@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book"
+    },
+    "title": {
+      "text": "Spells Skill Tree",
+      "color": "#b77ddd",
+      "bold": false
+    },
+    "description": {
+      "text": "Progress to unlock powerful spells!",
+      "color": "white"
+    },
+    "background": "block/deepslate",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GEG",
+        "APA",
+        "GEG"
+    ],
+    "key": {
+                "G": "ghast_tear",
+                "E": "echo_shard",
+                "A": "amethyst_shard",
+                "P": "phantom_membrane"
+    },
+    "result": {
+        "id": "chain_command_block",
+        "components": {
+            "custom_data": {"wand_core":"unicorn_hair"},
+            "item_model": "pack:unicorn_hair",
+            "item_name": {
+                "color": "white",
+                "text": "Unicorn Hair"
+            },
+            "lore": [
+                {
+                    "text": "Wand Core of Stability",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                },
+                {"text":"Harry Potter | And The Wizarding World", "italic":true, "bold":false, "color":"blue"}
+            ]
+        },
+        "count": 1
+    }
+}
+        

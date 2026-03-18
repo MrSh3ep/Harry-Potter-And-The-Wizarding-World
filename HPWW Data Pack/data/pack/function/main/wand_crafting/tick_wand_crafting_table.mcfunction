@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ oak_planks run function pack:main/wand_crafting/break_wand_crafting_table

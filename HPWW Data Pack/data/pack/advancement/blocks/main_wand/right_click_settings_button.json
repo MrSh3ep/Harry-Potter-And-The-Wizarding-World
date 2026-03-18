@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "using_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"item_model": "pack:settings_button"
+					}
+				}
+			} 
+		}
+	},
+	"rewards": {
+		"function": "pack:main/spellwheel/wheel/function/settings_menu/settings_menu"
+	}
+}

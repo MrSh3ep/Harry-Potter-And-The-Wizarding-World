@@ -1,0 +1,7 @@
+
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "pack:item/settings_button"
+    }
+}

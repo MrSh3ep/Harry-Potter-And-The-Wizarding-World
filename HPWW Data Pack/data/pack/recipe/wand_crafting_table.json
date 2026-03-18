@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " D ",
+        "ABA",
+        "OOO"
+    ],
+    "key": {
+        "D": "diamond",
+        "A": "amethyst_shard",
+        "B": "book",
+        "O": "oak_planks"
+                
+    },
+    "result": {
+        "id": "item_frame",
+        "components": {
+            "item_model": "hpww_blocks:wand_crafting_table",
+            "item_name": "Wand Crafting Table",
+            "entity_data": {
+                "id": "item_frame",
+                "Facing": 1,
+                "Invulnerable": true,
+                "Invisible": true,
+                "Fixed": true,
+                "Tags": [
+                    "pack.wand_crafting_table.block",
+                    "pack.item_frame_block"
+                ]
+
+            },
+            "lore": [
+                {
+                    "text": "Used to craft all wands", "bold": false, "italic":false, "color": "gray"
+                },
+                {"text":"Harry Potter | And The Wizarding World", "italic":true, "bold":false, "color":"blue"}
+            ]
+
+            
+        }
+    }
+}
+        

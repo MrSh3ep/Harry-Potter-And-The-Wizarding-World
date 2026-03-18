@@ -1,0 +1,1 @@
+execute as @s[tag=pack.wand_crafting_table_block] run function pack:main/wand_crafting/tick_wand_crafting_table
