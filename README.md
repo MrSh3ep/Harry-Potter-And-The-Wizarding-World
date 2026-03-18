@@ -1,5 +1,4 @@
-![Main Title](https://www.dropbox.com/scl/fi/7mo1gconuf0v2zvpkuqyb/Modrinth_HPWW_Main-Title_rounded.png?rlkey=35hoksg184zxd47ncjapj1zol&st=0rn9uymo&dl=1)
-
+<img="https://www.dropbox.com/scl/fi/7mo1gconuf0v2zvpkuqyb/Modrinth_HPWW_Main-Title_rounded.png?rlkey=35hoksg184zxd47ncjapj1zol&st=0rn9uymo&dl=1" alt="main_title">
 # Information
 - This Project contains **spoilers** to the Harry Potter Book series by [J. K. Rowling](https://stories.jkrowling.com/my-story/).
 
