@@ -8,3 +8,6 @@ fill ~10 ~8 ~10 ~-10 ~-2 ~-10 air replace light[level=15]
 execute at @s run playsound entity.breeze.deflect master @a[distance=0..15] ~ ~ ~ 2
 
 title @s[scores={SpellWheelStatus=0}] actionbar [{"text":"Lumos ", color:"#ffed87", bold:false, italic:false}, {text:"Deactivated", color: "white", bold:false, italic:false}]
+
+function pack:main/spells/store_player_spell_slot_data/lumos/update_deactive
+ 
