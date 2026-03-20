@@ -13,7 +13,7 @@
 
 #Drop Prevention
     function pack:main/spellwheel/wheel/function/drop/replace_macro
-    function pack:main/spellwheel/wheel/function/remove_extra_wands
+    execute as @a at @s run function pack:main/spellwheel/wheel/function/remove_extra_wands
 
 
 #Draw Spellwheel
@@ -39,8 +39,9 @@ execute as @a at @a run function pack:main/spellwheel/wheel/function/pages/left_
 
 #lumos
 execute as @a run function pack:main/spells/function/lumos/tick
-    
+
 #Spell Wheel Settings triggers
+execute as @a[scores={settings_menu_cancel=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/cancel
 
 #left click tick for display etc
 execute as @a run function pack:main/spellwheel/main_wand/tick

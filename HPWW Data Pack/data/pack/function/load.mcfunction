@@ -28,7 +28,7 @@ execute as @a unless score @s new_player_storage matches 1 run scoreboard player
 #Spell Wheel
 advancement revoke @a only pack:blocks/main_wand/right_click_settings_button
 advancement revoke @a only pack:blocks/main_wand/right_click_exit_wheel_button
-advancement revoke @a only pack:blocks/main_wand/right_click_main_wand
+execute as @s if score @s SpellWheelStatus matches 0 run advancement revoke @a only pack:blocks/main_wand/right_click_main_wand
 advancement revoke @a only pack:pages/lc_cooldown
 advancement revoke @a only pack:pages/rc_cooldown
 
@@ -51,8 +51,9 @@ advancement revoke @a only pack:pages/rc_cooldown
     scoreboard objectives add LastSelectedSlot dummy
 
     # Settings Menu
-    scoreboard objectives add ui dummy
-    scoreboard objectives add ui.id dummy
+    scoreboard objectives add settings_menu_cancel trigger
+    gamerule send_command_feedback false
+
 
     recipe give @a pack:dragon_heartstring
     recipe give @a pack:unicorn_hair
