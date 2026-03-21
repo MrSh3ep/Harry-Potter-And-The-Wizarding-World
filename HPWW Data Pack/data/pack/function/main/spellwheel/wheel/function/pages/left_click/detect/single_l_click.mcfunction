@@ -1,8 +1,9 @@
 # Ran from lc tick
-
-#single click
 scoreboard players set @s left_click_timer 0
 scoreboard players set @s left_click_count 0
+execute as @s if predicate pack:detectshift run return run function pack:main/spells/function/basic_cast/basic_cast_start
+#single click
+
 
 
 

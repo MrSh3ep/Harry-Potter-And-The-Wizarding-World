@@ -54,3 +54,7 @@ execute as @a[tag=new_player] run function pack:first_join
 execute as @a if score @s SpellWheelStatus matches 1 run function pack:main/spells/function/other/selected_page_save
 
 execute as @a run execute store result score @s SelectedSlot run data get entity @s SelectedItemSlot
+
+#basic cast
+execute as @a as @s run function pack:main/spells/function/basic_cast/tick
+

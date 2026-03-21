@@ -137,3 +137,6 @@ scoreboard players set #-1 spacefont -1
 
         scoreboard objectives add SelectedSlot_icon dummy
         scoreboard players set @s SelectedSlot_icon 0
+
+        scoreboard objectives add basic_cast_cooldown dummy
+scoreboard players set @a basic_cast_cooldown 0
