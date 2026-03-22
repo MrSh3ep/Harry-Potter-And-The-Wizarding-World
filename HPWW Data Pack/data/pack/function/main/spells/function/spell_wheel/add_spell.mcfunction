@@ -18,5 +18,4 @@ $data modify storage pdb:main in.spell_wheel_data.spells.page_$(Page).slot_$(Slo
 
 function pdb:save_me
 
-tag @s add settings_cooldown
-execute as @s[tag=settings_cooldown] run schedule function pack:main/spellwheel/wheel/function/settings_menu/settings_cooldown 1s
+trigger settings_menu_cancel set 1
