@@ -1,4 +1,4 @@
-execute as @a if score @s SpellWheelStatus matches 0 run return run function pack:main/spellwheel/main_wand/left_click
+execute as @s if score @s SpellWheelStatus matches 0 run return run function pack:main/spellwheel/main_wand/left_click
 # for the main wand left clikc stuff ^
 
 

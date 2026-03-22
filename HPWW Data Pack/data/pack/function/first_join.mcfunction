@@ -29,6 +29,7 @@ recipe give @s pack:unicorn_hair
 recipe give @s pack:phoenix_feather
 recipe give @s pack:wand_crafting_table
 scoreboard players set @a basic_cast_cooldown 0
+scoreboard players set @a protego_activated 0
 
 
 

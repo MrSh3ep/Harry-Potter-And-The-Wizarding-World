@@ -7,7 +7,11 @@ execute as @e[type=armor_stand,tag=basic_cast] at @s run tp @s ^ ^ ^1.3
 
 
 #Particle Trail
-execute at @e[type=armor_stand, tag=basic_cast] run particle minecraft:copper_fire_flame ~ ~1 ~ 0.01 0.01 0.01 0.01 10 force
+execute at @e[type=armor_stand, tag=basic_cast] run particle dust{color:[1.0,0.22,0.22], scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.01 5 force
+
+execute at @e[type=armor_stand, tag=basic_cast] run particle dust{color:[1.0,0.45,0.22],scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.01 1 force
+
+
 
 #Death And Effects
 execute as @e[type=armor_stand, tag=basic_cast] if score @s basic_cast_lifetime matches 0 as @s at @s run function pack:main/spells/function/basic_cast/kill

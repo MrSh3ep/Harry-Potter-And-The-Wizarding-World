@@ -9,7 +9,7 @@
 
 #protego
     execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
-    execute as @a run function pack:main/spells/function/protego/tick
+    execute as @a as @s at @s run function pack:main/spells/function/protego/tick
 
 #Drop Prevention
     function pack:main/spellwheel/wheel/function/drop/replace_macro
@@ -57,4 +57,5 @@ execute as @a run execute store result score @s SelectedSlot run data get entity
 
 #basic cast
 execute as @a as @s run function pack:main/spells/function/basic_cast/tick
+
 
