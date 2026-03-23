@@ -145,4 +145,8 @@ scoreboard objectives add basic_cast_cooldown dummy
 scoreboard players set @a basic_cast_cooldown 0
 scoreboard objectives add basic_cast_lifetime dummy
 scoreboard players set @a basic_cast_lifetime 0
+scoreboard objectives add basic_cast_lc_cooldown dummy
+scoreboard players set @s basic_cast_lc_cooldown 0
+
+execute as @a run function animated_java:protego/remove/entities
 

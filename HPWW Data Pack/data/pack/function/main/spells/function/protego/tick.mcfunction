@@ -12,4 +12,4 @@ execute if score @s protego_activated matches 1.. run scoreboard players remove 
 
 execute at @s if score @s protego_activated matches 1.. run function pack:main/spells/function/protego/protego_function
 
-execute as @s at @s if score @s protego_activated matches 0 run function pack:main/spells/function/protego/protego_end
+execute as @s at @s if score @s protego_activated matches 0 if score @s protego_cooldown matches 2..75 run function pack:main/spells/function/protego/protego_end
