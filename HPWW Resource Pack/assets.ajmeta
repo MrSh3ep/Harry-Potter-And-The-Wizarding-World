@@ -1,0 +1,13 @@
+{
+	"formatVersion": "1.0.0",
+	"rigs": {
+		"protego": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/items/blueprint/protego/protego.json",
+				"assets/animated_java/models/blueprint/protego/protego.json",
+				"assets/animated_java/textures/blueprint/protego/protego.png"
+			]
+		}
+	}
+}

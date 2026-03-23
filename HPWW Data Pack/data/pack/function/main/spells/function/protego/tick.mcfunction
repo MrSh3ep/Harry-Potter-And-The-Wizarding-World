@@ -12,4 +12,4 @@ execute if score @s protego_activated matches 1.. run scoreboard players remove 
 
 execute at @s if score @s protego_activated matches 1.. run function pack:main/spells/function/protego/protego_function
 
-execute if score @s protego_activated matches 0 run effect clear @s minecraft:slowness
+execute as @s at @s if score @s protego_activated matches 0 run function pack:main/spells/function/protego/protego_end

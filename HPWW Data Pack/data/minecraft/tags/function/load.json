@@ -1,3 +1,9 @@
 {
-    "values": [{"id": "pack:load"}]
+	"replace": false,
+	"values": [
+		"animated_java:global/on_load",
+		{
+			"id": "pack:load"
+		}
+	]
 }

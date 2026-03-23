@@ -1,8 +1,21 @@
 {
-  "pack": {
-     "description": [{"text": "HPWW Resource And Data Pack. ", "color":"#d18ce6", "bold": false, "italic": false},{"text": "by MrSheep", "color":"gold", "bold": true, "italic": false}],
-     "pack_format": 94,
-     "min_format": 94,
-     "max_format": 94
-  }
+	"pack": {
+		"description": [
+			{
+				"text": "HPWW Resource And Data Pack. ",
+				"color": "#d18ce6",
+				"bold": false,
+				"italic": false
+			},
+			{
+				"text": "by MrSheep",
+				"color": "gold",
+				"bold": true,
+				"italic": false
+			}
+		],
+		"pack_format": 94,
+		"min_format": 88,
+		"max_format": 9999999
+	}
 }

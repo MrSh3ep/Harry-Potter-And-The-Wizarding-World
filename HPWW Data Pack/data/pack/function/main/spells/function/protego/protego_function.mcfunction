@@ -1,7 +1,9 @@
 execute if entity @e[type=armor_stand, tag=protego_blockable, distance=0..3.5] run function pack:main/spells/function/protego/block
 
+execute as @s run tp @n[tag=aj.protego.root, type=item_display] ~ ~ ~ 0 0
+
 effect give @s slowness 1 1 true
-particle dust{color:[0.0,0.84,0.9],scale:1} ~ ~1 ~ 1.254 1.254 1.254 1 100 force @a
+
 
 
 
