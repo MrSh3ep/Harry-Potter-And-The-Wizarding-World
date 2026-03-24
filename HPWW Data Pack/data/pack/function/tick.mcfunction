@@ -7,6 +7,9 @@
 #Spell Wheel SFX
     execute as @a[scores={SpellWheelStatus=1}] at @s run function pack:main/spellwheel/wheel/function/sfx/change_page
 
+# Cache each player's UUID so spells can keep track of who cast them.
+    execute as @a run function pack:main/spells/function/other/store_uuid
+
 #protego
     execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
     execute as @a as @s at @s run function pack:main/spells/function/protego/tick

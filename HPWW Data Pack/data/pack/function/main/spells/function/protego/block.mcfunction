@@ -1,4 +1,5 @@
-kill @n[type=armor_stand, tag=protego_blockable, distance=0..3.5]
+kill @n[type=armor_stand, tag=protego_block_target, distance=0..3.5]
+tag @e[type=armor_stand, tag=protego_block_target, distance=0..3.5] remove protego_block_target
 
 playsound entity.warden.sonic_boom master @a ~ ~ ~ 3
 

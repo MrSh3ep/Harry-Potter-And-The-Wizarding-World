@@ -151,5 +151,14 @@ scoreboard players set @a basic_cast_lifetime 0
 scoreboard objectives add basic_cast_lc_cooldown dummy
 scoreboard players set @s basic_cast_lc_cooldown 0
 
+scoreboard objectives add spell_uuid_0 dummy
+scoreboard players set @a spell_uuid_0 0
+scoreboard objectives add spell_uuid_1 dummy
+scoreboard players set @a spell_uuid_1 0
+scoreboard objectives add spell_uuid_2 dummy
+scoreboard players set @a spell_uuid_2 0
+scoreboard objectives add spell_uuid_3 dummy
+scoreboard players set @a spell_uuid_3 0
+
 execute as @a run function animated_java:protego/remove/entities
 
