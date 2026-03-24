@@ -1,7 +1,10 @@
 #declare objective settings_menu_cancel
+#declare objective settings_menu_bind_spell
 #declare objective settings_menu_reset_player_data
 scoreboard players reset @s settings_menu_cancel
 scoreboard players enable @s settings_menu_cancel
+scoreboard players reset @s settings_menu_bind_spell
+scoreboard players enable @s settings_menu_bind_spell
 scoreboard players reset @s settings_menu_reset_player_data
 scoreboard players enable @s settings_menu_reset_player_data
 
@@ -13,11 +16,15 @@ scoreboard players enable @s settings_menu_reset_player_data
   "can_close_with_escape": true,\
   "inputs": [\
     {\
-      "type": "minecraft:text",\
-      "key": "spell_name",\
+      "type": "minecraft:number_range",\
+      "key": "spell_number",\
       "label": {\
-        "text": "Spell Wheel Name (Lowercase)"\
+        "text": "Spell ID (00 blank, 01 lumos)"\
       },\
+      "start": 0.0,\
+      "end": 1.0,\
+      "step": 1.0,\
+      "initial": 1,\
       "width": 200\
     },\
     {\
@@ -53,7 +60,7 @@ scoreboard players enable @s settings_menu_reset_player_data
         "text": "Bind Spell"\
       },\
       "action": {\
-        "type":"minecraft:dynamic/run_command", template:"/function pack:main/spells/function/spell_wheel/add_spell {Spell:$(spell_name), Page:$(page_number), Slot:$(slot_number),}" \
+        "type":"minecraft:dynamic/run_command", template:"/trigger settings_menu_bind_spell set 0$(page_number)0$(slot_number)0$(spell_number)" \
       }\
     },\
     {\

@@ -44,8 +44,9 @@ execute as @a at @a run function pack:main/spellwheel/wheel/function/pages/left_
 execute as @a run function pack:main/spells/function/lumos/tick
 
 #Spell Wheel Settings triggers
+execute as @a[scores={settings_menu_bind_spell=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/bind_spell
 execute as @a[scores={settings_menu_cancel=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/cancel
-execute as @a[scores={settings_menu_reset_player_data=1..}] run function pack:main/spellwheel/wheel/reset_player_data
+execute as @a[scores={settings_menu_reset_player_data=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/reset_player_data
 
 #left click tick for display etc
 execute as @a run function pack:main/spellwheel/main_wand/tick

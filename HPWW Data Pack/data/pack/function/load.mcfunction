@@ -52,7 +52,15 @@ advancement revoke @a only pack:pages/rc_cooldown
 
     # Settings Menu
     scoreboard objectives add settings_menu_cancel trigger
+    scoreboard objectives add settings_menu_bind_spell trigger
     scoreboard objectives add settings_menu_reset_player_data trigger
+    scoreboard objectives add settings_bind_encoded dummy
+    scoreboard objectives add settings_bind_spell dummy
+    scoreboard objectives add settings_bind_page dummy
+    scoreboard objectives add settings_bind_slot dummy
+    scoreboard objectives add settings_bind_const dummy
+    scoreboard players set #100 settings_bind_const 100
+    scoreboard players set #10000 settings_bind_const 10000
     gamerule send_command_feedback false
 
 
