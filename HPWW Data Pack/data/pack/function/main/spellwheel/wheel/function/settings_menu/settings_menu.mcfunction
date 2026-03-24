@@ -1,6 +1,9 @@
 #declare objective settings_menu_cancel
+#declare objective settings_menu_reset_player_data
 scoreboard players reset @s settings_menu_cancel
 scoreboard players enable @s settings_menu_cancel
+scoreboard players reset @s settings_menu_reset_player_data
+scoreboard players enable @s settings_menu_reset_player_data
 
  dialog show @s {\
   "type": "minecraft:multi_action",\
@@ -59,6 +62,14 @@ scoreboard players enable @s settings_menu_cancel
       },\
       "action": {\
         "type":"minecraft:run_command", "command":"/trigger settings_menu_cancel set 1" \
+      }\
+    },\
+    {\
+      "label": {\
+        "text": "Reset Player Data"\
+      },\
+      "action": {\
+        "type":"minecraft:run_command", "command":"/trigger settings_menu_reset_player_data set 1" \
       }\
     }\
   ]\

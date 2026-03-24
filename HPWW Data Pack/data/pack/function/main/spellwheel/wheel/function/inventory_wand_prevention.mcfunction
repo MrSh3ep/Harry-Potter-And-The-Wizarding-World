@@ -1,0 +1,33 @@
+execute if items entity @s player.crafting.1 test_instance_block run item replace entity @s player.crafting.1 with air
+execute if items entity @s player.crafting.2 test_instance_block run item replace entity @s player.crafting.2 with air
+execute if items entity @s player.crafting.3 test_instance_block run item replace entity @s player.crafting.3 with air
+execute if items entity @s player.crafting.0 test_instance_block run item replace entity @s player.crafting.0 with air
+
+execute if items entity @s inventory.0 test_instance_block run item replace entity @s inventory.0 with air
+execute if items entity @s inventory.1 test_instance_block run item replace entity @s inventory.1 with air
+execute if items entity @s inventory.2 test_instance_block run item replace entity @s inventory.2 with air
+execute if items entity @s inventory.3 test_instance_block run item replace entity @s inventory.3 with air
+execute if items entity @s inventory.4 test_instance_block run item replace entity @s inventory.4 with air
+execute if items entity @s inventory.5 test_instance_block run item replace entity @s inventory.5 with air
+execute if items entity @s inventory.6 test_instance_block run item replace entity @s inventory.6 with air
+execute if items entity @s inventory.7 test_instance_block run item replace entity @s inventory.7 with air
+execute if items entity @s inventory.8 test_instance_block run item replace entity @s inventory.8 with air
+execute if items entity @s inventory.9 test_instance_block run item replace entity @s inventory.9 with air
+execute if items entity @s inventory.10 test_instance_block run item replace entity @s inventory.10 with air
+execute if items entity @s inventory.11 test_instance_block run item replace entity @s inventory.11 with air
+execute if items entity @s inventory.12 test_instance_block run item replace entity @s inventory.12 with air
+execute if items entity @s inventory.13 test_instance_block run item replace entity @s inventory.13 with air
+execute if items entity @s inventory.14 test_instance_block run item replace entity @s inventory.14 with air
+execute if items entity @s inventory.15 test_instance_block run item replace entity @s inventory.15 with air
+execute if items entity @s inventory.16 test_instance_block run item replace entity @s inventory.16 with air
+execute if items entity @s inventory.17 test_instance_block run item replace entity @s inventory.17 with air
+execute if items entity @s inventory.18 test_instance_block run item replace entity @s inventory.18 with air
+execute if items entity @s inventory.19 test_instance_block run item replace entity @s inventory.19 with air
+execute if items entity @s inventory.20 test_instance_block run item replace entity @s inventory.20 with air
+execute if items entity @s inventory.21 test_instance_block run item replace entity @s inventory.21 with air
+execute if items entity @s inventory.22 test_instance_block run item replace entity @s inventory.22 with air
+execute if items entity @s inventory.23 test_instance_block run item replace entity @s inventory.23 with air
+execute if items entity @s inventory.24 test_instance_block run item replace entity @s inventory.24 with air
+execute if items entity @s inventory.25 test_instance_block run item replace entity @s inventory.25 with air
+execute if items entity @s inventory.26 test_instance_block run item replace entity @s inventory.26 with air
+

@@ -52,6 +52,7 @@ advancement revoke @a only pack:pages/rc_cooldown
 
     # Settings Menu
     scoreboard objectives add settings_menu_cancel trigger
+    scoreboard objectives add settings_menu_reset_player_data trigger
     gamerule send_command_feedback false
 
 

@@ -45,6 +45,7 @@ execute as @a run function pack:main/spells/function/lumos/tick
 
 #Spell Wheel Settings triggers
 execute as @a[scores={settings_menu_cancel=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/cancel
+execute as @a[scores={settings_menu_reset_player_data=1..}] run function pack:main/spellwheel/wheel/reset_player_data
 
 #left click tick for display etc
 execute as @a run function pack:main/spellwheel/main_wand/tick
@@ -61,4 +62,5 @@ execute as @a run execute store result score @s SelectedSlot run data get entity
 #basic cast
 execute as @a as @s run function pack:main/spells/function/basic_cast/tick
 
+execute as @a if score @s SpellWheelStatus matches 1 run function pack:main/spellwheel/wheel/function/inventory_wand_prevention
 
