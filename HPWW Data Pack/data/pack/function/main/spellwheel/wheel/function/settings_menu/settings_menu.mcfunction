@@ -1,6 +1,8 @@
 #declare objective settings_menu_cancel
 #declare objective settings_menu_bind_spell
 #declare objective settings_menu_reset_player_data
+#declare objective settings_menu_button_cooldown
+execute if score @s settings_menu_button_cooldown matches 1.. run return run advancement revoke @s only pack:blocks/main_wand/right_click_settings_button
 scoreboard players reset @s settings_menu_cancel
 scoreboard players enable @s settings_menu_cancel
 scoreboard players reset @s settings_menu_bind_spell
