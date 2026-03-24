@@ -1,1 +1,4 @@
-{"values":["animated_java:protego/on_load"]}
+{
+	"replace": false,
+	"values": ["animated_java:protego/on_load"]
+}

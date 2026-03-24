@@ -4,6 +4,3 @@ execute as @s at @s run tp @e[tag=aj.protego.root, type=item_display, limit=1, s
 
 effect give @s slowness 1 1 true
 
-
-
-

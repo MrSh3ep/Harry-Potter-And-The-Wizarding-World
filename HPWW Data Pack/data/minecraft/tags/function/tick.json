@@ -1,9 +1,4 @@
 {
 	"replace": false,
-	"values": [
-		{
-			"id": "pack:tick"
-		},
-		"animated_java:global/on_tick"
-	]
+	"values": ["pack:tick", "animated_java:global/on_tick"]
 }

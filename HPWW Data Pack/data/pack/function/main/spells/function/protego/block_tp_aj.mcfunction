@@ -1,0 +1,1 @@
+execute as @s at @s run tp @e[tag=aj.protego.root, type=item_display, limit=1, sort=nearest] ~ ~0.01 ~ ~ 0

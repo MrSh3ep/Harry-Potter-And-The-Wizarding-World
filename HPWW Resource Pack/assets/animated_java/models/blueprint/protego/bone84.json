@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/protego/protego_box",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [8, 1, 5],
+			"to": [8, 15, 11],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 10.0002, 5.0677]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 1.00001, 0, 1.87501],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [3.12923, 5.37501, 3.50423, 6.25001],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 1.00001, 0, 1.87501],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [5.24577, 3.18751, 5.62077, 4.06251],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0, 1.31673, 0, 0.94173],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0, 0.94173, 0, 1.31673],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

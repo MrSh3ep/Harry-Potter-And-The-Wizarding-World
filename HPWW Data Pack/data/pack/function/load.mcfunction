@@ -117,6 +117,9 @@ scoreboard players set #-1 spacefont -1
         scoreboard players set @a protego_cooldown_visual 1
         scoreboard objectives add protego_activated dummy
         scoreboard players set @a protego_activated 0
+        scoreboard objectives add protego_block_timer dummy
+        scoreboard players set @a protego_block_timer 0
+
         
 
         # Store constant 20 (run once during setup, not every tick)
