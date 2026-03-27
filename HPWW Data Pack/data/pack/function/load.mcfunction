@@ -63,7 +63,6 @@ advancement revoke @a only pack:pages/rc_cooldown
     scoreboard objectives add settings_bind_const dummy
     scoreboard players set #100 settings_bind_const 100
     scoreboard players set #10000 settings_bind_const 10000
-    gamerule send_command_feedback false
 
 
     recipe give @a pack:dragon_heartstring

@@ -9,6 +9,7 @@ scoreboard players reset @s settings_menu_bind_spell
 scoreboard players enable @s settings_menu_bind_spell
 scoreboard players reset @s settings_menu_reset_player_data
 scoreboard players enable @s settings_menu_reset_player_data
+gamerule send_command_feedback false
 
  dialog show @s {\
   "type": "minecraft:multi_action",\
@@ -27,7 +28,7 @@ scoreboard players enable @s settings_menu_reset_player_data
       "end": 1.0,\
       "step": 1.0,\
       "initial": 1,\
-      "width": 200\
+      "width": 150,\
     },\
     {\
       "type": "minecraft:number_range",\
