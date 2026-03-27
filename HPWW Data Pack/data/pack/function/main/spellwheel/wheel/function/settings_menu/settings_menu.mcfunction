@@ -21,7 +21,7 @@ scoreboard players enable @s settings_menu_reset_player_data
       "type": "minecraft:number_range",\
       "key": "spell_number",\
       "label": {\
-        "text": "Spell ID (00 blank, 01 lumos)"\
+        "text": "Spell ID"\
       },\
       "start": 0.0,\
       "end": 1.0,\
@@ -81,5 +81,5 @@ scoreboard players enable @s settings_menu_reset_player_data
         "type":"minecraft:run_command", "command":"/trigger settings_menu_reset_player_data set 1" \
       }\
     }\
-  ]\
+  ],\
 }
