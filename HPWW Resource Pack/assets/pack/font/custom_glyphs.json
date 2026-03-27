@@ -162,6 +162,15 @@
             "chars": ["\uE038"],
             "ascent": 25,
             "height": 46
+        },
+
+
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_0.png",
+            "chars": ["\uE040"],
+            "ascent": 25,
+            "height": 47
         }
     ]
 }

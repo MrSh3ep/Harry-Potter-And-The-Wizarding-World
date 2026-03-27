@@ -160,6 +160,9 @@ scoreboard objectives add basic_cast_lifetime dummy
 scoreboard players set @a basic_cast_lifetime 0
 scoreboard objectives add basic_cast_lc_cooldown dummy
 scoreboard players set @s basic_cast_lc_cooldown 0
+scoreboard players set @a basic_cast_icon_varient 0
+
+scoreboard objectives add basic_cast_icon_varient dummy
 
 scoreboard objectives add spell_uuid_0 dummy
 scoreboard players set @a spell_uuid_0 0
