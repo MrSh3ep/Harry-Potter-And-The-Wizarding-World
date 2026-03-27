@@ -1,7 +1,7 @@
 {
 	"model": {
 		"type": "minecraft:model",
-		"model": "animated_java:blueprint/protego/bone119",
+		"model": "animated_java:blueprint/protego/protego",
 		"tints": [
 			{"type": "minecraft:dye", "default": [1, 1, 1]}
 		]
