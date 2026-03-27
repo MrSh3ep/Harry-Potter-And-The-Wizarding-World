@@ -67,19 +67,45 @@ scoreboard players enable @s settings_menu_reset_player_data
     },\
     {\
       "label": {\
-        "text": "Cancel"\
+        "text": "Reset Spell Wheel",\
+      },\
+      "action": {\
+        "type":"minecraft:run_command", "command":"/trigger settings_menu_reset_player_data set 1" \
+      },\
+      "tooltip": {\
+        "text": "Press to reset the players spell wheel, including all of its data. Useful if you encounter any bugs.."\
+      }\
+    },\
+    {\
+      "label": {\
+        "text": "Exit"\
       },\
       "action": {\
         "type":"minecraft:run_command", "command":"/trigger settings_menu_cancel set 1" \
       }\
     },\
+  ],\
+  "body": [\
     {\
-      "label": {\
-        "text": "Reset Player Data"\
-      },\
-      "action": {\
-        "type":"minecraft:run_command", "command":"/trigger settings_menu_reset_player_data set 1" \
-      }\
+      "type": "minecraft:plain_message",\
+      "contents": [\
+        {\
+          "text": "Spell ID List\n",\
+          "bold": true,\
+          "color": "white"\
+        },\
+        {\
+          "text": "0 = blank\n",\
+          "color": "gray",\
+          "bold": false\
+        },\
+        {\
+          "text": "1 = lumos",\
+          "color": "#ffea76",\
+          "bold": false\
+        }\
+      ],\
+      "width": 220\
     }\
   ],\
 }
