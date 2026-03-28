@@ -66,3 +66,6 @@ execute as @a as @s run function pack:main/spells/function/basic_cast/tick
 
 execute as @a if score @s SpellWheelStatus matches 1 run function pack:main/spellwheel/wheel/function/inventory_wand_prevention
 
+function pack:main/spells/function/target/tick
+
+

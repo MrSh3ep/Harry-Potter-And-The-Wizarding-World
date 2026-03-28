@@ -175,3 +175,7 @@ scoreboard players set @a spell_uuid_3 0
 
 execute as @a run function animated_java:protego/remove/entities
 
+#Target Entity Detection
+scoreboard objectives add targeted_entity_raycast dummy
+scoreboard players set @a targeted_entity_raycast 0
+
