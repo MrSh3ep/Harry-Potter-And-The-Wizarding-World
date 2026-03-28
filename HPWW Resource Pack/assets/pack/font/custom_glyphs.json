@@ -168,9 +168,80 @@
         {
             "type": "bitmap",
             "file": "pack:spell_wheel/basic_cast_meter_0.png",
-            "chars": ["\uE040"],
+            "chars": ["\uE900"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_1.png",
+            "chars": ["\uE911"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_2.png",
+            "chars": ["\uE912"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_3.png",
+            "chars": ["\uE913"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_4.png",
+            "chars": ["\uE914"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_5.png",
+            "chars": ["\uE915"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_6.png",
+            "chars": ["\uE916"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_7.png",
+            "chars": ["\uE917"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_8.png",
+            "chars": ["\uE918"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_9.png",
+            "chars": ["\uE919"],
+            "ascent": 25,
+            "height": 47
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/basic_cast_meter_10.png",
+            "chars": ["\uE9020"],
             "ascent": 25,
             "height": 47
         }
+
     ]
 }
