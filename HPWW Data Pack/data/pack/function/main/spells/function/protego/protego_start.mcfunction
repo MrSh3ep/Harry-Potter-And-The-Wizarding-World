@@ -8,6 +8,5 @@ tellraw @a[distance=0..15] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Pr
 
 execute as @s at @s positioned ~ ~0.1 ~ rotated 0 0 run function animated_java:protego/summon {args:{animation:'protego_active'}}
 execute at @s as @e[type=item_display, tag=aj.protego.root, limit=1, sort=nearest] run function animated_java:protego/animations/protego_active/play
-
-playsound entity.warden.sonic_charge master @a ~ ~ ~ 3
+playsound minecraft:entity.breeze.charge master @a ~ ~ ~ 3
 

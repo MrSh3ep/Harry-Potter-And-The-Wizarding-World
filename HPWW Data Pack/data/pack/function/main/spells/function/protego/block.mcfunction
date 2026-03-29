@@ -1,7 +1,7 @@
 kill @n[type=armor_stand, tag=protego_block_target, distance=0..3.5]
 tag @e[type=armor_stand, tag=protego_block_target, distance=0..3.5] remove protego_block_target
 
-playsound entity.warden.sonic_boom master @a ~ ~ ~ 3
+playsound minecraft:entity.breeze.death master @a ~ ~ ~ 3
 
 scoreboard players set @s protego_activated 0
 scoreboard players set @s protego_block_timer 17
