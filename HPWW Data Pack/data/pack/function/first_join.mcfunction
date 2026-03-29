@@ -32,6 +32,7 @@ scoreboard players set @a basic_cast_cooldown 0
 scoreboard players set @a protego_activated 0
 scoreboard players set @a basic_cast_icon_varient 0
 scoreboard players set @a raycaster_player 0
+scoreboard players set @s highlight_team_id 0
 
 
 

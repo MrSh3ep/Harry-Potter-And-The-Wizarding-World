@@ -178,4 +178,6 @@ execute as @a run function animated_java:protego/remove/entities
 #Target Entity Detection
 scoreboard objectives add targeted_entity_raycast dummy
 scoreboard players set @a targeted_entity_raycast 0
+scoreboard objectives add highlight_team_id dummy
+scoreboard players add @a highlight_team_id 0
 
