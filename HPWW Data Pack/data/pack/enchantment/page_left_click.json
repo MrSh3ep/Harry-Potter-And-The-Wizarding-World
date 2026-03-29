@@ -2,7 +2,7 @@
 	"description": "",
 	"max_level": 1,
 	"slots": ["mainhand"],
-	"supported_items": ["test_instance_block"],
+	"supported_items": ["test_instance_block", "structure_block"],
 	"weight": 1,
 	"anvil_cost": 0,
 	"min_cost": {

@@ -1,6 +1,7 @@
+
+
 execute as @s if score @s SpellWheelStatus matches 0 run return run function pack:main/spellwheel/main_wand/left_click
 # for the main wand left clikc stuff ^
-
 
 
 execute if score @s left_click_timer matches 0 run scoreboard players set @s left_click_timer 6
