@@ -4,7 +4,7 @@ execute as @s if score @s SpellWheelStatus matches 0 run return run function pac
 # for the main wand left clikc stuff ^
 
 
-execute if score @s left_click_timer matches 0 run scoreboard players set @s left_click_timer 6
+execute if score @s left_click_timer matches 0 run scoreboard players set @s left_click_timer 10
 
 execute unless score @s left_click_advancement_cooldown matches 1.. anchored eyes run scoreboard players add @s left_click_count 1
 
