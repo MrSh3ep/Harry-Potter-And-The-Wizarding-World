@@ -20,4 +20,5 @@ execute as @e[type=armor_stand, tag=basic_cast] if score @s basic_cast_lifetime 
 #kill when hit blocks
 execute as @e[type=armor_stand,tag=basic_cast] at @s unless block ~ ~1 ~ minecraft:air unless block ~ ~0.5 ~ #flowers unless block ~ ~0.5 ~ short_grass unless block ~ ~0.5 ~ tall_grass unless block ~ ~0.5 ~ bush unless block ~ ~0.5 ~ snow unless block ~ ~0.5 ~ firefly_bush run function pack:main/spells/function/basic_cast/kill
 
-execute as @e[type=armor_stand, tag=basic_cast] at @s if entity @e[type=!item, distance=0.1..1.3] run function pack:main/spells/function/basic_cast/damage
+#detect entities and damage them
+execute as @e[type=armor_stand, tag=basic_cast] at @s if entity @e[type=!item, distance=0.1..1.5] run function pack:main/spells/function/basic_cast/damage
