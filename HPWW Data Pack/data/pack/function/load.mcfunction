@@ -145,7 +145,7 @@ scoreboard players set #-1 spacefont -1
         scoreboard players set @a lumos_cooldown_visual 10
         scoreboard objectives add lumos_activated dummy
         scoreboard players set @a lumos_activated 0
-
+        execute as @e[type=marker,tag=light] at @s run function pack:main/spells/function/lumos/replace_old_block
 
         #Join Detection
         scoreboard objectives add Joined minecraft.custom:minecraft.leave_game
@@ -180,4 +180,5 @@ scoreboard objectives add targeted_entity_raycast dummy
 scoreboard players set @a targeted_entity_raycast 0
 scoreboard objectives add highlight_team_id dummy
 scoreboard players add @a highlight_team_id 0
+
 
