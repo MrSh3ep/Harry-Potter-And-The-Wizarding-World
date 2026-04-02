@@ -18,6 +18,8 @@
     function pack:main/spellwheel/wheel/function/drop/replace_macro
     execute as @a at @s run function pack:main/spellwheel/wheel/function/remove_extra_wands
 
+#Refresh cached page data only when it has been dirtied.
+    execute as @a[scores={SpellWheelStatus=1,spell_wheel_cache_dirty=1..}] run function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 
 #Draw Spellwheel
     execute as @a[scores={SpellWheelStatus=1}] run function pack:main/spellwheel/wheel/function/display/start

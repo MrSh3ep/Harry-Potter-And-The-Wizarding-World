@@ -15,3 +15,4 @@ execute if score @s lumos_icon_state matches 5 run function pack:main/spells/fun
 execute if score @s lumos_icon_state matches 6 run function pack:main/spells/function/lumos/set_icons/apply_all/cooldown_4
 
 function pdb:save_me
+function pack:main/spellwheel/wheel/function/cache/queue_refresh

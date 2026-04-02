@@ -42,6 +42,8 @@ advancement revoke @a only pack:pages/rc_cooldown
     scoreboard objectives add HasPreset dummy
     scoreboard objectives add SpellWheelStatus dummy
     scoreboard objectives add kill_tile dummy
+    scoreboard objectives add spell_wheel_cache_dirty dummy
+    scoreboard players set @a spell_wheel_cache_dirty 1
 
     #Spell Wheel SFX
     scoreboard objectives add HotbarSound dummy
@@ -184,5 +186,3 @@ scoreboard objectives add targeted_entity_raycast dummy
 scoreboard players set @a targeted_entity_raycast 0
 scoreboard objectives add highlight_team_id dummy
 scoreboard players add @a highlight_team_id 0
-
-

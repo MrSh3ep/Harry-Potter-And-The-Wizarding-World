@@ -68,3 +68,5 @@ data modify storage pdb:main in.spell_wheel_data.spells.page_7.slot_3 set from s
 data modify storage pdb:main in.spell_wheel_data.spells.page_7.slot_4 set from storage pack:gobal_spell_data blank
 
 function pdb:save_me
+function pack:main/spellwheel/wheel/function/cache/queue_refresh
+function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty

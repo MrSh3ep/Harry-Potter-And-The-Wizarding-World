@@ -1,6 +1,9 @@
 
 #called from pack:tick.mcfunction
 
+data remove storage pdb:main out
+function pdb:get_me
+
 #page 1
 execute if score @s SelectedSlot matches 0 run return run function pack:main/spellwheel/wheel/function/display/pages/page_1
 

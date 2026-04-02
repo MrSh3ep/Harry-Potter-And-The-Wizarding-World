@@ -32,5 +32,7 @@ function pdb:save_me
 function pdb:get_me
 execute if score @s HasPreset matches 0 run return run function pack:main/spellwheel/wheel/function/first_open with storage pdb:main out.selected_item.components."minecraft:custom_data"
 
+function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
+
 function pdb:get_me
 function pack:main/spellwheel/wheel/function/give_wands_main

@@ -35,6 +35,7 @@ scoreboard players set @s protego_activated 0
 scoreboard players set @s basic_cast_icon_varient 0
 scoreboard players set @s highlight_team_id 0
 scoreboard players set @s HasPreset 0
+scoreboard players set @s spell_wheel_cache_dirty 1
 
 
 
