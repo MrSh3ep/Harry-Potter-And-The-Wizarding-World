@@ -1,5 +1,6 @@
 scoreboard players set @s lumos_activated 0
 scoreboard players set @s lumos_cooldown 100
+function pack:main/spells/function/lumos/set_icons/start
 
 execute as @e[type=marker, distance=0..5] at @s run function pack:main/spells/function/lumos/replace_old_block
 

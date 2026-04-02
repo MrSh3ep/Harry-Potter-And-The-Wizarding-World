@@ -10,10 +10,14 @@ execute unless score @s lumos_cooldown matches 0 run scoreboard players remove @
     scoreboard players operation @s lumos_cooldown_visual /= @s tick_const
 
 
-execute as @a[scores={lumos_activated=1}] at @s run function pack:main/spells/function/lumos/create_light
+execute if score @s lumos_activated matches 1 at @s run function pack:main/spells/function/lumos/create_light
 
-#sets the icons to change
-execute if items entity @s weapon.mainhand structure_block if score @s lumos_cooldown matches 2.. run function pack:main/spells/function/lumos/set_icons/start
-execute if items entity @s weapon.offhand structure_block if score @s lumos_cooldown matches 2.. run function pack:main/spells/function/lumos/set_icons/start
+# Queue icon refreshes only when the state actually changes.
+execute if score @s lumos_icon_state matches -1 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_cooldown matches 80 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_cooldown matches 60 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_cooldown matches 40 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_cooldown matches 20 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_activated matches 0 if score @s lumos_cooldown matches 0 unless score @s lumos_icon_state matches 0 run function pack:main/spells/function/lumos/set_icons/start
 
-execute if score @s SpellWheelStatus matches 1 run function pack:main/spells/function/lumos/set_icons/start
+execute if score @s lumos_icon_update_queue matches 1.. run function pack:main/spells/function/lumos/set_icons/flush_queue

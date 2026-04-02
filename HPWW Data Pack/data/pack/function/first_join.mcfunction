@@ -21,6 +21,8 @@ scoreboard players set @s tick_const 20
 scoreboard players set @s lumos_cooldown 10
 scoreboard players set @s lumos_cooldown_visual 10
 scoreboard players set @s lumos_activated 0
+scoreboard players set @s lumos_icon_state -1
+scoreboard players set @s lumos_icon_update_queue 0
 scoreboard players set @s SelectedSlot_icon 0
 scoreboard players set @s number_0 0
 scoreboard players set #fake_player_zero_number number_0 0

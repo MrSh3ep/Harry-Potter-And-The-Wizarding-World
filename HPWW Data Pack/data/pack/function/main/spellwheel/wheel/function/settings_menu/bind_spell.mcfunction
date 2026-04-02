@@ -33,6 +33,7 @@ execute unless data storage pdb:main bind_spell.SpellData run return fail
 
 function pack:main/spellwheel/wheel/function/settings_menu/bind_spell_commit with storage pdb:main bind_spell
 function pdb:save_me
+function pack:main/spells/function/lumos/set_icons/start
 
 scoreboard players set @s settings_menu_button_cooldown 3
 advancement revoke @s only pack:blocks/main_wand/right_click_settings_button

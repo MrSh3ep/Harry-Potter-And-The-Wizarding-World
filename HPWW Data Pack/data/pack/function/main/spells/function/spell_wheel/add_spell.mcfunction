@@ -17,5 +17,6 @@ $data modify storage pdb:main in.spell_wheel_data.spells.page_$(Page).slot_$(Slo
 #for example, a global spell will have {Spell: "Lumos", Keys:{Active: 551, Deactive: 552}}
 
 function pdb:save_me
+function pack:main/spells/function/lumos/set_icons/start
 
 execute as @s run advancement revoke @s only pack:blocks/main_wand/right_click_exit_wheel_button

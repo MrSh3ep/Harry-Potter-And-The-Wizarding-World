@@ -5,7 +5,7 @@ execute as @e[type=marker, tag=light] at @s run function pack:main/spells/functi
 
 
 #Summon Markers
-execute as @a[scores={lumos_activated=1}] if items entity @s weapon.* #pack:lumos_emitter at @s positioned ~ ~1 ~ run function pack:main/spells/function/lumos/summon_markers
+execute if items entity @s weapon.* #pack:lumos_emitter at @s positioned ~ ~1 ~ run function pack:main/spells/function/lumos/summon_markers
 
 
 #Place Light

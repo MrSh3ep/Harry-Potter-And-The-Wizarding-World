@@ -11,3 +11,4 @@ particle dust{color:[1.0,0.93,0.46],scale:1} ~ ~1 ~ 1.254 1.254 1.254 1 50 force
 
 scoreboard players set @s lumos_cooldown 0
 scoreboard players set @s lumos_activated 1
+function pack:main/spells/function/lumos/set_icons/start
