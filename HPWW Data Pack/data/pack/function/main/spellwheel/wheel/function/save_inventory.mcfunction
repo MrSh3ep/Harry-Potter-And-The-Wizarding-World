@@ -5,13 +5,16 @@
 
 scoreboard players set @s SelectedSlot -1
 scoreboard players set @s SpellWheelStatus 1
+scoreboard players set @s spell_wheel_display_dirty 1
+scoreboard players set @s spell_wheel_display_timer 0
+scoreboard players set @s spell_wheel_maintenance_timer 0
 playsound block.vault.activate master @s ~ ~ ~ 1 1
 
 execute as @a if score @s new_player_storage matches 0 run function pdb:new_player
 
 data remove storage pdb:main in
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 data modify storage pdb:main in set from storage pdb:main out
 data remove storage pdb:main in.hotbar
 #Resaves Hotbar But not Preset :}
@@ -29,10 +32,10 @@ data modify storage pdb:main in.selected_item set from entity @s SelectedItem
 function pdb:save_me
 
 # Executes only if the player has no preset
-function pdb:get_me
+function pdb:get_me_cached
 execute if score @s HasPreset matches 0 run return run function pack:main/spellwheel/wheel/function/first_open with storage pdb:main out.selected_item.components."minecraft:custom_data"
 
 function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 
-function pdb:get_me
+function pdb:get_me_cached
 function pack:main/spellwheel/wheel/function/give_wands_main

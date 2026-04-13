@@ -13,4 +13,5 @@ $data modify storage pdb:main in.spell_wheel_data.spells.$(Page).$(Slot) set fro
 
 function pdb:save_me
 function pack:main/spells/function/lumos/set_icons/start
+function pack:main/spells/function/levioso/set_icons/start
 function pack:main/spellwheel/wheel/function/cache/queue_refresh

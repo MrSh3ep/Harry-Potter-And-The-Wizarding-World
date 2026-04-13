@@ -1,8 +1,11 @@
 
 #called from pack:tick.mcfunction
 
+scoreboard players set @s spell_wheel_display_timer 4
+scoreboard players set @s spell_wheel_display_dirty 0
+
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 
 #page 1
 execute if score @s SelectedSlot matches 0 run return run function pack:main/spellwheel/wheel/function/display/pages/page_1

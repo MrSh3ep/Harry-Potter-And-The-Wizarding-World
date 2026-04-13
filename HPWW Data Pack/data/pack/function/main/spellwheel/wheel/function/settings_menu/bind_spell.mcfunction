@@ -28,12 +28,14 @@ execute store result storage pdb:main bind_spell.Slot int 1 run scoreboard playe
 
 execute if score @s settings_bind_spell matches 0 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data blank
 execute if score @s settings_bind_spell matches 1 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data lumos
+execute if score @s settings_bind_spell matches 2 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data levioso
 
 execute unless data storage pdb:main bind_spell.SpellData run return fail
 
 function pack:main/spellwheel/wheel/function/settings_menu/bind_spell_commit with storage pdb:main bind_spell
 function pdb:save_me
 function pack:main/spells/function/lumos/set_icons/start
+function pack:main/spells/function/levioso/set_icons/start
 function pack:main/spellwheel/wheel/function/cache/queue_refresh
 function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 

@@ -1,5 +1,3 @@
-execute if score @s basic_cast_cooldown matches 1.. run scoreboard players remove @s basic_cast_cooldown 1
-
 execute as @e[type=marker, tag=basic_cast] if score @s basic_cast_lifetime matches 1.. run scoreboard players remove @s basic_cast_lifetime 1
 
 #TP

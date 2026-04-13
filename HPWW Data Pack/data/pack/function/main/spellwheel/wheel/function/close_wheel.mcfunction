@@ -1,5 +1,8 @@
 function pack:main/spellwheel/wheel/function/save_preset
 scoreboard players set @s SpellWheelStatus 0
+scoreboard players set @s spell_wheel_display_dirty 0
+scoreboard players set @s spell_wheel_display_timer 0
+scoreboard players set @s spell_wheel_maintenance_timer 0
 playsound block.vault.deactivate master @s ~ ~ ~ 1 1
 
 #Clear The Hotbar
@@ -15,7 +18,7 @@ item replace entity @s hotbar.8 with air
 
 
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 #give hotbar
 execute if data storage pdb:main out.hotbar.0 run summon item ~ ~ ~ {PickupDelay:0, Tags:["temp"],Item:{id:"minecraft:oak_planks",count:1, components:{item_model:"pack:temp_item"}}}
 data modify entity @n[type=item,tag=temp, nbt={Item:{"components":{"minecraft:item_model":"pack:temp_item"}}}] Item set from storage pdb:main in.hotbar.0

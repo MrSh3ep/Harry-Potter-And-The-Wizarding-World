@@ -33,6 +33,72 @@
             "height": 50
         },
 
+         {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_0.png",
+            "chars": ["\uE030"],
+            "ascent": 25,
+            "height": 46
+        },
+
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_1.png",
+            "chars": ["\uE031"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_2.png",
+            "chars": ["\uE032"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_3.png",
+            "chars": ["\uE033"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_4.png",
+            "chars": ["\uE034"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_5.png",
+            "chars": ["\uE035"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE036"],
+            "ascent": 25,
+            "height": 46
+        },
+        
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE037"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE038"],
+            "ascent": 25,
+            "height": 46
+        },
+
 
 
         {
@@ -93,76 +159,99 @@
             "ascent": 25,
             "height": 46
         },
-        
-
-
-
-
 
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_0.png",
-            "chars": ["\uE030"],
+            "file": "pack:spell_wheel/levioso_active.png",
+            "chars": ["\uA211"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_1.png",
-            "chars": ["\uE031"],
+            "file": "pack:spell_wheel/levioso_selected.png",
+            "chars": ["\uC211"],
+            "ascent": 25,
+            "height": 46
+        },
+
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/levioso_deactive_0.png",
+            "chars": ["\uB210"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_2.png",
-            "chars": ["\uE032"],
+            "file": "pack:spell_wheel/levioso_deactive_1.png",
+            "chars": ["\uB211"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_3.png",
-            "chars": ["\uE033"],
+            "file": "pack:spell_wheel/levioso_deactive_2.png",
+            "chars": ["\uB212"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_4.png",
-            "chars": ["\uE034"],
+            "file": "pack:spell_wheel/levioso_deactive_3.png",
+            "chars": ["\uB213"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_5.png",
-            "chars": ["\uE035"],
+            "file": "pack:spell_wheel/levioso_deactive_4.png",
+            "chars": ["\uB214"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
-            "chars": ["\uE036"],
-            "ascent": 25,
-            "height": 46
-        },
-        
-        {
-            "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
-            "chars": ["\uE037"],
+            "file": "pack:spell_wheel/levioso_deactive_5.png",
+            "chars": ["\uB215"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/spell_wheel_scroll_6.png",
-            "chars": ["\uE038"],
+            "file": "pack:spell_wheel/levioso_deactive_6.png",
+            "chars": ["\uB216"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/levioso_deactive_7.png",
+            "chars": ["\uB217"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/levioso_deactive_8.png",
+            "chars": ["\uB218"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/levioso_deactive_9.png",
+            "chars": ["\uB219"],
             "ascent": 25,
             "height": 46
         }
+        
+
+
+
+
+
+       
 
     ]
 }

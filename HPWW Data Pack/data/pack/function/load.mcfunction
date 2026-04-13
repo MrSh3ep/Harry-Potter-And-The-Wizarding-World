@@ -44,6 +44,12 @@ advancement revoke @a only pack:pages/rc_cooldown
     scoreboard objectives add kill_tile dummy
     scoreboard objectives add spell_wheel_cache_dirty dummy
     scoreboard players set @a spell_wheel_cache_dirty 1
+    scoreboard objectives add spell_wheel_display_timer dummy
+    scoreboard players set @a spell_wheel_display_timer 0
+    scoreboard objectives add spell_wheel_display_dirty dummy
+    scoreboard players set @a spell_wheel_display_dirty 0
+    scoreboard objectives add spell_wheel_maintenance_timer dummy
+    scoreboard players set @a spell_wheel_maintenance_timer 0
 
     #Spell Wheel SFX
     scoreboard objectives add HotbarSound dummy
@@ -153,6 +159,20 @@ scoreboard players set #-1 spacefont -1
         scoreboard players set @a lumos_icon_update_queue 0
         execute as @e[type=marker,tag=light] at @s run function pack:main/spells/function/lumos/replace_old_block
 
+    #Levioso
+        data modify storage pack:gobal_spell_data levioso set value {Spell:"levioso", Current_Key:"A211", Keys:{Active:"A211", Deactive:{D_0:"B210", D_1:"B211", D_2:"B212", D_3:"B213", D_4:"B214", D_5:"B215", D_6:"B216", D_7:"B217", D_8:"B218", D_9:"B219"}, Selected:"C211"}}
+
+        scoreboard objectives add levioso_cooldown dummy
+        scoreboard players set @a levioso_cooldown 0
+        scoreboard objectives add levioso_cooldown_visual dummy
+        scoreboard players set @a levioso_cooldown_visual 0
+        scoreboard objectives add levioso_icon_state dummy
+        scoreboard players set @a levioso_icon_state -1
+        scoreboard objectives add levioso_icon_update_queue dummy
+        scoreboard players set @a levioso_icon_update_queue 0
+        scoreboard objectives add levioso_selected_flash dummy
+        scoreboard players set @a levioso_selected_flash 0
+
         #Join Detection
         scoreboard objectives add Joined minecraft.custom:minecraft.leave_game
 
@@ -178,6 +198,7 @@ scoreboard objectives add spell_uuid_2 dummy
 scoreboard players set @a spell_uuid_2 0
 scoreboard objectives add spell_uuid_3 dummy
 scoreboard players set @a spell_uuid_3 0
+execute as @a run function pack:main/spells/function/other/store_uuid
 
 execute as @a run function animated_java:protego/remove/entities
 

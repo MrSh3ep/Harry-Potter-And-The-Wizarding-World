@@ -1,4 +1,4 @@
-summon marker ^ ^ ^ {Tags:[basic_cast, temp_needs_cooldown, protego_blockable], NoGravity:true, Invulnerable:true, Invisible:true, Small:true}
+summon marker ^ ^ ^ {Tags:[basic_cast, temp_needs_cooldown, protego_blockable], NoGravity:true, Invulnerable:true}
 
 execute as @n[type=marker, tag=temp_needs_cooldown] run scoreboard players set @s basic_cast_lifetime 20
 scoreboard players operation @n[type=marker, tag=temp_needs_cooldown, limit=1, sort=nearest] spell_uuid_0 = @s spell_uuid_0

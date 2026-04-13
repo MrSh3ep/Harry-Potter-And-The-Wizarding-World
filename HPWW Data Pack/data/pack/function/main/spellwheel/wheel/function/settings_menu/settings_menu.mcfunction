@@ -25,7 +25,7 @@ gamerule send_command_feedback false
         "text": "Spell ID"\
       },\
       "start": 0.0,\
-      "end": 1.0,\
+      "end": 2.0,\
       "step": 1.0,\
       "initial": 1,\
       "width": 150,\
@@ -103,6 +103,11 @@ gamerule send_command_feedback false
         {\
           "text": "1 = lumos",\
           "color": "#ffea76",\
+          "bold": false\
+        },\
+        {\
+          "text": "2 = levioso",\
+          "color": "#9fd6ff",\
           "bold": false\
         }\
       ],\
