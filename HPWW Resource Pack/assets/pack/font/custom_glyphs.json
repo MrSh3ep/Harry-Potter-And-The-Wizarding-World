@@ -169,79 +169,57 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_selected.png",
+            "file": "pack:spell_wheel/levioso_selected_1.png",
             "chars": ["\uC211"],
             "ascent": 25,
             "height": 46
         },
-
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_0.png",
-            "chars": ["\uB210"],
+            "file": "pack:spell_wheel/levioso_selected_2.png",
+            "chars": ["\uC212"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_1.png",
-            "chars": ["\uB211"],
+            "file": "pack:spell_wheel/levioso_selected_3.png",
+            "chars": ["\uC213"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_2.png",
-            "chars": ["\uB212"],
+            "file": "pack:spell_wheel/levioso_selected_4.png",
+            "chars": ["\uC214"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_3.png",
-            "chars": ["\uB213"],
+            "file": "pack:spell_wheel/levioso_selected_5.png",
+            "chars": ["\uC215"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_4.png",
-            "chars": ["\uB214"],
+            "file": "pack:spell_wheel/levioso_selected_6.png",
+            "chars": ["\uC216"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_5.png",
-            "chars": ["\uB215"],
+            "file": "pack:spell_wheel/levioso_selected_7.png",
+            "chars": ["\uC217"],
             "ascent": 25,
             "height": 46
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_6.png",
-            "chars": ["\uB216"],
-            "ascent": 25,
-            "height": 46
-        },
-        {
-            "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_7.png",
-            "chars": ["\uB217"],
-            "ascent": 25,
-            "height": 46
-        },
-        {
-            "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_8.png",
-            "chars": ["\uB218"],
-            "ascent": 25,
-            "height": 46
-        },
-        {
-            "type": "bitmap",
-            "file": "pack:spell_wheel/levioso_deactive_9.png",
-            "chars": ["\uB219"],
+            "file": "pack:spell_wheel/levioso_selected_8.png",
+            "chars": ["\uC218"],
             "ascent": 25,
             "height": 46
         }
