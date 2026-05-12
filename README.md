@@ -201,5 +201,3 @@ _for both buttons, press the `use.item/place_block` keybind to trigger them_
 If your items glitch or anything happens, reset your wand wheel player data with `/function pack:main/spellwheel/wheel/function/reset_player_data`
 
 **If you find any bugs, please share them on my [discord](https://discord.gg/G2Wkg9CFuE) server.**
-
-git test?

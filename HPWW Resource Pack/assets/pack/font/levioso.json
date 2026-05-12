@@ -1,0 +1,15 @@
+{
+    "providers":
+
+    [
+
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/levioso_active.png",
+            "chars": ["\uC215"],
+            "ascent": 25,
+            "height": 46
+        }
+
+    ]
+}
