@@ -1,6 +1,7 @@
-execute unless score @s protego_cooldown matches 0 run return run function pack:main/spells/function/protego/protego_sfx
+function pack:main/spells/function/api/read_cooldown {spell:"protego"}
+execute if score @s cooldown_api matches 1.. run return run function pack:main/spells/function/protego/protego_sfx
 
-scoreboard players set @s protego_cooldown 140
+function pack:main/spells/function/api/start_cooldown {spell:"protego",time:7}
 scoreboard players set @s protego_activated 35
 
 tellraw @a[distance=0..15] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Protego!", bold:false, italic:true, color:aqua}]

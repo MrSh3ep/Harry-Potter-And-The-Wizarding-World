@@ -14,7 +14,9 @@
 
 #protego
     execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
-    execute as @a[scores={protego_cooldown=1..}] at @s run function pack:main/spells/function/protego/tick
+
+#Spell API
+    function pack:main/spells/function/api/tick
 
 #Drop Prevention
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=0}] at @s run function pack:main/spellwheel/wheel/function/maintenance
@@ -45,19 +47,6 @@ execute as @a[scores={right_click_timer=0,right_click_count=1..}] at @s run func
 execute as @a[scores={left_click_timer=1..}] at @s run function pack:main/spellwheel/wheel/function/pages/left_click/detect/lc_tick
 execute as @a[scores={left_click_timer=0,left_click_count=1..}] at @s run function pack:main/spellwheel/wheel/function/pages/left_click/detect/lc_tick
 
-
-#Spell Values
-    #Protego
-    execute as @a unless score @s protego_cooldown matches 0 run scoreboard players set @s protego_spell_wheel_value 5
-    execute as @a if score @s protego_cooldown matches 0 run scoreboard players set @s protego_spell_wheel_value 4
-
-    #
-
-#lumos
-execute as @a run function pack:main/spells/function/lumos/tick
-
-#levioso
-execute as @a run function pack:main/spells/function/levioso/tick
 
 #left click tick for display etc
 execute as @a[scores={lumos_activated=1,SpellWheelStatus=0}] run function pack:main/spellwheel/main_wand/tick

@@ -111,6 +111,17 @@ advancement revoke @a only pack:pages/rc_cooldown
 
     
 
+#Spell API
+    scoreboard objectives add cooldown_api dummy
+    scoreboard objectives add cooldown_api_active dummy
+    scoreboard objectives add cooldown_api_probe dummy
+    scoreboard players set @a cooldown_api_active 1
+    scoreboard players set @a cooldown_api_probe 1
+    scoreboard players set #20 cooldown_api 20
+    scoreboard players set #26 cooldown_api 26
+    scoreboard players set #27 cooldown_api 27
+    scoreboard players set #1000 cooldown_api 1000
+
 #Spell Visuals
     scoreboard objectives add protego_spell_wheel_value dummy
     scoreboard players set @a protego_spell_wheel_value 4
@@ -124,54 +135,18 @@ scoreboard objectives add spacefont dummy
 scoreboard players set #-1 spacefont -1
 
 # Spells
-#ALL SPELLS MUST HAVE THIS FORMAT __ ex : {Spell:"Blank", Current_Key:"", Keys:{Active:"\uE101", Deactive:"\uE101",}
-    #Blank
-    data modify storage pack:gobal_spell_data blank set value {Spell:"blank", Current_Key:"E101", Keys:{Active:"E101", Deactive:"E101",}}
+function pack:main/spells/function/api/spell_definitions
 
     #Protego
-        scoreboard objectives add protego_cooldown dummy
-        scoreboard players set @a protego_cooldown 1
-        scoreboard objectives add protego_cooldown_visual dummy
-        scoreboard players set @a protego_cooldown_visual 1
         scoreboard objectives add protego_activated dummy
         scoreboard players set @a protego_activated 0
         scoreboard objectives add protego_block_timer dummy
         scoreboard players set @a protego_block_timer 0
 
-        
-
-        # Store constant 20 (run once during setup, not every tick)
-        scoreboard objectives add tick_const dummy
-        scoreboard players set @a tick_const 20
-
     #Lumos
-        data modify storage pack:gobal_spell_data lumos set value {Spell:"lumos", Current_Key:"A551", Keys:{Active:"A551", Deactive: {D_0:"B550", D_1:"B551", D_2:"B552", D_3:"B553", D_4:"B554", D_5:"B555"}, Selected:"C551"}}
-
-        scoreboard objectives add lumos_cooldown dummy
-        scoreboard players set @a lumos_cooldown 10
-        scoreboard objectives add lumos_cooldown_visual dummy
-        scoreboard players set @a lumos_cooldown_visual 10
         scoreboard objectives add lumos_activated dummy
         scoreboard players set @a lumos_activated 0
-        scoreboard objectives add lumos_icon_state dummy
-        scoreboard players set @a lumos_icon_state -1
-        scoreboard objectives add lumos_icon_update_queue dummy
-        scoreboard players set @a lumos_icon_update_queue 0
         execute as @e[type=marker,tag=light] at @s run function pack:main/spells/function/lumos/replace_old_block
-
-    #Levioso
-        data modify storage pack:gobal_spell_data levioso set value {Spell:"levioso", Current_Key:"A211", Keys:{Active:"A211", Deactive:{D_0:"B210", D_1:"B211", D_2:"B212", D_3:"B213", D_4:"B214", D_5:"B215", D_6:"B216", D_7:"B217", D_8:"B218", D_9:"B219"}, Selected:"C211"}}
-
-        scoreboard objectives add levioso_cooldown dummy
-        scoreboard players set @a levioso_cooldown 0
-        scoreboard objectives add levioso_cooldown_visual dummy
-        scoreboard players set @a levioso_cooldown_visual 0
-        scoreboard objectives add levioso_icon_state dummy
-        scoreboard players set @a levioso_icon_state -1
-        scoreboard objectives add levioso_icon_update_queue dummy
-        scoreboard players set @a levioso_icon_update_queue 0
-        scoreboard objectives add levioso_selected_flash dummy
-        scoreboard players set @a levioso_selected_flash 0
 
         #Join Detection
         scoreboard objectives add Joined minecraft.custom:minecraft.leave_game
@@ -207,3 +182,7 @@ scoreboard objectives add targeted_entity_raycast dummy
 scoreboard players set @a targeted_entity_raycast 0
 scoreboard objectives add highlight_team_id dummy
 scoreboard players add @a highlight_team_id 0
+
+
+scoreboard objectives add spell_wheel_attack_mode dummy
+scoreboard players set @a spell_wheel_attack_mode 0

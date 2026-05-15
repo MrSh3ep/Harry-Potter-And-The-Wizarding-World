@@ -15,20 +15,10 @@ scoreboard players set @s number_2 2
 scoreboard players set #fake_player_zero_number number_0 0
 scoreboard players set @s protego_spell_wheel_value 4
 scoreboard players set #-1 spacefont -1
-scoreboard players set @s protego_cooldown 1
-scoreboard players set @s protego_cooldown 1
-scoreboard players set @s protego_cooldown_visual 1
-scoreboard players set @s tick_const 20
-scoreboard players set @s lumos_cooldown 10
-scoreboard players set @s lumos_cooldown_visual 10
+scoreboard players set @s cooldown_api 0
+scoreboard players set @s cooldown_api_active 1
+scoreboard players set @s cooldown_api_probe 1
 scoreboard players set @s lumos_activated 0
-scoreboard players set @s lumos_icon_state -1
-scoreboard players set @s lumos_icon_update_queue 0
-scoreboard players set @s levioso_cooldown 0
-scoreboard players set @s levioso_cooldown_visual 0
-scoreboard players set @s levioso_icon_state -1
-scoreboard players set @s levioso_icon_update_queue 0
-scoreboard players set @s levioso_selected_flash 0
 scoreboard players set @s SelectedSlot_icon 0
 scoreboard players set @s number_0 0
 scoreboard players set #fake_player_zero_number number_0 0
@@ -38,6 +28,7 @@ recipe give @s pack:phoenix_feather
 recipe give @s pack:wand_crafting_table
 scoreboard players set @s basic_cast_cooldown 0
 scoreboard players set @s protego_activated 0
+scoreboard players set @s protego_block_timer 0
 scoreboard players set @s basic_cast_icon_varient 0
 scoreboard players set @s highlight_team_id 0
 scoreboard players set @s HasPreset 0
@@ -45,6 +36,7 @@ scoreboard players set @s spell_wheel_cache_dirty 1
 scoreboard players set @s spell_wheel_display_timer 0
 scoreboard players set @s spell_wheel_display_dirty 0
 scoreboard players set @s spell_wheel_maintenance_timer 0
+scoreboard players set @s spell_wheel_attack_mode 0
 
 
 

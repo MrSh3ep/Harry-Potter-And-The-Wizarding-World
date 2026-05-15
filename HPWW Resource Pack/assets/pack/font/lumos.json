@@ -2,7 +2,7 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_active.png",
+            "file": "pack:spell_wheel/lumos/lumos_active.png",
             "chars": [
                 "ꄀ"
             ],
@@ -11,7 +11,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_selected.png",
+            "file": "pack:spell_wheel/lumos/lumos_selected.png",
             "chars": [
                 "넀"
             ],
@@ -20,7 +20,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_1.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_1.png",
             "chars": [
                 "섁"
             ],
@@ -29,7 +29,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_2.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_2.png",
             "chars": [
                 "섂"
             ],
@@ -38,7 +38,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_3.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_3.png",
             "chars": [
                 "섃"
             ],
@@ -47,7 +47,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_4.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_4.png",
             "chars": [
                 "섄"
             ],
@@ -56,7 +56,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_5.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_5.png",
             "chars": [
                 "섅"
             ],
@@ -65,7 +65,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_6.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_6.png",
             "chars": [
                 "섆"
             ],
@@ -74,7 +74,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_7.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_7.png",
             "chars": [
                 "섇"
             ],
@@ -83,7 +83,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_8.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_8.png",
             "chars": [
                 "섈"
             ],
@@ -92,7 +92,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_9.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_9.png",
             "chars": [
                 "섉"
             ],
@@ -101,7 +101,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_10.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_10.png",
             "chars": [
                 "섐"
             ],
@@ -110,7 +110,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_11.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_11.png",
             "chars": [
                 "섑"
             ],
@@ -119,7 +119,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_12.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_12.png",
             "chars": [
                 "섒"
             ],
@@ -128,7 +128,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_13.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_13.png",
             "chars": [
                 "섓"
             ],
@@ -137,7 +137,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_14.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_14.png",
             "chars": [
                 "섔"
             ],
@@ -146,7 +146,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_15.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_15.png",
             "chars": [
                 "섕"
             ],
@@ -155,7 +155,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_16.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_16.png",
             "chars": [
                 "섖"
             ],
@@ -164,7 +164,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_17.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_17.png",
             "chars": [
                 "섗"
             ],
@@ -173,7 +173,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_18.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_18.png",
             "chars": [
                 "섘"
             ],
@@ -182,7 +182,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_19.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_19.png",
             "chars": [
                 "섙"
             ],
@@ -191,7 +191,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_20.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_20.png",
             "chars": [
                 "선"
             ],
@@ -200,7 +200,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_21.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_21.png",
             "chars": [
                 "섡"
             ],
@@ -209,7 +209,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_22.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_22.png",
             "chars": [
                 "섢"
             ],
@@ -218,7 +218,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_23.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_23.png",
             "chars": [
                 "섣"
             ],
@@ -227,7 +227,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_24.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_24.png",
             "chars": [
                 "설"
             ],
@@ -236,7 +236,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_25.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_25.png",
             "chars": [
                 "섥"
             ],
@@ -245,7 +245,7 @@
         },
         {
             "type": "bitmap",
-            "file": "pack:spell_wheel/levioso/levioso_cooldown_26.png",
+            "file": "pack:spell_wheel/lumos/lumos_cooldown_26.png",
             "chars": [
                 "섦"
             ],

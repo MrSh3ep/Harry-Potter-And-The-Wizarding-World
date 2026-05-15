@@ -34,8 +34,7 @@ execute unless data storage pdb:main bind_spell.SpellData run return fail
 
 function pack:main/spellwheel/wheel/function/settings_menu/bind_spell_commit with storage pdb:main bind_spell
 function pdb:save_me
-function pack:main/spells/function/lumos/set_icons/start
-function pack:main/spells/function/levioso/set_icons/start
+function pack:main/spells/function/api/icons/force_refresh_all_icons
 function pack:main/spellwheel/wheel/function/cache/queue_refresh
 function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 
