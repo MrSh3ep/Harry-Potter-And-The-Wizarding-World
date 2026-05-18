@@ -2,8 +2,6 @@
 
 tellraw @a ["",{bold:true,text:"",extra:[{color:"#c5a7fd",text:"H"},{color:"#c1a1fb",text:"a"},{color:"#bd9cf9",text:"r"},{color:"#b896f8",text:"r"},{color:"#b491f6",text:"y "},{color:"#ac86f2",text:"P"},{color:"#a880f0",text:"o"},{color:"#a47bee",text:"t"},{color:"#9f75ed",text:"t"},{color:"#9b70eb",text:"e"},{color:"#976ae9",text:"r "},{color:"#9b6ddb",text:"|"}]},{bold:true,text:"",extra:[{color:"#ac7dc2",text:" A"},{color:"#b484b6",text:"n"},{color:"#bd8ca9",text:"d "},{color:"#cd9c91",text:"T"},{color:"#d5a485",text:"h"},{color:"#deac78",text:"e "},{color:"#eebb60",text:"W"},{color:"#f7c353",text:"i"},{color:"#ffcb47",text:"z"},{color:"#ffcc4c",text:"a"},{color:"#ffcd52",text:"r"},{color:"#ffcd57",text:"d"},{color:"#ffce5d",text:"i"},{color:"#ffcf62",text:"n"},{color:"#ffd067",text:"g "},{color:"#ffd172",text:"W"},{color:"#ffd277",text:"o"},{color:"#ffd37d",text:"r"},{color:"#ffd382",text:"l"},{color:"#ffd488",text:"d "}]},{color:"white",text:"has reloaded!\n",extra:[{bold:true,text:"Version"}," -"]},{color:"gold",text:" Beta v0.2a "},{color:"dark_red",text:"(⚠ EXPECT BUGS)\n"},{color:"white",text:"",extra:[{bold:true,text:"Creator"}," - "]},{bold:true,text:"",extra:[{color:"#607451",text:"M"},{color:"#6b7a57",text:"r"},{color:"#767f5c",text:"S"},{color:"#818562",text:"h"},{color:"#8a8663",text:"3"},{color:"#948863",text:"e"},{color:"#9d8964",text:"p"}]},"\n"]
 
-give @s glass[block_entity_data={id:"bed"}]
-
 
 
 execute as @a unless score @s HasPreset matches 1 run scoreboard players set @s HasPreset 0
