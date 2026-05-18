@@ -28,7 +28,7 @@ gamerule send_command_feedback false
       "end": 2.0,\
       "step": 1.0,\
       "initial": 1,\
-      "width": 150,\
+      "width": 100,\
     },\
     {\
       "type": "minecraft:number_range",\
@@ -101,7 +101,7 @@ gamerule send_command_feedback false
           "bold": false\
         },\
         {\
-          "text": "1 = lumos",\
+          "text": "1 = lumos\n",\
           "color": "#ffea76",\
           "bold": false\
         },\
