@@ -9,16 +9,13 @@ item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
 item replace entity @s hotbar.8 with air
 
-
-data remove storage pdb:main out
-data remove storage pdb:main out.give_item_components
 function pdb:get_me
-function pack:main/spellwheel/wheel/function/give_wands/h0/get
-function pack:main/spellwheel/wheel/function/give_wands/h1/get
-function pack:main/spellwheel/wheel/function/give_wands/h2/get
-function pack:main/spellwheel/wheel/function/give_wands/h3/get
-function pack:main/spellwheel/wheel/function/give_wands/h4/get
-function pack:main/spellwheel/wheel/function/give_wands/h5/get
-function pack:main/spellwheel/wheel/function/give_wands/h6/get
-function pack:main/spellwheel/wheel/function/give_wands/h7/get
-function pack:main/spellwheel/wheel/function/give_wands/h8/get
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_0 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_1 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_2 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_3 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_4 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_5 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_6 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_7 with storage pdb:main out.wands.first_open.data
+function pack:main/spellwheel/wheel/function/give_wands/replace/slot_8 with storage pdb:main out.wands.first_open.data

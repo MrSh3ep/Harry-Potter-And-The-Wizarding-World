@@ -27,7 +27,7 @@
                     "bold": false,
                     "italic": false
                 },
-                {"text":"Harry Potter | And The Wizarding World", "italic":true, "bold":false, "color":"blue"}
+                [{"text":"\uEA1A", "font":"pack:custom_glyphs", "shadow_color":0, "color":"white","bold":false,"italic":false}]
             ]
         },
         "count": 1

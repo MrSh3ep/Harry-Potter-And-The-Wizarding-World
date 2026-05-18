@@ -13,9 +13,7 @@
                                 "minecraft:item_name": "Wand Crafting Table",
                                 "minecraft:item_model": "hpww_blocks:wand_crafting_table",
                                 "lore":[
-                                    {
-                                    "text": "Used to craft all wands", "bold": false, "italic":false, "color": "gray"},
-                                    {"text":"Harry Potter | And The Wizarding World", "italic":true, "bold":false, "color":"blue"}
+                                    [{"text":"\uEA1A", "font":"pack:custom_glyphs", "shadow_color":0, "color":"white","bold":false,"italic":false}]
                                 ],
                                 "entity_data": {
                                     "id": "minecraft:item_frame",

@@ -9,6 +9,14 @@
             "height": 46
         },
 
+        {
+            "type": "bitmap",
+            "file": "pack:spell_wheel/description_logo_glyph.png",
+            "chars": ["\uEA1A"],
+            "ascent": 7,
+            "height": 7
+        },
+
 
         {
             "type": "bitmap",

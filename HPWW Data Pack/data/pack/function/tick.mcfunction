@@ -61,6 +61,4 @@ execute as @a if score @s SpellWheelStatus matches 1 run function pack:main/spel
 execute as @a[scores={basic_cast_cooldown=1..}] run scoreboard players remove @s basic_cast_cooldown 1
 execute if entity @e[type=marker,tag=basic_cast,limit=1] run function pack:main/spells/function/basic_cast/tick
 
-function pack:main/spells/function/target/tick
-
 

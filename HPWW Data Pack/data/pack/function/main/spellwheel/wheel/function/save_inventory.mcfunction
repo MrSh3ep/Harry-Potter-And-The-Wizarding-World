@@ -31,9 +31,24 @@ data modify storage pdb:main in.hotbar.8 set from entity @s Inventory[{Slot:8b}]
 data modify storage pdb:main in.selected_item set from entity @s SelectedItem
 function pdb:save_me
 
-# Executes only if the player has no preset
+# Executes only if the player has no preset to generate a copy of main wand for the spell whell wands :D
+data remove storage pdb:main in
+data remove storage pdb:main out
 function pdb:get_me_cached
-execute if score @s HasPreset matches 0 run return run function pack:main/spellwheel/wheel/function/first_open with storage pdb:main out.selected_item.components."minecraft:custom_data"
+data modify storage pdb:main in set from storage pdb:main out
+
+data remove storage pdb:main in.wands.first_open.data
+
+# saving stuff
+data modify storage pdb:main in.wands.first_open.data.lore set from storage pdb:main out.selected_item.components."minecraft:lore"
+data modify storage pdb:main in.wands.first_open.data.wand_wood set from storage pdb:main out.selected_item.components."minecraft:custom_data".wand_wood
+data modify storage pdb:main in.wands.first_open.data.wand_core set from storage pdb:main out.selected_item.components."minecraft:custom_data".wand_core
+function pdb:save_me
+
+#saved lore, wood, and core
+
+function pdb:get_me_cached
+execute if score @s HasPreset matches 0 run return run function pack:main/spellwheel/wheel/function/first_open with storage pdb:main out.wands.first_open.data
 
 function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 

@@ -1,0 +1,1 @@
+item replace entity @s hotbar.7 with test_instance_block[item_model="pack:settings_button", consumable={consume_seconds:1000000000, animation:"none", has_consume_particles:false}, custom_data={cannot_be_dropped:1b, ui:1b},custom_name=""]
