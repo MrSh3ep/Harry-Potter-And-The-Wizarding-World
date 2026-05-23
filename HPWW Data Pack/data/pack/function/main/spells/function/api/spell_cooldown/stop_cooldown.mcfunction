@@ -10,7 +10,7 @@ $data modify storage pdb:main in.cooldowns.$(spell) set value {remaining:0,durat
 
 scoreboard players set #cooldown_api_changed cooldown_api 1
 scoreboard players set #cooldown_icon_changed cooldown_api 0
-$function pack:main/spells/function/api/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
+$function pack:main/spells/function/api/spell_cooldown/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
 function pdb:save_me
 execute if score #cooldown_icon_changed cooldown_api matches 1.. run function pack:main/spellwheel/wheel/function/cache/queue_refresh
 $execute unless data storage pack:cooldown_api args{trigger_function:"none"} at @s run function $(trigger_function)

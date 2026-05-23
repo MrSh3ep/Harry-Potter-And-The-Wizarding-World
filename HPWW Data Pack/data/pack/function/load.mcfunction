@@ -133,7 +133,7 @@ scoreboard objectives add spacefont dummy
 scoreboard players set #-1 spacefont -1
 
 # Spells
-function pack:main/spells/function/api/spell_definitions
+function pack:main/spells/function/api/spell_cooldown/spell_definitions
 
     #Protego
         scoreboard objectives add protego_activated dummy

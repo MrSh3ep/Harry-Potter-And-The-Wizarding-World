@@ -22,6 +22,6 @@ $execute store result storage pdb:main in.cooldowns.$(spell).duration int 1 run 
 
 scoreboard players set #cooldown_api_changed cooldown_api 1
 scoreboard players set #cooldown_icon_changed cooldown_api 0
-$function pack:main/spells/function/api/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
+$function pack:main/spells/function/api/spell_cooldown/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
 function pdb:save_me
 execute if score #cooldown_icon_changed cooldown_api matches 1.. run function pack:main/spellwheel/wheel/function/cache/queue_refresh

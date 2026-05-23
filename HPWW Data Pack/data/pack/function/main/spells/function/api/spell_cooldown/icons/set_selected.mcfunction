@@ -16,9 +16,9 @@ $execute unless score #selected_arg cooldown_api matches 1.. run data modify sto
 scoreboard players set #cooldown_api_changed cooldown_api 1
 scoreboard players set #cooldown_icon_changed cooldown_api 0
 $execute if score #selected_arg cooldown_api matches 1.. run data modify storage pack:cooldown_api icon set value {spell:"$(spell)",key_path:"Keys.Selected"}
-execute if score #selected_arg cooldown_api matches 1.. run function pack:main/spells/function/api/icons/apply_icon_to_storage with storage pack:cooldown_api icon
+execute if score #selected_arg cooldown_api matches 1.. run function pack:main/spells/function/api/spell_cooldown/icons/apply_icon_to_storage with storage pack:cooldown_api icon
 execute if score #selected_arg cooldown_api matches 1.. run scoreboard players set #cooldown_icon_changed cooldown_api 1
-$execute unless score #selected_arg cooldown_api matches 1.. run function pack:main/spells/function/api/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
+$execute unless score #selected_arg cooldown_api matches 1.. run function pack:main/spells/function/api/spell_cooldown/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
 function pdb:save_me
 execute if score #cooldown_icon_changed cooldown_api matches 1.. run function pack:main/spellwheel/wheel/function/cache/queue_refresh
 execute if score #cooldown_icon_changed cooldown_api matches 1.. if score @s SpellWheelStatus matches 1 run function pack:main/spellwheel/wheel/function/display/start

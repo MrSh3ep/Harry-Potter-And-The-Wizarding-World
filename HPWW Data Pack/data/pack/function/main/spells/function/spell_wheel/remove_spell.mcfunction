@@ -12,5 +12,5 @@ data modify storage pdb:main in set from storage pdb:main out
 $data modify storage pdb:main in.spell_wheel_data.spells.page_$(Page).slot_$(Slot) set from storage pack:gobal_spell_data blank
 
 function pdb:save_me
-function pack:main/spells/function/api/icons/force_refresh_all_icons
+function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_all_icons
 function pack:main/spellwheel/wheel/function/cache/queue_refresh

@@ -7,8 +7,10 @@ execute as @e[type=marker,tag=basic_cast] at @s run tp @s ^ ^ ^2.5
 
 #Particle Trail
 execute at @e[type=marker, tag=basic_cast] run particle dust{color:[1.0,0.22,0.22], scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.01 5 force
+ 
 
 execute at @e[type=marker, tag=basic_cast] run particle dust{color:[1.0,0.45,0.22],scale:1} ~ ~1 ~ 0.1 0.1 0.1 0.01 1 force
+
 
 
 

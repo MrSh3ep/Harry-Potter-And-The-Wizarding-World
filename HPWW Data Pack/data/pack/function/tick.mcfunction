@@ -16,7 +16,7 @@
     execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
 
 #Spell API
-    function pack:main/spells/function/api/tick
+    function pack:main/spells/function/api/spell_cooldown/tick
 
 #Drop Prevention
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=0}] at @s run function pack:main/spellwheel/wheel/function/maintenance

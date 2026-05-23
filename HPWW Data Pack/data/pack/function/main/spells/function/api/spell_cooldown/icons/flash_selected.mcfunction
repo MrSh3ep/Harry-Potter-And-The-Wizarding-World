@@ -21,7 +21,7 @@ $execute store result storage pdb:main in.cooldowns.$(spell).duration int 1 run 
 scoreboard players set #cooldown_api_changed cooldown_api 1
 scoreboard players set #cooldown_icon_changed cooldown_api 1
 $data modify storage pack:cooldown_api icon set value {spell:"$(spell)",key_path:"Keys.Selected"}
-function pack:main/spells/function/api/icons/apply_icon_to_storage with storage pack:cooldown_api icon
+function pack:main/spells/function/api/spell_cooldown/icons/apply_icon_to_storage with storage pack:cooldown_api icon
 function pdb:save_me
 scoreboard players set @s spell_wheel_cache_dirty 0
 execute if score @s SpellWheelStatus matches 1 run function pack:main/spellwheel/wheel/function/display/start

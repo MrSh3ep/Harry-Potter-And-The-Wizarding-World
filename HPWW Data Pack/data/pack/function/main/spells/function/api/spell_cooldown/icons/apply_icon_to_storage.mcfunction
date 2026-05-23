@@ -55,4 +55,4 @@ $execute if data storage pdb:main in.spell_wheel_data.spells.page_7.slot_3{Spell
 $execute if data storage pdb:main in.spell_wheel_data.spells.page_7.slot_4{Spell:"$(spell)"} run data modify storage pdb:main in.spell_wheel_data.spells.page_7.slot_4.Current_Key set from storage pack:gobal_spell_data $(spell).$(key_path)
 $execute if data storage pdb:main in.spell_wheel_data.spells.page_7.slot_4{Spell:"$(spell)"} run data modify storage pdb:main in.spell_wheel_data.spells.page_7.slot_4.icon_font set from storage pack:gobal_spell_data $(spell).icon_font
 
-function pack:main/spells/function/api/icons/apply_icon_to_cache with storage pack:cooldown_api icon
+function pack:main/spells/function/api/spell_cooldown/icons/apply_icon_to_cache with storage pack:cooldown_api icon

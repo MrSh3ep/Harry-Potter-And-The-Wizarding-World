@@ -64,6 +64,6 @@ execute if score #target_stage cooldown_api matches 24 run data modify storage p
 execute if score #target_stage cooldown_api matches 25 run data modify storage pack:cooldown_api icon.key_path set value "Keys.Cooldown.D_25"
 execute if score #target_stage cooldown_api matches 26 run data modify storage pack:cooldown_api icon.key_path set value "Keys.Cooldown.D_26"
 
-function pack:main/spells/function/api/icons/apply_icon_to_storage with storage pack:cooldown_api icon
+function pack:main/spells/function/api/spell_cooldown/icons/apply_icon_to_storage with storage pack:cooldown_api icon
 scoreboard players set #cooldown_api_changed cooldown_api 1
 scoreboard players set #cooldown_icon_changed cooldown_api 1

@@ -35,11 +35,11 @@ execute if score #remaining cooldown_api matches 1.. if score #global_paused coo
 $execute if score #cooldown_api_changed cooldown_api matches 1.. store result storage pdb:main in.cooldowns.$(spell).remaining int 1 run scoreboard players get #remaining cooldown_api
 
 $execute if score #selected cooldown_api matches 1.. run data modify storage pack:cooldown_api icon set value {spell:"$(spell)",key_path:"Keys.Selected"}
-execute if score #selected cooldown_api matches 1.. run function pack:main/spells/function/api/icons/apply_icon_to_storage with storage pack:cooldown_api icon
+execute if score #selected cooldown_api matches 1.. run function pack:main/spells/function/api/spell_cooldown/icons/apply_icon_to_storage with storage pack:cooldown_api icon
 execute if score #selected cooldown_api matches 1.. run scoreboard players set @s spell_wheel_display_dirty 1
 execute if score #selected cooldown_api matches 1.. run scoreboard players set @s spell_wheel_display_timer 0
 execute if score #selected cooldown_api matches 1.. run return 0
 
-$function pack:main/spells/function/api/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
+$function pack:main/spells/function/api/spell_cooldown/icons/refresh_spell_icon_loaded {spell:"$(spell)"}
 $execute if score #remaining cooldown_api matches 0 if score #paused cooldown_api matches 0 if score #pause_timer cooldown_api matches 0 if score #selected cooldown_api matches 0 if score #selected_timer cooldown_api matches 0 run data remove storage pdb:main in.cooldowns.$(spell)
 execute if score #remaining cooldown_api matches 0 if score #paused cooldown_api matches 0 if score #pause_timer cooldown_api matches 0 if score #selected cooldown_api matches 0 if score #selected_timer cooldown_api matches 0 run scoreboard players set #cooldown_api_changed cooldown_api 1
