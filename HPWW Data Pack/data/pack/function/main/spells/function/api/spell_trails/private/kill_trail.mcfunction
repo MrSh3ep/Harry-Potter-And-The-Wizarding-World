@@ -1,1 +1,1 @@
-tellraw @a "loop end YAY"
+kill @s
