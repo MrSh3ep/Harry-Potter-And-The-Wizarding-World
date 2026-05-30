@@ -1,4 +1,4 @@
-$summon armor_stand ^ ^ ^1 {Tags:[spell_trail, needs_rotation, trail_color_$(color)], attributes:[{id:"gravity", base:0.0000000000000000001}], Invisible:1b}
+$summon armor_stand ^ ^ ^1 {Tags:[spell_trail, needs_rotation, trail_color_$(color)], Small:1b, Invisible:1b, attributes:[{id:"gravity", base:0.0000000000000000001}]}
 rotate @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] ~ ~
 
 data remove storage pack:trail_storage in
@@ -13,4 +13,3 @@ execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, so
 
 $execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] at @s run function pack:main/spells/function/api/spell_trails/private/set_life_time with storage pack:spell_trail_definitions $(color)
 tag @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] remove needs_rotation
-

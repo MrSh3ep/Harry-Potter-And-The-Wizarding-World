@@ -192,3 +192,7 @@ scoreboard players set @a spell_wheel_attack_mode 0
 scoreboard objectives add spell_trail_life_ticks dummy
 scoreboard objectives add spell_trail_schedule dummy
 scoreboard objectives add spell_trail_motion dummy
+scoreboard objectives add spell_trail_speed dummy
+scoreboard players set #-1 spell_trail_motion -1
+scoreboard players set #speed_scale spell_trail_motion 1000
+scoreboard players set #default spell_trail_speed 1000
