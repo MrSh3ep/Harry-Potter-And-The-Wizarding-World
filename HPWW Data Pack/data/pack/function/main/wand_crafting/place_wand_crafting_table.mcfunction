@@ -5,7 +5,7 @@ execute if block ~ ~ ~ water run setblock ~ ~ ~ oak_planks
 
 
 
-execute align y run summon item_display ~ ~ ~ {Tags:["pack.custom_block","pack.wand_crafting_table_block","pack.new_wand_crafting_table_block"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.02f,1.02f,1.02f]},item:{id:"minecraft:item_frame",count:1,components:{"minecraft:item_model":"hpww_blocks:wand_crafting_table"}}, brightness:{block:15, sky:15}}
+execute align y run summon item_display ~ ~ ~ {Tags:["pack.custom_block","pack.wand_crafting_table_block","pack.new_wand_crafting_table_block"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:item_frame",count:1,components:{"minecraft:item_model":"hpww_blocks:wand_crafting_table"}}, brightness:{block:15, sky:15}}
 execute if entity @a[tag=pack.placed_item_frame,distance=..10,limit=1,sort=nearest,y_rotation=-45..45] run data merge entity @n[type=item_display,tag=pack.new_wand_crafting_table_block,distance=..2] {Rotation:[180f,0f]}
 execute if entity @a[tag=pack.placed_item_frame,distance=..10,limit=1,sort=nearest,y_rotation=45..135] run data merge entity @n[type=item_display,tag=pack.new_wand_crafting_table_block,distance=..2] {Rotation:[-90f,0f]}
 execute if entity @a[tag=pack.placed_item_frame,distance=..10,limit=1,sort=nearest,y_rotation=135..180] run data merge entity @n[type=item_display,tag=pack.new_wand_crafting_table_block,distance=..2] {Rotation:[0f,0f]}
