@@ -137,6 +137,7 @@ scoreboard players set #-1 spacefont -1
 
 # Spells
 function pack:main/spells/function/api/spell_cooldown/spell_definitions
+function pack:main/spells/function/api/spell_trails/api/trail_definitions
 
     #Protego
         scoreboard objectives add protego_activated dummy
@@ -187,3 +188,6 @@ scoreboard players add @a highlight_team_id 0
 
 scoreboard objectives add spell_wheel_attack_mode dummy
 scoreboard players set @a spell_wheel_attack_mode 0
+
+scoreboard objectives add spell_trail_life_ticks dummy
+scoreboard objectives add spell_trail_schedule dummy
