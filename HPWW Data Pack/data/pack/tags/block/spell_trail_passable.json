@@ -9,6 +9,8 @@
     "minecraft:tall_grass",
     "minecraft:bush",
     "minecraft:firefly_bush",
-    "minecraft:snow"
+    "minecraft:snow",
+    "minecraft:water",
+    "minecraft:lava"
   ]
 }
