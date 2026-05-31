@@ -1,0 +1,1 @@
+$function $(namespace):$(end_function)

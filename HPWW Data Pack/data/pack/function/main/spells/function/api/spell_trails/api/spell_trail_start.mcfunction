@@ -6,8 +6,11 @@ data remove storage pack:trail_storage out
 
 
 
-#Sav
-$data modify storage pack:trail_storage in.trail_spell.spell set value $(spell)
+#Save data
+$data modify storage pack:trail_storage in.trail_end_function.namespace set value $(end_function_namespace)
+
+
+$data modify storage pack:trail_storage in.trail_end_function.end_function set value "$(end_function)"
 
 $data modify storage pack:trail_storage in.trail_color set value {particle_colors:{particle_color_1:$(color_1), particle_color_2:$(color_2)}}
 

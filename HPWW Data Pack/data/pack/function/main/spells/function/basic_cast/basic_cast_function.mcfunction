@@ -1,13 +1,14 @@
-summon marker ^ ^ ^ {Tags:[basic_cast, temp_needs_cooldown, protego_blockable], NoGravity:true, Invulnerable:true}
+#ran from left click single detect 
+scoreboard players set @s left_click_timer 0
+scoreboard players set @s left_click_count 0
 
-execute as @n[type=marker, tag=temp_needs_cooldown] run scoreboard players set @s basic_cast_lifetime 20
-scoreboard players operation @n[type=marker, tag=temp_needs_cooldown, limit=1, sort=nearest] spell_uuid_0 = @s spell_uuid_0
-scoreboard players operation @n[type=marker, tag=temp_needs_cooldown, limit=1, sort=nearest] spell_uuid_1 = @s spell_uuid_1
-scoreboard players operation @n[type=marker, tag=temp_needs_cooldown, limit=1, sort=nearest] spell_uuid_2 = @s spell_uuid_2
-scoreboard players operation @n[type=marker, tag=temp_needs_cooldown, limit=1, sort=nearest] spell_uuid_3 = @s spell_uuid_3
-rotate @n[type=marker,tag=temp_needs_cooldown] ~ ~ 
+execute if score @s basic_cast_cooldown matches 1.. run return fail
 
-tag @n remove temp_needs_cooldown
+execute unless score @s basic_cast_cooldown matches 0 run return run function pack:main/spells/function/basic_cast/basic_cast_function
+
+scoreboard players set @s basic_cast_cooldown 9
+
+function pack:main/spells/function/api/spell_trails/api/spell_trail_start {end_function_namespace:"pack",end_function:"main/spells/function/basic_cast/basic_cast_damage", color_1:[1.0,0.22,0.22], color_2:[1.0,0.45,0.22], speed:1700, life_ticks:30, color:"red"}
 
 playsound minecraft:entity.breeze.jump master @a ~ ~ ~ 3
 

@@ -3,6 +3,6 @@ scoreboard players set @s spell_trail_life_ticks 0
 
 
 function pack:main/spells/function/api/spell_trails/private/storage/get_me
-execute at @s run execute as @n[type=armor_stand, limit=1, tag=trail_entity_checker] at @s as @s run function pack:main/spells/function/api/spell_trails/private/trigger_spell with storage pack:trail_storage out.trail_spell
+execute at @s run execute as @n[type=armor_stand, limit=1, tag=trail_entity_checker] at @s as @s run function pack:main/spells/function/api/spell_trails/private/trail_end_function with storage pack:trail_storage out.trail_end_function
 
 kill @s

@@ -26,7 +26,7 @@ scoreboard players operation #move_remaining spell_trail_motion = @s spell_trail
 execute if score #move_remaining spell_trail_motion matches 1.. at @s run function pack:main/spells/function/api/spell_trails/private/move_step
 
 execute at @s if entity @e[distance=0..0.5, type=!armor_stand] run function pack:main/spells/function/api/spell_trails/private/kill_trail
-execute at @s if entity @e[distance=0.1..0.5, type=armor_stand] run function pack:main/spells/function/api/spell_trails/private/trail_collide
+execute at @s if entity @e[distance=0.1..0.5, type=armor_stand, tag=spell_trail] run function pack:main/spells/function/api/spell_trails/private/trail_collide
 
 #Loop End
 execute if score @s spell_trail_life_ticks matches 0 run return run function pack:main/spells/function/api/spell_trails/private/kill_trail
