@@ -4,4 +4,5 @@ particle minecraft:flash{color:-30327} ~ ~1 ~ 1 1 1 1 100 force @a
 
 playsound entity.warden.sonic_boom master @a ~ ~ ~ 3 2
 
+function pack:main/spells/function/api/spell_trails/private/cleanup_particle_anchor
 kill @s

@@ -1,4 +1,5 @@
-$summon armor_stand ^ ^ ^1 {Tags:[spell_trail, protego_blockable, needs_rotation, trail_color_$(color)], Small:1b, Invisible:1b, attributes:[{id:"gravity", base:0.0000000000000000001}]}
+$summon armor_stand ^ ^ ^0.5 {Tags:[spell_trail, protego_blockable, needs_rotation, trail_color_$(color)], Small:1b, Invisible:1b, attributes:[{id:"gravity", base:0.0000000000000000001}]}
+
 rotate @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] ~ ~
 
 data remove storage pack:trail_storage in
