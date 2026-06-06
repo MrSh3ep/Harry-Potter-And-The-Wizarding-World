@@ -1,3 +1,5 @@
+
+
 execute at @s run summon marker ~ ~ ~ {Tags:[trail_entity_checker], NoGravity:1b}
 scoreboard players set @s spell_trail_life_ticks 0
 function pack:main/spells/function/api/spell_trails/private/cleanup_particle_anchor
