@@ -1,6 +1,7 @@
 scoreboard players operation @s knocked_out_timer_temp = @s knocked_out_timer
 scoreboard players operation @s knocked_out_timer_temp /= @s number_20
 scoreboard players operation @s knocked_out_timer_seconds = @s knocked_out_timer_temp
+scoreboard players operation @s knocked_out_timer_seconds += @s number_1
 
 
 title @s actionbar [{text:"You Are Knocked Out! ", color:red}, {score:{name:"@s", objective:knocked_out_timer_seconds}, color:green}]

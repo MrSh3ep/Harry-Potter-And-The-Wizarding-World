@@ -1,7 +1,7 @@
 function pack:main/spells/function/api/spell_cooldown/read_cooldown {spell:"protego"}
 execute if score @s cooldown_api matches 1.. run return run function pack:main/spells/function/protego/protego_sfx
 
-function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"protego",time:7}
+function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"protego",time:4}
 scoreboard players set @s protego_activated 35
 
 tellraw @a[distance=0..15] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Protego!", bold:false, italic:true, color:aqua}]
