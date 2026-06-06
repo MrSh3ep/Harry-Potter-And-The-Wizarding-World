@@ -137,7 +137,7 @@ scoreboard players set #-1 spacefont -1
 
 # Spells
 function pack:main/spells/function/api/spell_cooldown/spell_definitions
-function pack:main/spells/function/api/spell_trails/api/trail_definitions
+function pack:main/spells/function/api/spell_trails/api/trail_definition_examples
 
     #Protego
         scoreboard objectives add protego_activated dummy
@@ -196,3 +196,9 @@ scoreboard objectives add spell_trail_speed dummy
 scoreboard players set #-1 spell_trail_motion -1
 scoreboard players set #speed_scale spell_trail_motion 1000
 scoreboard players set #default spell_trail_speed 1000
+
+
+
+#Duel HP
+scoreboard objectives add total_duel_hp dummy
+scoreboard objectives add current_duel_hp dummy

@@ -37,7 +37,8 @@ scoreboard players set @s spell_wheel_display_timer 0
 scoreboard players set @s spell_wheel_display_dirty 0
 scoreboard players set @s spell_wheel_maintenance_timer 0
 scoreboard players set @s spell_wheel_attack_mode 0
-
+scoreboard players set @s total_duel_hp 30
+scoreboard players set @s current_duel_hp 30
 
 
 
