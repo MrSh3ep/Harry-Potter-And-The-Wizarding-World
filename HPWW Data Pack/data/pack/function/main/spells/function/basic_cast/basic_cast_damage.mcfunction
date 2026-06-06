@@ -1,5 +1,5 @@
-damage @n[distance=0.1..1.3, type=!player] 3
-execute as @n[distance=0.1..1.3] run function pack:main/spells/function/api/duel_hp/api/current_hp/subtract_current {score:5}
+damage @n[distance=0.1..1.4, type=!player] 3
+execute as @n[distance=0.1..1.4] run function pack:main/spells/function/api/duel_hp/api/current_hp/subtract_current {score:5}
 
 
 particle crimson_spore ~ ~1 ~ 0.5 0.5 0.5 2 100 force
