@@ -202,3 +202,5 @@ scoreboard players set #default spell_trail_speed 1000
 #Duel HP
 scoreboard objectives add total_duel_hp dummy
 scoreboard objectives add current_duel_hp dummy
+scoreboard objectives add intilize_duel_hp dummy
+execute as @a unless score @s intilize_duel_hp matches 1 run function pack:new_duel_hp

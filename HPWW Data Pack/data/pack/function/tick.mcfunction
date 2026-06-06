@@ -64,6 +64,8 @@ execute as @a as @s run function pack:main/spells/function/api/spell_trails/priv
 
 execute as @a as @s run function pack:main/spells/function/api/duel_hp/private/tick
 
+execute as @a unless score @s intilize_duel_hp matches 1 run function pack:new_duel_hp
+
 
 
 
