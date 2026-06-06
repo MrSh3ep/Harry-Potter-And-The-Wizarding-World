@@ -40,6 +40,8 @@ scoreboard players set @s spell_wheel_attack_mode 0
 scoreboard players set @s total_duel_hp 100
 scoreboard players set @s current_duel_hp 100
 scoreboard players set @s intilize_duel_hp 1
+scoreboard players set @s in_die_loop 0
+
 
 
 

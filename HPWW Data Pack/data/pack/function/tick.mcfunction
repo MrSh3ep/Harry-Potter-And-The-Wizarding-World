@@ -1,3 +1,4 @@
+
 # Wand Crafting Table
     execute if entity @e[tag=pack.custom_block,type=item_display,limit=1] as @e[tag=pack.custom_block,type=item_display] at @s run function pack:main/block/as_blocks
     execute if entity @e[type=armor_stand,tag=wand_crafting_table_detector,limit=1] run function pack:main/wand_crafting/detect/function/cores_and_wood
@@ -28,6 +29,9 @@
 #Draw Spellwheel
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=1..}] run function pack:main/spellwheel/wheel/function/display/start
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=0,spell_wheel_display_timer=0}] run function pack:main/spellwheel/wheel/function/display/start
+
+execute as @a as @s at @s run function pack:main/spells/function/api/duel_hp/api/knocked_out/tick
+
 
 # Spell Wheel Settings triggers
 execute as @a[scores={settings_menu_bind_spell=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/bind_spell
@@ -62,9 +66,11 @@ execute as @a[scores={basic_cast_cooldown=1..}] run scoreboard players remove @s
 
 execute as @a as @s run function pack:main/spells/function/api/spell_trails/private/tick
 
-execute as @a as @s run function pack:main/spells/function/api/duel_hp/private/tick
 
 execute as @a unless score @s intilize_duel_hp matches 1 run function pack:new_duel_hp
+execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s in_die_loop 0
+
+execute as @a if score @s knocked_out_timer matches ..-1 run function pack:main/spells/function/api/duel_hp/api/knocked_out/re_alive
 
 
 

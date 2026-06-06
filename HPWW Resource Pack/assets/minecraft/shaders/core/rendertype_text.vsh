@@ -25,7 +25,7 @@ bool isHpTextColor(vec4 color) {
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
     if (isHpTextColor(Color)) {
-        gl_Position.y += (200 / ScreenSize.y) * gl_Position.w;
+        gl_Position.y += (206 / ScreenSize.y) * gl_Position.w;
     }
 
     sphericalVertexDistance = fog_spherical_distance(Position);

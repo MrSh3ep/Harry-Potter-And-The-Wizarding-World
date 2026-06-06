@@ -103,6 +103,8 @@ advancement revoke @a only pack:pages/rc_cooldown
 
         scoreboard objectives add number_2 dummy
         scoreboard players set @a number_2 2
+        scoreboard objectives add number_20 dummy
+        scoreboard players set @a number_20 20
 
         scoreboard objectives add number_0 dummy
         scoreboard players set #fake_player_zero_number number_0 0
@@ -179,12 +181,6 @@ execute as @a run function pack:main/spells/function/other/store_uuid
 
 execute as @a run function animated_java:protego/remove/entities
 
-#Target Entity Detection
-scoreboard objectives add targeted_entity_raycast dummy
-scoreboard players set @a targeted_entity_raycast 0
-scoreboard objectives add highlight_team_id dummy
-scoreboard players add @a highlight_team_id 0
-
 
 scoreboard objectives add spell_wheel_attack_mode dummy
 scoreboard players set @a spell_wheel_attack_mode 0
@@ -204,3 +200,12 @@ scoreboard objectives add total_duel_hp dummy
 scoreboard objectives add current_duel_hp dummy
 scoreboard objectives add intilize_duel_hp dummy
 execute as @a unless score @s intilize_duel_hp matches 1 run function pack:new_duel_hp
+scoreboard objectives add knocked_out_timer dummy
+scoreboard players set @a knocked_out_timer 0
+scoreboard objectives add in_die_loop dummy
+execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s in_die_loop 0
+
+scoreboard objectives add knocked_out_timer_seconds dummy
+scoreboard objectives add knocked_out_timer_temp dummy
+
+ 
