@@ -4,6 +4,16 @@ execute if score #startup_message_player startup_message matches 1 run tellraw @
   scoreboard objectives add startup_message dummy
   execute unless score #startup_message_player startup_message matches 0.. run scoreboard players set #startup_message_player startup_message 1
 
+  kill @e[type=armor_stand, tag=levioso_active]
+
+  execute as @a run attribute @s air_drag_modifier base reset
+  execute as @a run attribute @s gravity base reset
+  tag @e remove levioso_active
+  scoreboard objectives add levioso_spell_active.timer dummy
+  scoreboard objectives add levioso_spell_active.hit_count dummy
+
+
+
 
 
 
@@ -32,6 +42,7 @@ advancement revoke @a only pack:blocks/main_wand/right_click_exit_wheel_button
 execute as @s if score @s SpellWheelStatus matches 0 run advancement revoke @a only pack:blocks/main_wand/right_click_main_wand
 advancement revoke @a only pack:pages/lc_cooldown
 advancement revoke @a only pack:pages/rc_cooldown
+
 
 
 

@@ -42,7 +42,6 @@ execute as @a[scores={settings_menu_button_cooldown=1..}] run function pack:main
 
 
 
-
 #right click detection spell wheel
 execute as @a[scores={right_click_timer=1..}] at @s run function pack:main/spellwheel/wheel/function/pages/right_click/detect/rc_tick
 execute as @a[scores={right_click_timer=0,right_click_count=1..}] at @s run function pack:main/spellwheel/wheel/function/pages/right_click/detect/rc_tick
@@ -72,6 +71,7 @@ execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s i
 
 execute as @a if score @s knocked_out_timer matches ..-1 run function pack:main/spells/function/api/duel_hp/api/knocked_out/re_alive
 
+function pack:main/spells/function/levioso/function/tick
 
 
 

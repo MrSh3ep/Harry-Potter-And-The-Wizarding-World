@@ -1,6 +1,8 @@
 damage @n[distance=0.1..1.4, type=!player] 3
 execute as @n[distance=0.1..1.4] run function pack:main/spells/function/api/duel_hp/api/current_hp/subtract_current {score:5}
 
+scoreboard players add @n[tag=levioso_active, type=!#pack:nonlevioso] levioso_spell_active.hit_count 1
+execute if entity @n[tag=levioso_active] as @n[tag=levioso_active] run function pack:main/spells/function/basic_cast/apply_hit_motion
 
 particle crimson_spore ~ ~1 ~ 0.5 0.5 0.5 2 100 force
 particle flash{color:-1762573513} ~ ~ ~ 0.5 0.5 0.5 1 1 force @a
