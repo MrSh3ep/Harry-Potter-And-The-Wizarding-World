@@ -1,3 +1,4 @@
+function pdb:get_me
 execute unless items entity @s hotbar.0 test_instance_block run function pack:main/spellwheel/wheel/function/give_wands/replace/slot_0 with storage pdb:main out.wands.first_open.data
 execute unless items entity @s hotbar.1 test_instance_block run function pack:main/spellwheel/wheel/function/give_wands/replace/slot_1 with storage pdb:main out.wands.first_open.data
 execute unless items entity @s hotbar.2 test_instance_block run function pack:main/spellwheel/wheel/function/give_wands/replace/slot_2 with storage pdb:main out.wands.first_open.data

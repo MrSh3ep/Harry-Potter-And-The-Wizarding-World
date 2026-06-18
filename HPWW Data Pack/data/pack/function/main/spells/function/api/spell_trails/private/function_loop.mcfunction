@@ -26,8 +26,8 @@ function pack:main/spells/function/api/spell_trails/private/storage/get_me
 execute at @s run function pack:main/spells/function/api/spell_trails/private/update_particle_anchor
 execute at @s as @n[type=marker,tag=spell_trail_particle_anchor,distance=..2] at @s run function pack:main/spells/function/api/spell_trails/private/particles with storage pack:trail_storage out.trail_color.particle_colors
 
-execute at @s if entity @e[distance=0..0.9, type=!armor_stand, tag=!spell_trail_particle_anchor] run function pack:main/spells/function/api/spell_trails/private/kill_trail
-execute at @s if entity @e[distance=0.1..0.9, type=armor_stand, tag=spell_trail] run function pack:main/spells/function/api/spell_trails/private/trail_collide
+execute at @s if entity @e[distance=0..1.1, type=!armor_stand, tag=!spell_trail_particle_anchor] run function pack:main/spells/function/api/spell_trails/private/kill_trail
+execute at @s if entity @e[distance=0.1..1.1, type=armor_stand, tag=spell_trail] run function pack:main/spells/function/api/spell_trails/private/trail_collide
 
 #Loop End
 execute if score @s spell_trail_life_ticks matches 0 run return run function pack:main/spells/function/api/spell_trails/private/kill_trail

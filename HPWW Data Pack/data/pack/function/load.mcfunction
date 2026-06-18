@@ -8,9 +8,12 @@ execute if score #startup_message_player startup_message matches 1 run tellraw @
 
   execute as @a run attribute @s air_drag_modifier base reset
   execute as @a run attribute @s gravity base reset
+  execute as @e[tag=levioso_active] at @s run function pack:main/spells/function/levioso/function/end
   tag @e remove levioso_active
   scoreboard objectives add levioso_spell_active.timer dummy
   scoreboard objectives add levioso_spell_active.hit_count dummy
+  scoreboard objectives add levioso_spell_active.timer_display dummy
+    
 
 
 
