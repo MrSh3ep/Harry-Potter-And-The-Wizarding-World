@@ -1,4 +1,5 @@
 {
-	"replace": false,
-	"values": ["animated_java:global/on_load", "pack:load","#load:_private/load"]
+    "values" : [
+        "player_motion:internal/technical/load", "animated_java:global/on_load", "pack:load","#load:_private/load"
+    ]
 }
