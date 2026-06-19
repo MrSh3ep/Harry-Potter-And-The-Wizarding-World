@@ -1,6 +1,26 @@
-{ 
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "wands:item/pale_oak_wand"
-    }
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "wands:item/pale_oak_wand"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [125.04, -88.51, 163.21],
+			"translation": [0, 2.25, 2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0.01, 88.49, -35.83],
+			"translation": [0, 2.25, 1.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [18.5, 78, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-178.05, -68.89, 155.85]
+		},
+		"head": {
+			"rotation": [0, 38.25, 0],
+			"translation": [0, 0.25, 0]
+		}
+	}
 }

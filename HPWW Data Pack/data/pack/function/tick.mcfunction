@@ -1,3 +1,4 @@
+execute as @a at @s run function pack:main/spells/function/lumos/tick
 
 # Wand Crafting Table
     execute if entity @e[tag=pack.custom_block,type=item_display,limit=1] as @e[tag=pack.custom_block,type=item_display] at @s run function pack:main/block/as_blocks
