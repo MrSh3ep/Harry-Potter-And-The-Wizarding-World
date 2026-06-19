@@ -16,7 +16,7 @@ gamerule send_command_feedback false
   "title": {\
     "text": "Spell Wheel Settings"\
   },\
-  "can_close_with_escape": true,\
+  "can_close_with_escape": false,\
   "inputs": [\
     {\
       "type": "minecraft:number_range",\

@@ -7,7 +7,6 @@
 
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
-#moj_import <minecraft:globals.glsl>
 
 in vec3 Position;
 in vec4 Color;
@@ -30,18 +29,23 @@ bool isHpTextColor(vec4 color) {
 }
 
 float hpTextYOffset() {
-#ifdef IS_SEE_THROUGH
-    return 40.0;
+#if defined(IS_GUI)
+    return 34.3333;
+#elif defined(IS_SEE_THROUGH)
+    return 6.6667;
 #else
-    return 206.0;
+    return 0.0;
 #endif
 }
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+
+#if defined(IS_GUI) || defined(IS_SEE_THROUGH)
     if (isHpTextColor(Color)) {
-        gl_Position.y += (hpTextYOffset() / ScreenSize.y) * gl_Position.w;
+        gl_Position.y += hpTextYOffset() * abs(ProjMat[1][1]) * gl_Position.w;
     }
+#endif
 
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
     sphericalVertexDistance = fog_spherical_distance(Position);

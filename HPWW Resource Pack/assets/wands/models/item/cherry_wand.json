@@ -13,10 +13,10 @@
 			"translation": [0, 2.25, 1.75]
 		},
 		"firstperson_righthand": {
-			"rotation": [18.5, 78, 0]
+			"rotation": [3, 78, 0]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-178.05, -68.89, 155.85]
+			"rotation": [154.36, -78.88, 137.78]
 		},
 		"head": {
 			"rotation": [0, 38.25, 0],
