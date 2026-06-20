@@ -6,13 +6,13 @@
     },
     "display": {
         "title": {
-            "text": "Protego",
-            "color": "#abcfff"
+            "text": "Levioso",
+            "color": "#ffed87"
         },
-        "description": "A powerful charm used to block other charms, jinxes, or curses",
+        "description": "A utillity charm that levitates your opponents temporarily!",
         "announce_to_chat": false,
         "icon": {
-            "id": "shield"
+            "id": "feather"
         },
         "frame": "task",
         "hidden": false,

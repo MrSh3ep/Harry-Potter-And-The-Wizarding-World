@@ -5,14 +5,14 @@
     },
     "title": {
       "text": "Spells Skill Tree",
-      "color": "#b77ddd",
+      "color": "#5d3d72",
       "bold": false
     },
     "description": {
       "text": "Progress to unlock powerful spells!",
       "color": "white"
     },
-    "background": "block/deepslate",
+    "background": "pack:item/advancements_page_background",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": false,

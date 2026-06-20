@@ -108,7 +108,7 @@ gamerule send_command_feedback false
         {\
           "text": "2 = levioso",\
           "color": "#9fd6ff",\
-          "bold": false\
+          "bold": false,\
         }\
       ],\
       "width": 220\
