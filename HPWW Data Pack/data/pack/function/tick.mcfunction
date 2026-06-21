@@ -65,6 +65,7 @@ execute as @a if score @s SpellWheelStatus matches 1 run function pack:main/spel
 execute as @a[scores={basic_cast_cooldown=1..}] run scoreboard players remove @s basic_cast_cooldown 1
 
 execute as @a as @s run function pack:main/spells/function/api/spell_trails/private/tick
+function pack:main/spells/function/levioso/light/tick
 
 
 execute as @a unless score @s intilize_duel_hp matches 1 run function pack:new_duel_hp

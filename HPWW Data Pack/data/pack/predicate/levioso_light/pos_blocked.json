@@ -1,0 +1,29 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "tag": "pack:levioso_light_air"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:water"
+          ]
+        },
+        "fluid": {
+          "fluid": "minecraft:water"
+        }
+      }
+    }
+  }
+]

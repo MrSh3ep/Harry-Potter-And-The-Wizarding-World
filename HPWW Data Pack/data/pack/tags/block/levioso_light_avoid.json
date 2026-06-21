@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:moving_piston",
+    "minecraft:piston_head",
+    "minecraft:redstone_wire",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:observer",
+    "minecraft:redstone_lamp",
+    "minecraft:detector_rail",
+    "minecraft:iron_trapdoor",
+    "minecraft:iron_door",
+    "minecraft:slime_block",
+    "minecraft:honey_block",
+    "minecraft:tnt",
+    "minecraft:sponge",
+    "minecraft:lava",
+    "minecraft:frosted_ice",
+    "minecraft:command_block",
+    "minecraft:chain_command_block",
+    "minecraft:repeating_command_block",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:gravel"
+  ]
+}

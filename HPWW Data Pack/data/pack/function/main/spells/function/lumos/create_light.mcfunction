@@ -1,12 +1,5 @@
+#Replace this player's previous Lumos lights.
+function pack:main/spells/function/lumos/remove_owned_lights
 
-
-#Replace old Lights
-execute as @e[type=marker, tag=light] at @s run function pack:main/spells/function/lumos/replace_old_block
-
-
-#Summon Markers
+#Summon markers for this active Lumos source.
 execute if items entity @s weapon.* #pack:lumos_emitter at @s positioned ~ ~1 ~ run function pack:main/spells/function/lumos/summon_markers
-
-
-#Place Light
-execute as @e[type=marker, tag=light] at @s run function pack:main/spells/function/lumos/place_light

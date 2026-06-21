@@ -11,7 +11,6 @@ scoreboard players set #cooldown_icon_changed cooldown_api 0
 function pack:main/spells/function/api/spell_cooldown/tick/global_pause
 function pack:main/spells/function/api/spell_cooldown/tick/registry
 
-execute if score @s lumos_activated matches 1 at @s run function pack:main/spells/function/lumos/create_light
 execute at @s run function pack:main/spells/function/protego/tick
 
 execute if score @s cooldown_api matches 1.. run scoreboard players set @s protego_spell_wheel_value 5
