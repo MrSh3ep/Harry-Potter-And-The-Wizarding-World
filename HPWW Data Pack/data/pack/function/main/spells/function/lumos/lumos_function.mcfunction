@@ -4,9 +4,9 @@ function pack:main/spells/function/api/spell_cooldown/read_cooldown {spell:"lumo
 execute if score @s cooldown_api matches 1.. run return run function pack:main/spells/function/lumos/lumos_cooldown_sfx
 
 
-tellraw @a[distance=0..15] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Lumos!", bold:false, italic:true, color:"#9fd6ff"}]
+tellraw @a[distance=0..25] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Lumos!", bold:false, italic:true, color:"#9fd6ff"}]
 
-execute at @s run playsound entity.breeze.deflect master @a ~ ~ ~ 2
+execute at @s run playsound entity.breeze.deflect master @a[distance=0..25] ~ ~ ~ 2
 particle dust{color:[1.0,0.93,0.46],scale:1} ~ ~1 ~ 1.254 1.254 1.254 1 50 force @a
 
 

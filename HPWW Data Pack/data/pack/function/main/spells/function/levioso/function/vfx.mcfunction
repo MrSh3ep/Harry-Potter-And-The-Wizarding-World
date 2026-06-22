@@ -10,3 +10,4 @@ scoreboard players operation @s levioso_spell_active.timer_display += @s number_
 
 
 title @s actionbar ["You are charmed with",{color:"#ffed87",text:" Levioso!"}," | ",{color:"green",score:{name:"@s",objective:"levioso_spell_active.timer_display"},extra:["s"]}]
+
