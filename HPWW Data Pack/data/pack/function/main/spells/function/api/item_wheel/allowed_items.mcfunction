@@ -1,0 +1,1 @@
+function pack:main/spells/function/api/item_wheel/private/store_allowed_items {item_model:"pack:wiggenweld_potion"}

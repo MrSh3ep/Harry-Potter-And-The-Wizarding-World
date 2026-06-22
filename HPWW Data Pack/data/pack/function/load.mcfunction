@@ -16,7 +16,8 @@ execute if score #startup_message_player startup_message matches 1 run tellraw @
     
 
 
-
+# item_wheel api
+function pack:main/spells/function/api/item_wheel/allowed_items
 
 
 

@@ -31,6 +31,8 @@ execute as @a at @s run function pack:main/spells/function/lumos/tick
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=1..}] run function pack:main/spellwheel/wheel/function/display/start
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=0,spell_wheel_display_timer=0}] run function pack:main/spellwheel/wheel/function/display/start
 
+    execute as @a[scores={SpellWheelStatus=1}] run function pack:main/spellwheel/wheel/function/display/item_wheel/tick
+
 execute as @a as @s at @s run function pack:main/spells/function/api/duel_hp/api/knocked_out/tick
 
 
