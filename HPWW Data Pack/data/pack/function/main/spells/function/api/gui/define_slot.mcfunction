@@ -1,1 +1,1 @@
-$title @s actionbar [{text:"$(character)", font:"$(font)", color:"#0$(align)$(pos_x)$(pos_y)"}]
+$title @s actionbar [{text:"$(character)", font:"$(font)", color:"#0$(align)$(pos_x)$(pos_y)", shadow_color:0, bold:false, italic:false}]
