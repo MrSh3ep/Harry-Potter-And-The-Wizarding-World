@@ -1,1 +1,1 @@
-title @s actionbar ["Hold",{bold:true,text:" ",extra:[{keybind:"key.sneak"}]}," to open the Item Wheel"]
+title @s actionbar ["Press",{bold:true,text:" ",extra:[{keybind:"key.sneak"}]}," to toggle the Item Wheel"]

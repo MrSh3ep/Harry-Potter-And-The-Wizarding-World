@@ -18,7 +18,10 @@ execute if score #startup_message_player startup_message matches 1 run tellraw @
 
 # item_wheel api
 function pack:main/spells/function/api/item_wheel/allowed_items
-
+scoreboard objectives add item_wheel_state dummy
+scoreboard objectives add item_wheel_shift_down dummy
+scoreboard players set @a item_wheel_state 0
+scoreboard players set @a item_wheel_shift_down 0
 
 
 execute as @a unless score @s HasPreset matches 1 run scoreboard players set @s HasPreset 0

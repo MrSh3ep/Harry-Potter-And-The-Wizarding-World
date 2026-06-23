@@ -5,6 +5,7 @@
 #moj_import <minecraft:sample_lightmap.glsl>
 #endif
 
+#moj_import <minecraft:globals.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:projection.glsl>
 
@@ -41,6 +42,7 @@ float hpTextYOffset() {
 const float HPWW_GUI_COLUMNS = 29.0;
 const float HPWW_GUI_ROWS = 15.0;
 const float HPWW_GUI_GLYPH_SIZE = 48.0;
+const float HPWW_GUI_FIXED_SCALE = 3.0;
 const float HPWW_GUI_ACTIONBAR_CENTER_FROM_BOTTOM = 35.0;
 
 struct HpwwGuiSlot {
@@ -75,8 +77,12 @@ vec2 hpwwGuiScreenSize() {
     );
 }
 
+vec2 hpwwGuiFixedScreenSize() {
+    return max(ScreenSize / HPWW_GUI_FIXED_SCALE, vec2(1.0));
+}
+
 vec2 hpwwGuiGridPoint(int x, int y) {
-    vec2 screenSize = hpwwGuiScreenSize();
+    vec2 screenSize = hpwwGuiFixedScreenSize();
     vec2 cellSize = screenSize / vec2(HPWW_GUI_COLUMNS, HPWW_GUI_ROWS);
     vec2 centerCell = vec2((HPWW_GUI_COLUMNS + 1.0) * 0.5, (HPWW_GUI_ROWS + 1.0) * 0.5);
     return screenSize * 0.5 + (vec2(float(x), float(y)) - centerCell) * cellSize;
@@ -99,25 +105,22 @@ vec2 hpwwGuiCornerOffset() {
     float halfGlyph = HPWW_GUI_GLYPH_SIZE * 0.5;
     int corner = gl_VertexID - (gl_VertexID / 4) * 4;
     if (corner == 0) {
-        return vec2(-halfGlyph, -halfGlyph);
-    } else if (corner == 1) {
-        return vec2(-halfGlyph, halfGlyph);
-    } else if (corner == 2) {
         return vec2(halfGlyph, halfGlyph);
+    } else if (corner == 1) {
+        return vec2(halfGlyph, -halfGlyph);
+    } else if (corner == 2) {
+        return vec2(-halfGlyph, -halfGlyph);
     }
-    return vec2(halfGlyph, -halfGlyph);
+    return vec2(-halfGlyph, halfGlyph);
 }
 
 vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot) {
     vec2 targetCenter = hpwwGuiApplyAlignment(hpwwGuiGridPoint(slot.x, slot.y), slot.align);
-    viewPosition.xy = targetCenter + hpwwGuiCornerOffset();
+    vec2 fixedPosition = targetCenter + hpwwGuiCornerOffset();
+    vec2 currentScreenSize = hpwwGuiScreenSize();
+    vec2 fixedScreenSize = hpwwGuiFixedScreenSize();
+    viewPosition.xy = fixedPosition * (currentScreenSize / fixedScreenSize);
     return viewPosition;
-}
-vec2 hpwwGuiFlipTexCoord(vec2 uv) {
-    float glyphRows = 16.0;
-    float cellTop = floor(uv.y * glyphRows) / glyphRows;
-    float cellBottom = cellTop + (1.0 / glyphRows);
-    return vec2(uv.x, cellTop + cellBottom - uv.y);
 }
 
 void main() {
@@ -147,5 +150,5 @@ void main() {
 #else
     vertexColor = Color;
 #endif
-    texCoord0 = hpwwGuiMarker > 0.5 ? hpwwGuiFlipTexCoord(UV0) : UV0;
+    texCoord0 = UV0;
 }
