@@ -52,6 +52,7 @@ NOTE: In this license..
 
 
 \#Reusing Code/Assets inside public projects
+* you may redistribute this datapack inside modpacks in platforms such as Modrinth and Curseforge
 
 * You may reuse code and/or assets found inside HPWW as long as you:
 
