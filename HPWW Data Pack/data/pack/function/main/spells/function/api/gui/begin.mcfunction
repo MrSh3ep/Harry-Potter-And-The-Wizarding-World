@@ -1,0 +1,1 @@
+data modify storage pack:gui_api actionbar set value []
