@@ -85,37 +85,54 @@ vec2 hpwwGuiGridPoint(int x, int y) {
 vec2 hpwwGuiApplyAlignment(vec2 target, int align) {
     float halfGlyph = HPWW_GUI_GLYPH_SIZE * 0.5;
     if (align == 1) {
-        target.x -= halfGlyph;
-    } else if (align == 2) {
-        target.y -= halfGlyph;
-    } else if (align == 3) {
         target.x += halfGlyph;
-    } else if (align == 4) {
+    } else if (align == 2) {
         target.y += halfGlyph;
+    } else if (align == 3) {
+        target.x -= halfGlyph;
+    } else if (align == 4) {
+        target.y -= halfGlyph;
     }
     return target;
 }
+vec2 hpwwGuiCornerOffset() {
+    float halfGlyph = HPWW_GUI_GLYPH_SIZE * 0.5;
+    int corner = gl_VertexID - (gl_VertexID / 4) * 4;
+    if (corner == 0) {
+        return vec2(-halfGlyph, -halfGlyph);
+    } else if (corner == 1) {
+        return vec2(-halfGlyph, halfGlyph);
+    } else if (corner == 2) {
+        return vec2(halfGlyph, halfGlyph);
+    }
+    return vec2(halfGlyph, -halfGlyph);
+}
 
-vec3 hpwwGuiPositionForSlot(vec3 position, HpwwGuiSlot slot) {
-    vec2 screenSize = hpwwGuiScreenSize();
-    vec2 sourceCenter = vec2(screenSize.x * 0.5, screenSize.y - HPWW_GUI_ACTIONBAR_CENTER_FROM_BOTTOM);
+vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot) {
     vec2 targetCenter = hpwwGuiApplyAlignment(hpwwGuiGridPoint(slot.x, slot.y), slot.align);
-    return vec3(position.xy + (targetCenter - sourceCenter), position.z);
+    viewPosition.xy = targetCenter + hpwwGuiCornerOffset();
+    return viewPosition;
+}
+vec2 hpwwGuiFlipTexCoord(vec2 uv) {
+    float glyphRows = 16.0;
+    float cellTop = floor(uv.y * glyphRows) / glyphRows;
+    float cellBottom = cellTop + (1.0 / glyphRows);
+    return vec2(uv.x, cellTop + cellBottom - uv.y);
 }
 
 void main() {
-    vec3 hpwwPosition = Position;
+    vec4 hpwwViewPosition = ModelViewMat * vec4(Position, 1.0);
     hpwwGuiMarker = 0.0;
 
 #if defined(IS_GUI)
     HpwwGuiSlot hpwwGuiSlot = hpwwGuiDecodeSlot(Color);
     if (hpwwGuiSlot.enabled) {
-        hpwwPosition = hpwwGuiPositionForSlot(Position, hpwwGuiSlot);
+        hpwwViewPosition = hpwwGuiPositionForSlot(hpwwViewPosition, hpwwGuiSlot);
         hpwwGuiMarker = 1.0;
     }
 #endif
 
-    gl_Position = ProjMat * ModelViewMat * vec4(hpwwPosition, 1.0);
+    gl_Position = ProjMat * hpwwViewPosition;
 
 #if defined(IS_GUI) || defined(IS_SEE_THROUGH)
     if (hpwwGuiMarker < 0.5 && isHpTextColor(Color)) {
@@ -124,11 +141,11 @@ void main() {
 #endif
 
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
-    sphericalVertexDistance = fog_spherical_distance(hpwwPosition);
-    cylindricalVertexDistance = fog_cylindrical_distance(hpwwPosition);
+    sphericalVertexDistance = fog_spherical_distance(Position);
+    cylindricalVertexDistance = fog_cylindrical_distance(Position);
     vertexColor = Color * sample_lightmap(Sampler2, UV2);
 #else
     vertexColor = Color;
 #endif
-    texCoord0 = UV0;
+    texCoord0 = hpwwGuiMarker > 0.5 ? hpwwGuiFlipTexCoord(UV0) : UV0;
 }
