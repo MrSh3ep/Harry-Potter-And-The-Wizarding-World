@@ -36,7 +36,7 @@ NOTE: In this license..
 
 \#Ownership
 
-1\. Many themes shown within HPWW belongs to 'Warner Bros' and J.K Rowling, as shown in the game 'Hogwarts Legacy'. This includes Spells, Items, Ui Textures/Interfaces, game mechanics etc..
+1\. Many themes shown within HPWW belongs to Warner Bros and J.K Rowling, as shown in the game 'Hogwarts Legacy'. This includes Spells, Items, Ui Textures/Interfaces, game mechanics etc..
 
 
 
@@ -45,14 +45,15 @@ NOTE: In this license..
 
 
 \#Distribution and Editing
+* you may redistribute this datapack ONLY inside modpacks, in platforms such as Modrinth and Curseforge
 
-* You are hereby prohibited from redistributing HPWW including any assets or code, modified/unmodified, TO THE PUBLIC for any reason without my (Mrsh3ep) explicit permission.
+* You are hereby prohibited from redistributing HPWW including any assets or code, modified/unmodified, TO THE PUBLIC for any reason without my (Mrsh3ep) explicit permission unless in a Modpack.
 * If you wish to redistribute contact me to potentially make an agreement.
 
 
 
 \#Reusing Code/Assets inside public projects
-* you may redistribute this datapack inside modpacks in platforms such as Modrinth and Curseforge
+
 
 * You may reuse code and/or assets found inside HPWW as long as you:
 
