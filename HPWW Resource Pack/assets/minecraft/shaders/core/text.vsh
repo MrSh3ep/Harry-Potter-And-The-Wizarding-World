@@ -41,7 +41,8 @@ float hpTextYOffset() {
 }
 const float HPWW_GUI_COLUMNS = 29.0;
 const float HPWW_GUI_ROWS = 15.0;
-const float HPWW_GUI_GLYPH_SIZE = 48.0;
+const float HPWW_GUI_SIZE_STEP = 8.0;
+const int HPWW_GUI_DEFAULT_SIZE_CODE = 6;
 const float HPWW_GUI_FIXED_SCALE = 3.0;
 const float HPWW_GUI_ACTIONBAR_CENTER_FROM_BOTTOM = 35.0;
 
@@ -50,6 +51,7 @@ struct HpwwGuiSlot {
     int align;
     int x;
     int y;
+    int sizeCode;
 };
 
 int hpwwGuiBcdByteToDecimal(int value) {
@@ -63,11 +65,12 @@ int hpwwGuiBcdByteToDecimal(int value) {
 
 HpwwGuiSlot hpwwGuiDecodeSlot(vec4 color) {
     ivec3 marker = ivec3(floor(color.rgb * 255.0 + vec3(0.5)));
-    int align = marker.r;
+    int sizeCode = marker.r / 16;
+    int align = marker.r - (sizeCode * 16);
     int x = hpwwGuiBcdByteToDecimal(marker.g);
     int y = hpwwGuiBcdByteToDecimal(marker.b);
-    bool enabled = align >= 0 && align <= 4 && x >= 1 && x <= 29 && y >= 1 && y <= 15;
-    return HpwwGuiSlot(enabled, align, x, y);
+    bool enabled = align >= 0 && align <= 4 && sizeCode >= 0 && sizeCode <= 15 && x >= 1 && x <= 29 && y >= 1 && y <= 15;
+    return HpwwGuiSlot(enabled, align, x, y, sizeCode);
 }
 
 vec2 hpwwGuiScreenSize() {
@@ -88,8 +91,13 @@ vec2 hpwwGuiGridPoint(int x, int y) {
     return screenSize * 0.5 + (vec2(float(x), float(y)) - centerCell) * cellSize;
 }
 
-vec2 hpwwGuiApplyAlignment(vec2 target, int align) {
-    float halfGlyph = HPWW_GUI_GLYPH_SIZE * 0.5;
+float hpwwGuiGlyphSize(HpwwGuiSlot slot) {
+    int sizeCode = slot.sizeCode > 0 ? slot.sizeCode : HPWW_GUI_DEFAULT_SIZE_CODE;
+    return float(sizeCode) * HPWW_GUI_SIZE_STEP;
+}
+
+vec2 hpwwGuiApplyAlignment(vec2 target, int align, float glyphSize) {
+    float halfGlyph = glyphSize * 0.5;
     if (align == 1) {
         target.x += halfGlyph;
     } else if (align == 2) {
@@ -101,8 +109,8 @@ vec2 hpwwGuiApplyAlignment(vec2 target, int align) {
     }
     return target;
 }
-vec2 hpwwGuiCornerOffset() {
-    float halfGlyph = HPWW_GUI_GLYPH_SIZE * 0.5;
+vec2 hpwwGuiCornerOffset(float glyphSize) {
+    float halfGlyph = glyphSize * 0.5;
     int corner = gl_VertexID - (gl_VertexID / 4) * 4;
     if (corner == 0) {
         return vec2(halfGlyph, halfGlyph);
@@ -115,8 +123,9 @@ vec2 hpwwGuiCornerOffset() {
 }
 
 vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot) {
-    vec2 targetCenter = hpwwGuiApplyAlignment(hpwwGuiGridPoint(slot.x, slot.y), slot.align);
-    vec2 fixedPosition = targetCenter + hpwwGuiCornerOffset();
+    float glyphSize = hpwwGuiGlyphSize(slot);
+    vec2 targetCenter = hpwwGuiApplyAlignment(hpwwGuiGridPoint(slot.x, slot.y), slot.align, glyphSize);
+    vec2 fixedPosition = targetCenter + hpwwGuiCornerOffset(glyphSize);
     vec2 currentScreenSize = hpwwGuiScreenSize();
     vec2 fixedScreenSize = hpwwGuiFixedScreenSize();
     viewPosition.xy = fixedPosition * (currentScreenSize / fixedScreenSize);
