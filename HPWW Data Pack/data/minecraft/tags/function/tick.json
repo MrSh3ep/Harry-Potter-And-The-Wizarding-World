@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["pack:tick", "animated_java:global/on_tick", "cauldronbrewing:meta/load"]
+	"values": ["pack:tick", "animated_java:global/on_tick"]
 }

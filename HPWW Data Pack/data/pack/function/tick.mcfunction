@@ -77,5 +77,8 @@ execute as @a if score @s knocked_out_timer matches ..-1 run function pack:main/
 
 function pack:main/spells/function/levioso/function/tick
 
+#brewing
+function pack:main/brewing/cauldron/tick
+
 
 

@@ -1,6 +1,8 @@
 # Ran once per player from pack:tick while SpellWheelStatus = 1.
 # Shift toggles the item wheel once per key press; holding shift will not flicker it.
 
+execute as @s run return fail
+
 execute unless entity @s[nbt={SelectedItemSlot:7}] run scoreboard players set @s item_wheel_state 0
 execute unless entity @s[nbt={SelectedItemSlot:7}] run scoreboard players set @s item_wheel_shift_down 0
 

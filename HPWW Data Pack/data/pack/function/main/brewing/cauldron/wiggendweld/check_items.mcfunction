@@ -1,0 +1,1 @@
+execute at @a as @e[distance=..10, nbt={Item:{id:"minecraft:oxeye_daisy"}},type=item] at @s if block ~ ~ ~ cauldron run function pack:main/brewing/cauldron/wiggendweld/check_wiggendweld
