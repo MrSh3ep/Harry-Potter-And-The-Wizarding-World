@@ -12,3 +12,6 @@ execute if entity @s[nbt={SelectedItemSlot:7}] unless predicate pack:detectshift
 
 execute if entity @s[nbt={SelectedItemSlot:7}] if score @s item_wheel_state matches 1 run function pack:main/spellwheel/wheel/function/display/item_wheel/main/draw/display
 execute if entity @s[nbt={SelectedItemSlot:7}] unless score @s item_wheel_state matches 1 run function pack:main/spellwheel/wheel/function/display/item_wheel/main/draw/action_bar
+
+
+execute as @s if score @s item_wheel_state matches 1 run function pack:main/spellwheel/wheel/function/display/item_wheel/main/draw/display
