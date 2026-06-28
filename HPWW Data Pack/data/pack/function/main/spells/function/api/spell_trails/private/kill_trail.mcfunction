@@ -8,4 +8,7 @@ function pack:main/spells/function/api/spell_trails/private/cleanup_particle_anc
 function pack:main/spells/function/api/spell_trails/private/storage/get_me
 execute at @s run execute as @n[type=marker, limit=1, tag=trail_entity_checker] at @s as @s run function pack:main/spells/function/api/spell_trails/private/trail_end_function with storage pack:trail_storage out.trail_end_function
 
+execute at @s run playsound minecraft:block.creaking_heart.step master @a[distance=0..20] ~ ~ ~ 3
+
+
 kill @s

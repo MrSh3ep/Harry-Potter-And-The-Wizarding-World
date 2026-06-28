@@ -1,0 +1,18 @@
+{
+    "spell_trail_fly": {
+        "sounds": [
+            {
+            "name": "pack:particle_trail_fly",
+            "stream": true
+            }
+        ]
+    },
+    "protego_block": {
+        "sounds": [
+            {
+            "name": "pack:protego_block",
+            "stream": true
+            }
+        ]
+    }
+}
