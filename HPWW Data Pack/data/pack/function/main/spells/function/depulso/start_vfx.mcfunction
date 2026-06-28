@@ -1,0 +1,1 @@
+tellraw @a[distance=0..25] [{"text":"<"},{"selector":"@s"},{text:">"},{text:" Depulso!", bold:false, italic:true, color:"#a187c8"}]

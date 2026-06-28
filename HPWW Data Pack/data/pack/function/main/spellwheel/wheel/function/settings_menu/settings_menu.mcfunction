@@ -25,7 +25,7 @@ gamerule send_command_feedback false
         "text": "Spell ID"\
       },\
       "start": 0.0,\
-      "end": 2.0,\
+      "end": 3.0,\
       "step": 1.0,\
       "initial": 1,\
       "width": 100,\
@@ -106,8 +106,13 @@ gamerule send_command_feedback false
           "bold": false\
         },\
         {\
-          "text": "2 = levioso",\
+          "text": "2 = levioso\n",\
           "color": "#9fd6ff",\
+          "bold": false,\
+        },\
+        {\
+          "text": "3 = Depulso\n",\
+          "color": "#a187c8",\
           "bold": false,\
         }\
       ],\

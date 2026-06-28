@@ -29,6 +29,8 @@ execute store result storage pdb:main bind_spell.Slot int 1 run scoreboard playe
 execute if score @s settings_bind_spell matches 0 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data blank
 execute if score @s settings_bind_spell matches 1 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data lumos
 execute if score @s settings_bind_spell matches 2 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data levioso
+execute if score @s settings_bind_spell matches 3 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data depulso
+
 
 execute unless data storage pdb:main bind_spell.SpellData run return fail
 
