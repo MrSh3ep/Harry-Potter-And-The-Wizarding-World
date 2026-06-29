@@ -20,6 +20,7 @@ execute as @a at @s run function pack:main/spells/function/lumos/tick
 
 #Spell API
     function pack:main/spells/function/api/spell_cooldown/tick
+    function pack:main/spells/function/expelliarmus/function/disarmed_wand/tick
 
 #Drop Prevention
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=0}] at @s run function pack:main/spellwheel/wheel/function/maintenance
