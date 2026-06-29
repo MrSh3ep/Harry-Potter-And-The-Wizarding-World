@@ -1,6 +1,6 @@
 scoreboard players set @s lumos_activated 0
 function pack:main/spells/function/api/spell_cooldown/icons/set_selected {spell:"lumos",selected:false}
-function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"lumos",time:5}
+function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"lumos",time:10}
 function pack:main/spells/function/lumos/remove_owned_lights
 
 execute at @s run playsound entity.breeze.deflect master @a[distance=0..15] ~ ~ ~ 2

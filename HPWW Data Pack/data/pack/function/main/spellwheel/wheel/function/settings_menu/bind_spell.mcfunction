@@ -30,6 +30,8 @@ execute if score @s settings_bind_spell matches 0 run data modify storage pdb:ma
 execute if score @s settings_bind_spell matches 1 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data lumos
 execute if score @s settings_bind_spell matches 2 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data levioso
 execute if score @s settings_bind_spell matches 3 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data depulso
+execute if score @s settings_bind_spell matches 4 run data modify storage pdb:main bind_spell.SpellData set from storage pack:gobal_spell_data expelliarmus
+
 
 
 execute unless data storage pdb:main bind_spell.SpellData run return fail

@@ -1,6 +1,4 @@
 #targeting API
-execute as @a if score @s SpellWheelStatus matches 1 at @s run function pack:main/spells/function/api/targeting/tick
-
 execute as @a at @s run function pack:main/spells/function/lumos/tick
 
 # Wand Crafting Table

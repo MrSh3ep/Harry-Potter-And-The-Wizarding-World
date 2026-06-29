@@ -25,7 +25,7 @@ gamerule send_command_feedback false
         "text": "Spell ID"\
       },\
       "start": 0.0,\
-      "end": 3.0,\
+      "end": 4.0,\
       "step": 1.0,\
       "initial": 1,\
       "width": 100,\
@@ -113,6 +113,11 @@ gamerule send_command_feedback false
         {\
           "text": "3 = Depulso\n",\
           "color": "#a187c8",\
+          "bold": false,\
+        },\
+        {\
+          "text": "4 = Expelliarmus\n",\
+          "color": "#761800",\
           "bold": false,\
         }\
       ],\

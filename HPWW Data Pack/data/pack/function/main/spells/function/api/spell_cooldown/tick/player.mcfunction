@@ -26,4 +26,6 @@ execute if score #cooldown_icon_changed cooldown_api matches 1.. run function pa
 
 ###############################################################
 # add a unless data storage pdb:main in.cooldowns.UR SPELL HERE
-execute unless data storage pdb:main in.cooldowns.depulso unless data storage pdb:main in.cooldowns.lumos unless data storage pdb:main in.cooldowns.levioso unless data storage pdb:main in.cooldowns.protego unless data storage pdb:main in.cooldowns{global_paused:1} unless data storage pdb:main in.cooldowns.global_pause_timer run scoreboard players set @s cooldown_api_active 0
+execute unless data storage pdb:main in.cooldowns.expelliarmus unless data storage pdb:main in.cooldowns.depulso unless data storage pdb:main in.cooldowns.lumos unless data storage pdb:main in.cooldowns.levioso unless data storage pdb:main in.cooldowns.protego unless data storage pdb:main in.cooldowns{global_paused:1} unless data storage pdb:main in.cooldowns.global_pause_timer run scoreboard players set @s cooldown_api_active 0
+
+
