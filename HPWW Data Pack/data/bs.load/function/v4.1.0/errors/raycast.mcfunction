@@ -14,16 +14,16 @@
 # ------------------------------------------------------------------------------------------------------------
 
 # Return early to ensure code runs only on the latest available version
-execute unless score $bs.hitbox.major load.status matches 4 run return 0
-execute unless score $bs.hitbox.minor load.status matches 0 run return 0
-execute unless score $bs.hitbox.patch load.status matches 0 run return 0
+execute unless score $bs.raycast.major load.status matches 4 run return 0
+execute unless score $bs.raycast.minor load.status matches 1 run return 0
+execute unless score $bs.raycast.patch load.status matches 0 run return 0
 
 # Format an error message for conflicting versions
-data modify storage bs:data load.errors append value {major:1b,message:{text:"[bs.hitbox]",hover_event:{action:"show_text",value:[{text:"[v",color:"#CCCCCC"},{type:"nbt",storage:"bs:data",nbt:"load.modules[{module:'bs.hitbox',enabled:1b}].version"},{text:" ("},{text:"✔ enabled",color:"#26BD26"},{text:"), v"},{type:"nbt",storage:"bs:data",nbt:"load.modules[{module:'bs.hitbox',enabled:0b}].version","separator":", v"},{text:"]"}]}}}
+data modify storage bs:data load.errors append value {major:1b,message:{text:"[bs.raycast]",hover_event:{action:"show_text",value:[{text:"[v",color:"#CCCCCC"},{type:"nbt",storage:"bs:data",nbt:"load.modules[{module:'bs.raycast',enabled:1b}].version"},{text:" ("},{text:"✔ enabled",color:"#26BD26"},{text:"), v"},{type:"nbt",storage:"bs:data",nbt:"load.modules[{module:'bs.raycast',enabled:0b}].version","separator":", v"},{text:"]"}]}}}
 
 # Return early if major version conflicts exist
-execute if score #bs.hitbox.major_versions load.status matches 2.. run return 0
+execute if score #bs.raycast.major_versions load.status matches 2.. run return 0
 
 # Mark the error as non major and create a downloadable bundle to resolve the issue
 data modify storage bs:data load.errors[-1].major set value 0b
-function bs.load:v4.0.0/bundle/append {module:"bs.hitbox"}
+function bs.load:v4.1.0/bundle/append {module:"bs.raycast"}

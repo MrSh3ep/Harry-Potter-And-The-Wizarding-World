@@ -13,6 +13,9 @@
 # For more details, refer to the MPL v2.0.
 # ------------------------------------------------------------------------------------------------------------
 
-execute positioned ~ ~2 ~ unless entity @s[dx=0] positioned ~ ~-2 ~ run return run function bs.hitbox:get_entity/registry/painting/height2
-scoreboard players add #h bs.ctx 4
-execute positioned ~ ~2 ~ run function bs.hitbox:get_entity/registry/painting/height2
+data modify storage bs:data load.status append value ["",": ",""]
+data modify storage bs:data load.status[-1][0] set from storage bs:ctx _[0].module
+data modify storage bs:data load.status[-1][2] set from storage bs:ctx _[0].version
+
+data remove storage bs:ctx _[0]
+execute if data storage bs:ctx _[0] run function bs.load:v4.1.0/status/module

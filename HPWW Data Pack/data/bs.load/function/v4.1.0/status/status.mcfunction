@@ -15,7 +15,7 @@
 
 # Return early to ensure code runs only on the latest available version
 execute unless score $bs.load.major load.status matches 4 run return 0
-execute unless score $bs.load.minor load.status matches 0 run return 0
+execute unless score $bs.load.minor load.status matches 1 run return 0
 execute unless score $bs.load.patch load.status matches 0 run return 0
 
 execute unless function #bs.load:process/validate run return fail
@@ -23,7 +23,7 @@ execute unless function #bs.load:process/validate run return fail
 data modify storage bs:ctx _ set value []
 data modify storage bs:ctx _ append from storage bs:data load.modules[{enabled:1b}]
 data modify storage bs:data load.status set value []
-function bs.load:v4.0.0/status/module
+function bs.load:v4.1.0/status/module
 
 tellraw @a [{text:"\n✔ ",color:"#4CCB5E",underlined:true},{text:"BOOKSHELF",bold:true},{text:" • Modules Loaded Successfully\n"}]
 tellraw @a [{text:"◇ Loaded Modules: ",color:"#F3B512"},{text:"\n • ",color:"#CCCCCC"},{type:"nbt",storage:"bs:data",nbt:"load.status[]",color:"#CCCCCC",separator:"\n • ",interpret:true},"\n"]

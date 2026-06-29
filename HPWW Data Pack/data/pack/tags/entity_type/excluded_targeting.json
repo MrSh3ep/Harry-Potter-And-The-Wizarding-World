@@ -2,8 +2,6 @@
     "values": [
         "minecraft:marker",
         "minecraft:armor_stand",
-        "item_frame",
-        "item_display",
-        "block_display"
+        "item_frame"
     ]
 }

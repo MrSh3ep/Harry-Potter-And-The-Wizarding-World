@@ -226,4 +226,7 @@ execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s i
 scoreboard objectives add knocked_out_timer_seconds dummy
 scoreboard objectives add knocked_out_timer_temp dummy
 
+
+#targeting API
+scoreboard objectives add target.glowing dummy
  

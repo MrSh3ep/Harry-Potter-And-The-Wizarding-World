@@ -15,7 +15,7 @@
 
 # Return early to ensure code runs only on the latest available version
 execute unless score $bs.load.major load.status matches 4 run return 0
-execute unless score $bs.load.minor load.status matches 0 run return 0
+execute unless score $bs.load.minor load.status matches 1 run return 0
 execute unless score $bs.load.patch load.status matches 0 run return 0
 
 # Return early if no loading errors are found

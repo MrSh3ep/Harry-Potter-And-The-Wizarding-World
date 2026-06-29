@@ -14,7 +14,7 @@
 # ------------------------------------------------------------------------------------------------------------
 
 # Add the version of the module to the list of available modules
-data modify storage bs:data load.modules append value {module:"bs.hitbox",version:"4.0.0",enabled:0b}
+data modify storage bs:data load.modules append value {module:"bs.hitbox",version:"4.1.0",enabled:0b}
 scoreboard players add $bs.hitbox.major load.status 0
 scoreboard players add $bs.hitbox.minor load.status 0
 scoreboard players add $bs.hitbox.patch load.status 0
@@ -24,8 +24,8 @@ execute unless score $bs.hitbox.major load.status matches 4 run scoreboard playe
 
 # Set the latest available version for the module
 execute unless score $bs.hitbox.major load.status matches ..4 run return 0
-execute if score $bs.hitbox.major load.status matches 4 unless score $bs.hitbox.minor load.status matches ..0 run return 0
-execute if score $bs.hitbox.major load.status matches 4 if score $bs.hitbox.minor load.status matches 0 unless score $bs.hitbox.patch load.status matches ..0 run return 0
+execute if score $bs.hitbox.major load.status matches 4 unless score $bs.hitbox.minor load.status matches ..1 run return 0
+execute if score $bs.hitbox.major load.status matches 4 if score $bs.hitbox.minor load.status matches 1 unless score $bs.hitbox.patch load.status matches ..0 run return 0
 scoreboard players set $bs.hitbox.major load.status 4
-scoreboard players set $bs.hitbox.minor load.status 0
+scoreboard players set $bs.hitbox.minor load.status 1
 scoreboard players set $bs.hitbox.patch load.status 0

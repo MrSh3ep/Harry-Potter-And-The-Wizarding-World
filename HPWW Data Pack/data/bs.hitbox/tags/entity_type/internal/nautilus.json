@@ -1,1 +1,1 @@
-{"replace":true,"values":[{"id":"minecraft:nautilus","required":false},{"id":"minecraft:zombie_nautilus","required":false}]}
+{"replace":true,"values":["minecraft:nautilus","minecraft:zombie_nautilus"]}

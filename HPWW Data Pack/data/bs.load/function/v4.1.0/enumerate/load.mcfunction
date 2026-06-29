@@ -14,7 +14,7 @@
 # ------------------------------------------------------------------------------------------------------------
 
 # Add the version of the module to the list of available modules
-data modify storage bs:data load.modules append value {module:"bs.load",version:"4.0.0"}
+data modify storage bs:data load.modules append value {module:"bs.load",version:"4.1.0"}
 scoreboard players add $bs.load.major load.status 0
 scoreboard players add $bs.load.minor load.status 0
 scoreboard players add $bs.load.patch load.status 0
@@ -24,8 +24,8 @@ execute unless score $bs.load.major load.status matches 4 run scoreboard players
 
 # Set the latest available version for the module
 execute unless score $bs.load.major load.status matches ..4 run return 0
-execute if score $bs.load.major load.status matches 4 unless score $bs.load.minor load.status matches ..0 run return 0
-execute if score $bs.load.major load.status matches 4 if score $bs.load.minor load.status matches 0 unless score $bs.load.patch load.status matches ..0 run return 0
+execute if score $bs.load.major load.status matches 4 unless score $bs.load.minor load.status matches ..1 run return 0
+execute if score $bs.load.major load.status matches 4 if score $bs.load.minor load.status matches 1 unless score $bs.load.patch load.status matches ..0 run return 0
 scoreboard players set $bs.load.major load.status 4
-scoreboard players set $bs.load.minor load.status 0
+scoreboard players set $bs.load.minor load.status 1
 scoreboard players set $bs.load.patch load.status 0
