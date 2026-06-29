@@ -6,7 +6,7 @@ scoreboard players add @n[tag=levioso_active, type=!#pack:excluded_checked_entit
 execute as @n[type=!#pack:excluded_checked_entities, distance=0.1..1.4] at @s rotated as @n[type=armor_stand,tag=spell_trail,tag=trail_color_red,distance=0..2,limit=1,sort=nearest] rotated ~ 0 run function pack:main/spells/function/basic_cast/apply_hit_motion
 
 particle crimson_spore ~ ~1 ~ 0.5 0.5 0.5 2 100 force
-particle flash{color:-1762573513} ~ ~ ~ 0.5 0.5 0.5 1 1 force @a
+particle flash{color:-1762573513} ~ ~1 ~ 0.5 0.5 0.5 1 1 force @a
 execute at @s run playsound minecraft:block.creaking_heart.step master @a[distance=0..20] ~ ~ ~ 3
 
 #kills the temp armorstad (og made for location pourpouses only LOL)

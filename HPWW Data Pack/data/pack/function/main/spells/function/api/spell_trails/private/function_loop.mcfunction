@@ -24,7 +24,7 @@ execute if score #move_remaining spell_trail_motion matches 1.. at @s run functi
 #Particles
 function pack:main/spells/function/api/spell_trails/private/storage/get_me
 execute at @s run function pack:main/spells/function/api/spell_trails/private/update_particle_anchor
-execute at @s as @n[type=marker,tag=spell_trail_particle_anchor,distance=..2] at @s run function pack:main/spells/function/api/spell_trails/private/particles with storage pack:trail_storage out.trail_color.particle_colors
+execute at @s run function pack:main/spells/function/api/spell_trails/private/particles_gap_fill
 
 execute at @s if entity @e[distance=0..1.1, type=!armor_stand, tag=!spell_trail_particle_anchor] run function pack:main/spells/function/api/spell_trails/private/kill_trail
 execute at @s if entity @e[distance=0.1..1.1, type=armor_stand, tag=spell_trail] run function pack:main/spells/function/api/spell_trails/private/trail_collide
