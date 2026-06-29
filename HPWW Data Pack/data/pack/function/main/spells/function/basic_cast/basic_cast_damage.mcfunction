@@ -1,9 +1,9 @@
 damage @n[distance=0.1..1.4, type=!player] 3
 execute as @n[distance=0.1..1.4] run function pack:main/spells/function/api/duel_hp/api/current_hp/subtract_current {score:5}
-execute if entity @n[type=!#pack:nonlevioso,distance=0.1..1.4] run function pack:main/spells/function/basic_cast/run_hit_sfx
+execute if entity @n[type=!#pack:excluded_checked_entities,distance=0.1..1.4] run function pack:main/spells/function/basic_cast/run_hit_sfx
 
-scoreboard players add @n[tag=levioso_active, type=!#pack:nonlevioso] levioso_spell_active.hit_count 1
-execute as @n[type=!#pack:nonlevioso, distance=0.1..1.4] at @s rotated as @n[type=armor_stand,tag=spell_trail,tag=trail_color_red,distance=0..2,limit=1,sort=nearest] rotated ~ 0 run function pack:main/spells/function/basic_cast/apply_hit_motion
+scoreboard players add @n[tag=levioso_active, type=!#pack:excluded_checked_entities] levioso_spell_active.hit_count 1
+execute as @n[type=!#pack:excluded_checked_entities, distance=0.1..1.4] at @s rotated as @n[type=armor_stand,tag=spell_trail,tag=trail_color_red,distance=0..2,limit=1,sort=nearest] rotated ~ 0 run function pack:main/spells/function/basic_cast/apply_hit_motion
 
 particle crimson_spore ~ ~1 ~ 0.5 0.5 0.5 2 100 force
 particle flash{color:-1762573513} ~ ~ ~ 0.5 0.5 0.5 1 1 force @a

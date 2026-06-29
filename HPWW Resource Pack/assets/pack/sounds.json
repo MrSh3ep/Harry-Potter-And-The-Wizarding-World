@@ -1,16 +1,8 @@
 {
-    "spell_trail_fly": {
+    "depulso_hit": {
         "sounds": [
             {
-            "name": "pack:particle_trail_fly",
-            "stream": true
-            }
-        ]
-    },
-    "protego_block": {
-        "sounds": [
-            {
-            "name": "pack:protego_block",
+            "name": "pack:depulso_hit",
             "stream": true
             }
         ]

@@ -1,6 +1,5 @@
 #> player_motion:api/launch_looking
 # Launches the player in the input direction
-execute if entity @s[type=!player] run return fail
 execute on vehicle run return fail
 
 scoreboard players set $function_called player_motion.internal.dummy 1
