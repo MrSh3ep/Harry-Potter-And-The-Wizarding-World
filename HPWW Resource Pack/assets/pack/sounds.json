@@ -3,7 +3,8 @@
         "sounds": [
             {
             "name": "pack:depulso_hit",
-            "stream": true
+            "stream": true,
+            "attenuation_distance":1
             }
         ]
     }

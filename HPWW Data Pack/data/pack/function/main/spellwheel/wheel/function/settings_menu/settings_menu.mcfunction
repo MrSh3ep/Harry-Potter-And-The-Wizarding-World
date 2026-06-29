@@ -32,6 +32,18 @@ gamerule send_command_feedback false
     },\
     {\
       "type": "minecraft:number_range",\
+      "key": "slot_number",\
+      "label": {\
+        "text": "Slot Number"\
+      },\
+      "start": 1.0,\
+      "end": 4.0,\
+      "step": 1.0,\
+      "initial": 1,\
+      "width": 120\
+    },\
+    {\
+      "type": "minecraft:number_range",\
       "key": "page_number",\
       "label": {\
         "text": "Page Number"\
@@ -42,18 +54,6 @@ gamerule send_command_feedback false
       "initial": 1,\
       "width": 120\
     },\
-    {\
-      "type": "minecraft:number_range",\
-      "key": "slot_number",\
-      "label": {\
-        "text": "Slot Number"\
-      },\
-      "start": 1.0,\
-      "end": 4.0,\
-      "step": 1.0,\
-      "initial": 1,\
-      "width": 120\
-    }\
   ],\
   "columns": 1,\
   "after_action": "close",\
@@ -117,7 +117,7 @@ gamerule send_command_feedback false
         },\
         {\
           "text": "4 = Expelliarmus\n",\
-          "color": "#761800",\
+          "color": "#b80101",\
           "bold": false,\
         }\
       ],\

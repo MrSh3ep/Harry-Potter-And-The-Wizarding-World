@@ -10,9 +10,7 @@ execute store result score @s SelectedSlot run data get entity @s SelectedItem.c
 
 # Compare and play sound if changed master @s ~ ~ ~ 1 1
 #Sound
-execute if score @s SelectedSlot > @s LastSelectedSlot run scoreboard players set @s spell_wheel_display_dirty 1
-execute if score @s SelectedSlot > @s LastSelectedSlot run playsound minecraft:item.book.page_turn master @s ~ ~ ~ 1 1
+execute if score @s SelectedSlot > @s LastSelectedSlot run function pack:main/spellwheel/wheel/function/sfx/change_page_line_13
 
-execute if score @s SelectedSlot < @s LastSelectedSlot run scoreboard players set @s spell_wheel_display_dirty 1
-execute if score @s SelectedSlot < @s LastSelectedSlot run playsound minecraft:item.book.page_turn master @s ~ ~ ~ 1 1
+execute if score @s SelectedSlot < @s LastSelectedSlot run function pack:main/spellwheel/wheel/function/sfx/change_page_line_15
 

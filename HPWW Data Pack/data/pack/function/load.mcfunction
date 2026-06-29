@@ -158,6 +158,8 @@ scoreboard players set #-1 spacefont -1
 # Spells
 function pack:main/spells/function/api/spell_cooldown/spell_definitions
 function pack:main/spells/function/api/spell_trails/api/trail_definition_examples
+scoreboard objectives add expelliarmus_wand_slot dummy
+scoreboard players set @a expelliarmus_wand_slot -1
 
     #Protego
         scoreboard objectives add protego_activated dummy
