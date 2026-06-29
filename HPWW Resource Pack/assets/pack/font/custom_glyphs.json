@@ -117,8 +117,8 @@
           "type": "bitmap",
             "file": "pack:spell_wheel/target_shader_marker.png",
             "chars": ["\uE040"],
-            "ascent": 0,
-            "height": 16  
+            "ascent": -1,
+            "height": 4  
         }
         
 
