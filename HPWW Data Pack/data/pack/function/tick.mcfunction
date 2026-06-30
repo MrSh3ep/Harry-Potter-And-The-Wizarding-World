@@ -6,32 +6,43 @@ execute as @a at @s run function pack:main/spells/function/lumos/tick
     execute at @a if entity @e[tag=wand_crafting_table_detector,limit=1, distance=..10, type=armor_stand] run function pack:main/wand_crafting/detect/function/cores_and_wood
 
 
+#these three, prtotego #drop prevention, #Draw Spell Wheel, And Spell Wheel SFX have to be in this order
+        #protego
+        execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
+
+
+#Drop Prevention
+        execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=0}] at @s run function pack:main/spellwheel/wheel/function/maintenance
+
+
+#Draw Spellwheel
+        execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=1..}] run function pack:main/spellwheel/wheel/function/display/start
+        execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=0,spell_wheel_display_timer=0}] run function pack:main/spellwheel/wheel/function/display/start
 
 #Spell Wheel SFX
-    execute as @a[scores={SpellWheelStatus=1}] at @s run function pack:main/spellwheel/wheel/function/sfx/change_page
-    execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_timer=1..}] run scoreboard players remove @s spell_wheel_display_timer 1
-    execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=1..}] run scoreboard players remove @s spell_wheel_maintenance_timer 1
+        execute as @a[scores={SpellWheelStatus=1}] at @s run function pack:main/spellwheel/wheel/function/sfx/change_page
+        execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_timer=1..}] run scoreboard players remove @s spell_wheel_display_timer 1
+        execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=1..}] run scoreboard players remove @s spell_wheel_maintenance_timer 1
+
+
+
 
 # Cache each player's UUID so spells can keep track of who cast them.
     # Cached on load/first join.
 
-#protego
-    execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function pack:main/spells/function/protego/protego_detect
+
 
 #Spell API
     function pack:main/spells/function/api/spell_cooldown/tick
     function pack:main/spells/function/expelliarmus/function/disarmed_wand/tick
 
-#Drop Prevention
-    execute as @a[scores={SpellWheelStatus=1,spell_wheel_maintenance_timer=0}] at @s run function pack:main/spellwheel/wheel/function/maintenance
+
     function pack:main/spellwheel/wheel/function/remove_extra_wands
 
 #Refresh cached page data only when it has been dirtied.
     execute as @a[scores={SpellWheelStatus=1,spell_wheel_cache_dirty=1..}] run function pack:main/spellwheel/wheel/function/cache/refresh_if_dirty
 
-#Draw Spellwheel
-    execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=1..}] run function pack:main/spellwheel/wheel/function/display/start
-    execute as @a[scores={SpellWheelStatus=1,spell_wheel_display_dirty=0,spell_wheel_display_timer=0}] run function pack:main/spellwheel/wheel/function/display/start
+
 
     execute as @a[scores={SpellWheelStatus=1}] run function pack:main/spellwheel/wheel/function/display/item_wheel/tick
 
@@ -39,6 +50,8 @@ execute as @a as @s at @s run function pack:main/spells/function/api/duel_hp/api
 
 
 # Spell Wheel Settings triggers
+execute as @a[scores={spell_wheel_tutorial_chat=1..}] run function pack:main/spellwheel/wheel/tutorial/chat_trigger
+execute as @a[scores={spell_wheel_tutorial_disable=1..}] run function pack:main/spellwheel/wheel/tutorial/disable_trigger
 execute as @a[scores={settings_menu_bind_spell=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/bind_spell
 execute as @a[scores={settings_menu_cancel=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/cancel
 execute as @a[scores={settings_menu_reset_player_data=1..}] run function pack:main/spellwheel/wheel/function/settings_menu/reset_player_data

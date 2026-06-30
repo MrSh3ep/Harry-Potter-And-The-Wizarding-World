@@ -1,0 +1,8 @@
+{
+    "values": [
+        "minecraft:marker",
+        "minecraft:item_frame",
+        "minecraft:glow_item_frame",
+        "minecraft:interaction"
+    ]
+}

@@ -63,4 +63,4 @@ execute if score @s expelliarmus_wand_slot matches 7 run item replace entity @s 
 execute if score @s expelliarmus_wand_slot matches 8 run item replace entity @s hotbar.8 with air
 
 function pack:main/spells/function/expelliarmus/function/disarmed_wand/spawn
-effect give @s slowness 3 2 true
+effect give @s slowness 3 3 true

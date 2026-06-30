@@ -1,3 +1,5 @@
+
+
 function pack:main/spellwheel/wheel/function/save_preset
 scoreboard players set @s SpellWheelStatus 0
 scoreboard players set @s spell_wheel_display_dirty 0

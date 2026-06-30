@@ -1,3 +1,1 @@
-tag @n[type=armor_stand,tag=spell_trail,tag=trail_color_red,distance=0..2,limit=1,sort=nearest] add basic_cast_hit_source
 execute as @a if score @s spell_uuid_0 = @e[type=armor_stand,tag=basic_cast_hit_source,limit=1] spell_uuid_0 if score @s spell_uuid_1 = @e[type=armor_stand,tag=basic_cast_hit_source,limit=1] spell_uuid_1 if score @s spell_uuid_2 = @e[type=armor_stand,tag=basic_cast_hit_source,limit=1] spell_uuid_2 if score @s spell_uuid_3 = @e[type=armor_stand,tag=basic_cast_hit_source,limit=1] spell_uuid_3 at @s run function pack:main/spells/function/basic_cast/hit_sfx
-tag @e[type=armor_stand,tag=basic_cast_hit_source] remove basic_cast_hit_source

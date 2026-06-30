@@ -3,4 +3,4 @@ execute as @e[tag=levioso_active] if score @s levioso_spell_active.timer matches
 
 execute as @e[tag=levioso_active] if score @s levioso_spell_active.hit_count matches 3 run function pack:main/spells/function/levioso/function/end
 
-execute as @e[tag=levioso_active] at @s run function pack:main/spells/function/levioso/function/vfx
+execute as @e[tag=levioso_active, type=!#pack:excluded_targeting] at @s run function pack:main/spells/function/levioso/function/vfx

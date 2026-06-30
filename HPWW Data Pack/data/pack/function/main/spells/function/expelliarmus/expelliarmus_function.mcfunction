@@ -3,7 +3,7 @@ execute if score @s cooldown_api matches 1.. run return run function pack:main/s
 
 function pack:main/spells/function/expelliarmus/start_vfx
 
-function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"expelliarmus",time:5}
+function pack:main/spells/function/api/spell_cooldown/start_cooldown {spell:"expelliarmus",time:15}
 function pack:main/spells/function/api/spell_cooldown/icons/flash_selected {spell:"expelliarmus",ticks:20}
 
 function pack:main/spells/function/api/spell_trails/api/spell_trail_start {end_function_namespace:"pack",end_function:"main/spells/function/expelliarmus/expelliarmus_spell_start",color_1:[0.78,0.13,0.0], color_2:[0.78,0.0,0.0], speed:2200, life_ticks:20, color:"dark_red"}
