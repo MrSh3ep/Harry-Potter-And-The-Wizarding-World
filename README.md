@@ -1,203 +1,185 @@
-
- <img width="1802" height="848" alt="Bh4ziEWw" src="https://github.com/user-attachments/assets/61ef07f9-83c7-412c-9b02-1b19ef8a3ccb" />
+![Main Title](https://www.dropbox.com/scl/fi/ynivk7wzd31o03j3megrs/Wizarding-World-Title.png?rlkey=8gp7icfkl8kh2pokdzqi5d7ns&st=ru5x7p6o&dl=1)
 
 # Information
-- This Project contains **spoilers** to the Harry Potter Book series by [J. K. Rowling](https://stories.jkrowling.com/my-story/).
 
-- **ALL CREDIT goes to J. K. Rowling, including: Spells, items, etc..** _She created every aspect of Harry Potter_, I simply coded them into minecraft.
+### Beta 0.4 will have many new spells, brand new potions, and so much more!!
 
-- **Harry Potter | And The Wizarding World is in early development!** Expect many **bugs** overal, and **visual artifacts** in the spell wheel _(Nothing is essentially polished or finalized. Anything in the datapack is subject to change any time)_.
+To see more behind the scenes, join my [Discord](https://discord.gg/G2Wkg9CFuE)
+
+- This project contains **spoilers** to the Harry Potter book series by [J. K. Rowling](https://stories.jkrowling.com/my-story/).
+
+- **ALL CREDIT goes to J. K. Rowling**, including spells, items, etc. She created every aspect of Harry Potter; I simply coded it into Minecraft.
+
+_(Credit to [The_Freenix](https://www.youtube.com/@The_Freenix) for the Hogwarts map used in the banner!)_
+
+---
+
+## Beta 0.3 (Latest Update)
+
+<details>
+<summary>Changelog</summary>
+
+### Additions
+- **Expelliarmus:** Essential combat charm used to disarm opponents.
+- **Levioso:** Levitate enemies into the air for follow-up attacks.
+- **Depulso:** Push enemies away (5s cooldown).
+- Updated Spell Trail API for improved particle rendering.
+
+### Bug Fixes / Improvements
+- Fixed Levioso item dupe glitch from 0.3a.
+- Fixed audio issues.
+- Spell Trails now include improved physics and can bounce off blocks.
+- Duel HP system added for more immersive combat.
+- Added Overlay/GUI API for custom UI development.
+- Added Spell Trail API for VFX and hit logic creation.
+- Added HP API for duel health manipulation.
+- Added Cooldown API for custom spell cooldown UI.
+- Cooldown icons now update outside spell wheel.
+- Optimised spell wheel performance.
+- Customisable cooldown icon FPS added.
+- Added full global storage reset option in settings.
+- Updated item description visuals.
+- Wand crafting table now rotates to player direction.
+- Wands display correctly in first/third person.
+- Added `/loot` command for all items.
+- Improved `/reload` startup message.
+- `/reload` no longer breaks spell wheel state.
+- Updated advancement page visuals.
+- Added custom license.
+- Updated spell wheel button textures.
+
+### Changes
+- Protego now affects duel HP instead of normal health.
+- Protego cooldown reduced from 6s → 4s.
+
+### Bug Fixes
+- Lumos is now fully multiplayer compatible.
+- Settings menu no longer closes on escape.
+- Spell wheel no longer scales with GUI scaling.
+- Dropped wands now correctly return your wand.
+- Improved entity hit detection.
+- Numerous minor fixes.
+
+</details>
+
+---
+
+## Installation
 
 <details>
 <summary>Installation Steps</summary>
 
-**Mod**  
-- Download the mod version of the project.  
-- Place the downloaded file in the `mods` folder of your Minecraft instance.  
+### Mod Version
+- Download the mod version.
+- Place it in your `mods` folder.
 
-**Datapack And Resourcepack**  
-- Download the datapack and resourcepack (both found in the selected version page in versions tab).
-- Place the Datapack in the `world datapack folder`.
-- Place the Resourcepack in your `Resourcepack folder` and select it.
-
-
-</details>
-
-
-# Introduction
-If you've ever read the Harry Potter book series by the author, **J. K. Rowling**, then you have most likely wondered.. "These books are incredible.. I WISH IT WAS IN MINECRAFT!". Well Im proud to present, **Harry Potter | And The Wizarding World!** Its a _fan made_ **datapack and Mod** that brings exactly everything you've ever read in the Harry Potter series, right into your **survival world or server.**
-
- Harry Potter | And the Wizarding World is desigend to be **integrated into a survival world, so you can experience Harry Potter outside of an adventure map!**
-
-Duel your friends with your choice **of 27 wands**, customize your **spell wheel with over 30+ spells**_(not fully added yet)_, and experience the magical world of Harry Potter with **your** **friends** like never before!
-
-This project is everything to me. I have put over 300+ hours of time and coded over 250 files with over 4000+ lines of code. I'd really appreciate if you download Harry Potter | And The Wizarding World ❤️
-
-# Road Map
-- **Every** thing you read in the Harry Potter book series **is planned!** Right now we are in the **beta stage** meanining, spells and items are being addded and bugs are being fixed. **The goal for release one is as follows:**
- 
-  - **At least 10 spells.** _(most likely more than 10)_
-  - An i**mproved crafting** system
-  - An immersive **settings menu**, that becomes a floating GUI infront of the player
-  - A **field guide,** giving acsess to quests, recipies etc..
-  - **Full survival compatibility**
-
-
-# Features
-
-<details>
-  <summary>Crafting</summary>
-
-## Recipes
-
-<details>
-  <summary>Recipes</summary>
-
- <h3>Wand Crafting Table</h3>
- 
-<img width="173" height="170" alt="Yuj4d-6A" src="https://github.com/user-attachments/assets/937f4eee-ab5e-495a-9fa3-ce5b9a478609" />
-
-- 3 Oak Planks
-- 2 Amethyst Shards
-- One Book
-- One Diamond
-
- <h3>Phoenix Feather</h3>
- 
-<img width="168" height="171" alt="jpZOFP4w" src="https://github.com/user-attachments/assets/ae549883-5da3-4402-afc6-b7d694b70a62" />
-
-- 4 Honeycomb
-- 2 Gold Ingots
-- 2 Amethyst Shards
-- 1 Feather
-
- <h3>Dragon Heartstring</h3>
- 
- <img width="169" height="170" alt="jKUQRRNA" src="https://github.com/user-attachments/assets/6e9544b3-2ea9-491d-b562-4fcbf3de21a4" />
-
-- 4 Magma Cream
-- 2 Fermented Spider Eyes
-- 2 Amethyst Shards
-- 1 Crimsion Hyphae
-- 
- <h3>Unicorn Hair</h3>
- 
-<img width="172" height="169" alt="8JozuVhw" src="https://github.com/user-attachments/assets/696dc99b-4b1a-49dc-ae5c-af23fde4b535" />
-
-- 4 Ghast Tears
-- 2 Echo Shards
-- 2 Amethyst Shards
-- 1 Phantom Membrane
+### Datapack + Resourcepack (2-in-1)
+- Download the combined zip file.
+- Place in your world’s `datapacks` folder.
+- Place the same zip in your `resourcepacks` folder.
+- Ignore the “incompatible” warning — it still works.
 
 </details>
 
-<h2>Wand Crafting Table</h2>
-<b>Wand crafting is made easy with a custom crafting system!</b> Simply throw your choice of <b>wood</b> and <b>wand core</b> onto the <b>wand crafting table</b>, and the wand will apear right on top!
-<br>
-<br>
+---
 
-![zazj_ZEQ](https://github.com/user-attachments/assets/5182de56-22a4-464c-847e-a804feafac79)
- <img width="400" alt="qJMv5f4Q" src="https://github.com/user-attachments/assets/6061b3fb-0ce3-4cac-bf54-1cfe1fa43885" />
- 
-<br>
-<i>(This is an example of crafting a Mangrove Unicorn Hair Wand!)</i>
-<br>
-<br>
+## Introduction
 
+> If you've ever read the Harry Potter series by J. K. Rowling, you've probably thought:  
+> *“I wish this was in Minecraft.”*
 
-<h3>Wand Crafting Materials</h3>
-<b>Wand Cores:</b>
-<ul>
-  <li> Phoenix Feather </li>
-  <li> Dragon Heartstring </li>
-  <li> Unicorn Hair </li>
-</ul>
-  <br>
-  <b>Wood Types:</b>
-  <br>
-  <i>wood types are stripped woods. Ex: Oak Stripped Wood</i>
-<ul>
-  <li> Oak </li>
-  <li> Spruce </li>
-  <li> Dark Oak </li>
-  <li> Birch </li>
-  <li> Acacia </li>
-  <li> Jungle </li>
-  <li> Cherry </li>
-  <li> Mangrove </li>
-  <li> Pale Oak </li>
-</ul>
+Harry Potter | And The Wizarding World is a **fan-made datapack and mod** that brings the magical universe into survival Minecraft.
 
-<img width="561" height="172" alt="qEOPVdhw" src="https://github.com/user-attachments/assets/e9953c6d-ba28-4260-8c6a-66080307b06b" />
+Duel your friends, craft wands, and explore over 30+ spells in a fully integrated survival experience.
 
-<i>(A picture of all current 27 wand varrients. 9 wood types, 3 cores, and a picture of Dragon Heartstring, Phoenix Feather, and the Unicorn Hair wand cores)</i>
-  
-</details>
+---
 
+## Features
 
 <details>
-  <summary>The Main Wand</summary>
-  
+<summary>Crafting</summary>
 
-  ## About
-> The **main tool** of Harry Potter | And The Wizarding World is the **wand**, also know as the **Main wand**, to differentiate the Main wand And **Spell wheel wands.** The main wand is the item that allows you to **control your activated spell** (if avalible), or **open the spell wheel**, a UI overlay above your hotbar, displaying c**ustomizable pages of binded spells**, making dueling and fighting with wands **easy and cinimatic!** _(more information can be found in the "The Spell Wheel" section below)_
+### Wand Crafting Table Recipe
 
-<img width="711" height="176" alt="bSzY_GRg" src="https://github.com/user-attachments/assets/16dde89d-e72a-4dc8-8506-c05b72117458" />
+![Wand Recipe](https://www.dropbox.com/scl/fi/7bipam0k7dxbsaay0w78i/wand_crafting_table_recipe.png?rlkey=mgmqif802xtzbdmyi3xldrnrf&st=rcc6cqzu&dl=1)
+
+- 3 Oak Planks  
+- 2 Amethyst Shards  
+- 1 Book  
+- 1 Diamond  
+
+### Wand Cores
+
+#### Phoenix Feather
+![Phoenix Feather](https://www.dropbox.com/scl/fi/15na0g5free5jsb244m2y/phoenix_feather_recipe.png?rlkey=05rhwlr2v38irkwxa7jfss9mo&st=1ix3mb8a&dl=1)
+
+#### Dragon Heartstring
+![Dragon Heartstring](https://www.dropbox.com/scl/fi/bcufbu4spkx28oe7gjhgl/dragon_heartstring_recipie.png?rlkey=m0bkqc8xxafijrkcxka6ty198&st=cbd6dtm8&dl=1)
+
+#### Unicorn Hair
+![Unicorn Hair](https://www.dropbox.com/scl/fi/ea9v0yr1zbw4ko7uw0s4t/unicorn_hair_recipe.png?rlkey=bb0hjqfvliq2q1vexvx10mvvo&st=vw5pjy6c&dl=1)
+
+</details>
+
+---
+
+## Wand Crafting Table
+
+Wand crafting is done by throwing a wood type and core onto the crafting table.
+
+![Crafting Demo](https://www.dropbox.com/scl/fi/ilhjar29yw5p8eo51r2sj/wand_crafting.gif?rlkey=11rk5muz9b9v7otxnb6gf6nhf&st=zxa7itld&dl=1)
+
+---
+
+## The Main Wand
+
+The main wand is your primary tool for casting spells and opening the spell wheel.
 
 ### Controls
-- To control your activated spell, or **trigger a spell's action**, press the `attack/destroy` keybind. _(default: Left Click)_ If there is no action, then the chat will return "No Action."
-  
-- Simularly, press the `use.item/place_block` keybind to **open the spell wheel**
+- Left click: cast / trigger spell action  
+- Right click: open spell wheel  
 
-</details>
+---
 
-<details>
-  <summary>The Spell Wheel</summary>
-  
-## About
-> The highlight of the project is the **Spell Wheel**; a completely custom UI _(that is far to complicated to explain)_ which displays **seven pages**, each with **four spell slots** above the hotbar. You can **bind any spell to any slot, and activate that slot with the respective keybind** (_read below)_ to **activate** that spell! _(You can even bind more than one spell on the same page!)_
+## The Spell Wheel
 
-https://youtu.be/509cl71hsrc
-
-<i>This video showcases the spell Lumos</i>
-
-### Activation and Deactivation
-**Activating** the spell wheel **could not be more simple!** Simply press the `attack / destroy` keybind _(Default: Right Click)_ to open the spell wheel.
-  
-**Closing** the spell wheel **is just as easy.** Again, press the `attack / destroy` keybind _(Default: Right Click)_ on the **exit button** _(hotbar slot 9)_ to exit the spell wheel. Once done, you **automatically recive all of your hotbar items back!** _(and any wands extra wands from the spell wheel is also removed..)_
+The spell wheel is a custom UI with 7 pages and 4 slots per page.
 
 ### Controls
- The spell wheel has 7 pages, and 2 buttons. Every page has 4 slots. **Scroll with your mouse to change pages** The **first slot** is activated by **single pressing** the `attack/destroy` keybind _(default: Left Click)_. The **second slot** is activated by **doubble pressing** the `attack/destroy` keybind. The **third and fourth** slot can be activated the same way, just by **pressing and doubble pressing** the `use.item/place.block` keybind _(default: Right Click)_
+- Scroll: change page  
+- Left click: activate slot 1  
+- Double left click: activate slot 2  
+- Right click: activate slot 3  
+- Double right click: activate slot 4  
 
 ### Buttons
-_for both buttons, press the `use.item/place_block` keybind to trigger them_
+- Settings: configure spell bindings  
+- Exit: closes wheel and restores inventory  
 
-  **Settings Button:** Press the settings button to open a GUI, where you can bind spells to specific slots in specific pages. _make sure whatever spell you type, there are no capital letters only lowercase._ After you set the input, **press submit** to bind! **sadly, the settings menu only works if you are OP / admin.. there is no work around, and in a future update I will fix**
+---
 
-  **Exit Button:** The Exit button will simply **exit the spell wheel**, returning all of your **hotbar items**, including your main wand!
+## Spells
 
-</details>
+### Expelliarmus
+Disarms enemy wand during combat.
 
-<details>
-  <summary>Spells</summary>
-                   
-<details>
-  <summary>Lumos</summary>
-                  
-## Lumos
-> Lumos is an **essential spell** in the Wizarding World. Lumos allows you to **shine a light for any ammount of time at your location.** You can also exit your spell wheel and still have lumos activated **when holding** your main wand! _(you can quickly deactivate it with the main wand spell trigger action)_
+### Depulso
+Pushes enemies away with force.
 
-<img width="2560" height="1440" alt="BJ1bzC8w" src="https://github.com/user-attachments/assets/e692d21f-f564-4202-8820-cf38f22a5f62" />
+### Levioso
+Lifts enemies into the air for combos.
 
-  </details>
- </details>
+### Lumos
+Creates a persistent light source while holding your wand.
+
+### Basic Cast
+Quick damage attack (shift + left click).
+
+### Protego
+Shield charm used to block incoming spells (Q key).
+
+---
 
 ## Known Bugs
 
-- *VERY INFREQUENT OCCOURANCE* When typing `/reload` in chat while a player has there spell wheel open will cause their stored hotbar items to not  replace, and glitch the selected spell wheel wand.
-
-- Visual Artifacts will apear on a spell icon that is on cooldown when scrolling onto any page with a spell on cooldown or has a changed state from the last time viewd.
-
-If your items glitch or anything happens, reset your wand wheel player data with `/function pack:main/spellwheel/wheel/function/reset_player_data`
-
-**If you find any bugs, please share them on my [discord](https://discord.gg/G2Wkg9CFuE) server.**
+If something breaks:
