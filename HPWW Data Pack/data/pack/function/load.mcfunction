@@ -243,3 +243,4 @@ scoreboard objectives add target.glowing dummy
 scoreboard objectives add hpww.gainingXP dummy
 scoreboard objectives add hpww.xp_nextlevel dummy
 scoreboard objectives add hpww.total_xp_nextlevel dummy
+scoreboard objectives add level.SpellWheelDraw dummy
