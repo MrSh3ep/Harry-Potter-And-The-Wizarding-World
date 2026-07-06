@@ -206,7 +206,7 @@ scoreboard objectives add spell_uuid_3 dummy
 scoreboard players set @a spell_uuid_3 0
 execute as @a run function pack:main/spells/function/other/store_uuid
 
-execute as @a run function animated_java:protego/remove/entities
+execute as @a run function aj:protego/remove/entities
 
 
 scoreboard objectives add spell_wheel_attack_mode dummy

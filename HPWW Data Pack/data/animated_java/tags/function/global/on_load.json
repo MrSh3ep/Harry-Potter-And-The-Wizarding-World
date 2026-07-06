@@ -1,4 +1,1 @@
-{
-	"replace": false,
-	"values": ["aj:hpww_field_guide/on_load", "animated_java:protego/on_load"]
-}
+{"values":["aj:protego/on_load"]}

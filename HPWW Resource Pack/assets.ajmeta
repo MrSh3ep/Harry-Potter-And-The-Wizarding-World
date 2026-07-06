@@ -23,6 +23,14 @@
 				"assets/aj/textures/blueprint/hpww_field_guide/main_menu_field_guide.png"
 			]
 		},
+		"aj:protego": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/aj/items/blueprint/protego/protego.json",
+				"assets/aj/models/blueprint/protego/protego.json",
+				"assets/aj/textures/blueprint/protego/protego_box.png"
+			]
+		},
 		"protego": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [

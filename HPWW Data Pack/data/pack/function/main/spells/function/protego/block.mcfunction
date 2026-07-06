@@ -13,4 +13,4 @@ function pack:main/spells/function/api/duel_hp/api/current_hp/add_current {score
 execute at @s run function pack:main/spells/function/protego/block_particles
 
 
-execute at @s as @e[type=item_display, tag=aj.protego.root, limit=1, sort=nearest] run function animated_java:protego/animations/protego_block/play
+execute at @s as @e[type=item_display, tag=aj.protego.root, limit=1, sort=nearest] run function aj:protego/animations/protego_block/play
