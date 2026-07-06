@@ -34,4 +34,5 @@ advancement revoke @s only pack:blocks/main_wand/right_click_main_wand
 advancement revoke @s only pack:blocks/main_wand/right_click_exit_wheel_button
 advancement revoke @s only pack:blocks/main_wand/right_click_settings_button
 
+function pack:main/spells/function/api/gui/clear_base_actionbar
 title @s actionbar ""
