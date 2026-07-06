@@ -1,6 +1,28 @@
 {
 	"formatVersion": "1.0.0",
 	"rigs": {
+		"aj:hpww_field_guide": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/aj/items/blueprint/hpww_field_guide/challenges.json",
+				"assets/aj/items/blueprint/hpww_field_guide/gear.json",
+				"assets/aj/items/blueprint/hpww_field_guide/level.json",
+				"assets/aj/items/blueprint/hpww_field_guide/owl_post.json",
+				"assets/aj/items/blueprint/hpww_field_guide/qests.json",
+				"assets/aj/items/blueprint/hpww_field_guide/settings.json",
+				"assets/aj/items/blueprint/hpww_field_guide/spell_wheel.json",
+				"assets/aj/items/blueprint/hpww_field_guide/talents.json",
+				"assets/aj/models/blueprint/hpww_field_guide/challenges.json",
+				"assets/aj/models/blueprint/hpww_field_guide/gear.json",
+				"assets/aj/models/blueprint/hpww_field_guide/level.json",
+				"assets/aj/models/blueprint/hpww_field_guide/owl_post.json",
+				"assets/aj/models/blueprint/hpww_field_guide/qests.json",
+				"assets/aj/models/blueprint/hpww_field_guide/settings.json",
+				"assets/aj/models/blueprint/hpww_field_guide/spell_wheel.json",
+				"assets/aj/models/blueprint/hpww_field_guide/talents.json",
+				"assets/aj/textures/blueprint/hpww_field_guide/main_menu_field_guide.png"
+			]
+		},
 		"protego": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
 			"versionedFiles": [

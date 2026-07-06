@@ -5,7 +5,7 @@
 			"conditions": {
 				"item": {
 					"components": {
-						"item_model": "pack:settings_button"
+						"item_model": "hpww_items:field_guide"
 					}
 				}
 			} 

@@ -95,5 +95,8 @@ function pack:main/spells/function/levioso/function/tick
 #brewing
 function pack:main/brewing/cauldron/tick
 
+#level
+execute as @a run function pack:main/spells/function/skills/level/tick
+
 
 

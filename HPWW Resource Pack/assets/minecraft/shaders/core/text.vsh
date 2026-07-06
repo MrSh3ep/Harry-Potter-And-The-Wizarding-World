@@ -25,6 +25,7 @@ out float cylindricalVertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 flat out float hpwwGuiMarker;
+out vec2 hpwwGuiLocalOffset;
 
 bool isHpTextColor(vec4 color) {
     return (abs(color.r - 0.8666667) < 0.001 && abs(color.g - 0.2392157) < 0.001 && abs(color.b - 0.2392157) < 0.001) || (abs(color.r - 0.0) < 0.001 && abs(color.g - 0.7176471) < 0.001 && abs(color.b - 1.0) < 0.001);
@@ -122,10 +123,12 @@ vec2 hpwwGuiCornerOffset(float glyphSize) {
     return vec2(-halfGlyph, halfGlyph);
 }
 
-vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot) {
+
+vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot, out vec2 localOffset) {
     float glyphSize = hpwwGuiGlyphSize(slot);
     vec2 targetCenter = hpwwGuiApplyAlignment(hpwwGuiGridPoint(slot.x, slot.y), slot.align, glyphSize);
-    vec2 fixedPosition = targetCenter + hpwwGuiCornerOffset(glyphSize);
+    localOffset = hpwwGuiCornerOffset(glyphSize);
+    vec2 fixedPosition = targetCenter + localOffset;
     vec2 currentScreenSize = hpwwGuiScreenSize();
     vec2 fixedScreenSize = hpwwGuiFixedScreenSize();
     viewPosition.xy = fixedPosition * (currentScreenSize / fixedScreenSize);
@@ -135,11 +138,12 @@ vec4 hpwwGuiPositionForSlot(vec4 viewPosition, HpwwGuiSlot slot) {
 void main() {
     vec4 hpwwViewPosition = ModelViewMat * vec4(Position, 1.0);
     hpwwGuiMarker = 0.0;
+    hpwwGuiLocalOffset = vec2(0.0);
 
 #if defined(IS_GUI)
     HpwwGuiSlot hpwwGuiSlot = hpwwGuiDecodeSlot(Color);
     if (hpwwGuiSlot.enabled) {
-        hpwwViewPosition = hpwwGuiPositionForSlot(hpwwViewPosition, hpwwGuiSlot);
+        hpwwViewPosition = hpwwGuiPositionForSlot(hpwwViewPosition, hpwwGuiSlot, hpwwGuiLocalOffset);
         hpwwGuiMarker = 1.0;
     }
 #endif

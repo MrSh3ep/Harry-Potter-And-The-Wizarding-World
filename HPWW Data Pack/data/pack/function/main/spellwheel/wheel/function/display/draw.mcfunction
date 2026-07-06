@@ -1,6 +1,6 @@
 
 #Called from pages in display
-
+execute if score @s SpellWheelDisplay matches 1
 
 execute if score @s knocked_out_timer matches 1.. run return fail
 

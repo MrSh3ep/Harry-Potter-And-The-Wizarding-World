@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"0": "aj:blueprint/hpww_field_guide/main_menu_field_guide",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [2.5, 2.5, 8],
+			"to": [13.5, 13.5, 8],
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [12.25, 0.25, 12.75, 0.75],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [13.25, 0.25, 13.75, 0.75],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [14.25, 0.25, 14.75, 0.75],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [15.25, 0.25, 15.75, 0.75],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0.25, 1.25, 0.75, 1.75],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [1.25, 1.25, 1.75, 1.75],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

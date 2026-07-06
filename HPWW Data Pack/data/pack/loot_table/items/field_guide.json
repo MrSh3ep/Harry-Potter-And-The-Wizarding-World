@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:structure_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "consumable":{"consume_seconds":1000000000},
+            "item_model": "hpww_items:field_guide",
+            "item_name": {
+                "color": "white",
+                "text": "Field Guide"
+            },
+            "lore": [
+                {
+                    "text": "The only book you'll need on your",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false               
+                },
+{
+                    "text": "wizarding adventure! (Not Really)",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false               
+                },
+                
+                [{"text":"\uEA1A", "font":"pack:custom_glyphs", "shadow_color":0, "color":"white","bold":false,"italic":false}]
+            ]
+        }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

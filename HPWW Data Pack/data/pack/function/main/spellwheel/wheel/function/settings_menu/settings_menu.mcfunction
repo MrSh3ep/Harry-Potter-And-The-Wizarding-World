@@ -11,6 +11,7 @@ scoreboard players reset @s settings_menu_reset_player_data
 scoreboard players enable @s settings_menu_reset_player_data
 gamerule send_command_feedback false
 
+
  dialog show @s {\
   "type": "minecraft:multi_action",\
   "title": {\

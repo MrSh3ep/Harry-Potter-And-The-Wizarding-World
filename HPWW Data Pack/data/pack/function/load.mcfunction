@@ -239,3 +239,7 @@ scoreboard objectives add knocked_out_timer_temp dummy
 #targeting API
 scoreboard objectives add target.glowing dummy
  
+# level
+scoreboard objectives add hpww.gainingXP dummy
+scoreboard objectives add hpww.xp_nextlevel dummy
+scoreboard objectives add hpww.total_xp_nextlevel dummy
