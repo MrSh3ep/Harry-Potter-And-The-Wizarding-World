@@ -1,1 +1,4 @@
-{"values":["aj:protego/on_load"]}
+{
+	"replace": false,
+	"values": ["aj:field_guide_gui/on_load", "aj:protego/on_load"]
+}

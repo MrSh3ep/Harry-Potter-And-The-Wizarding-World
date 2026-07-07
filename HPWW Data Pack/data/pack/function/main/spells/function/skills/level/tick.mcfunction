@@ -1,4 +1,6 @@
 
+execute if score @s levioso_spell_active.timer matches 1.. run return fail
+
 #makes sure U have the new path
 execute unless data storage mcfentitymap:maps hpww_level run function mcfentitymap:new {path: hpww_level}
 execute store result score @s hpww.level_has_row run function mcfentitymap:contains_entity {path: hpww_level}

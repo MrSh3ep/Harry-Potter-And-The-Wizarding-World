@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"22": "aj:blueprint/field_guide_gui/fg_level_fill_0",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [2, 10, 0],
+			"to": [14, 22, 0],
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#22"
+				},
+				"east": {
+					"uv": [0, 0, 0, 3],
+					"texture": "#22"
+				},
+				"south": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#22"
+				},
+				"west": {
+					"uv": [0, 0, 0, 3],
+					"texture": "#22"
+				},
+				"up": {
+					"uv": [3, 0, 0, 0],
+					"texture": "#22"
+				},
+				"down": {
+					"uv": [3, 0, 0, 0],
+					"texture": "#22"
+				}
+			}
+		}
+	]
+}
