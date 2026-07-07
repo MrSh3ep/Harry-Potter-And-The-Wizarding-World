@@ -1,0 +1,145 @@
+{
+    "providers": [
+
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_1.png",
+            "chars": ["\uA101"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_2.png",
+            "chars": ["\uA102"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_3.png",
+            "chars": ["\uA103"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_4.png",
+            "chars": ["\uA104"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_5.png",
+            "chars": ["\uA105"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_6.png",
+            "chars": ["\uA106"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_7.png",
+            "chars": ["\uA107"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_8.png",
+            "chars": ["\uA108"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_9.png",
+            "chars": ["\uA109"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_10.png",
+            "chars": ["\uA110"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_11.png",
+            "chars": ["\uA111"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_12.png",
+            "chars": ["\uA112"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_13.png",
+            "chars": ["\uA113"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_14.png",
+            "chars": ["\uA114"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_15.png",
+            "chars": ["\uA115"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_16.png",
+            "chars": ["\uA116"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_17.png",
+            "chars": ["\uA117"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_18.png",
+            "chars": ["\uA118"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_19.png",
+            "chars": ["\uA119"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww_field_guide:level/number/fg_level_number_20.png",
+            "chars": ["\uA120"],
+            "ascent": 25,
+            "height": 46
+        }
+    ]
+}

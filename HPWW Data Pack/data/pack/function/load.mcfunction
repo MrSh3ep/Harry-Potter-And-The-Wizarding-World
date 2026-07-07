@@ -244,3 +244,9 @@ scoreboard objectives add hpww.gainingXP dummy
 scoreboard objectives add hpww.xp_nextlevel dummy
 scoreboard objectives add hpww.total_xp_nextlevel dummy
 scoreboard objectives add level.SpellWheelDraw dummy
+scoreboard objectives add hpww.level_has_row dummy
+scoreboard objectives add hpww.XPGlyph dummy
+scoreboard objectives add hpww.NumberGlyph dummy
+execute as @a unless score @s hpww.NumberGlyph matches 100.. run scoreboard players set @s hpww.NumberGlyph 101
+execute as @a unless score @s hpww.XPGlyph matches 100.. run scoreboard players set @s hpww.XPGlyph 100
+

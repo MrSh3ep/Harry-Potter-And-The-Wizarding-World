@@ -1,8 +1,8 @@
-# Draws the level UI through the Gui API so it can merge with the spell wheel base actionbar.
+#saves values again but as strings
+$function mcfentitymap:put {path: hpww_level, key: XPGlyph, value: $(XPGlyph)}
+$function mcfentitymap:put {path: hpww_level, key: NumberGlyph, value: $(NumberGlyph)}
 
-function pack:main/spells/function/api/gui/begin
-function pack:main/spells/function/api/gui/define_slot {font:"hpww_field_guide:level", character:"\uB110", pos_x:"02", pos_y:"02", align:"0", size:"9"}
+function mcfentitymap:get_or_default {path: hpww_level, key: XPGlyph, output: "level.XPGlyph", default: 100}
+function mcfentitymap:get_or_default {path: hpww_level, key: NumberGlyph, output: "level.NumberGlyph", default: 101}
 
-function pack:main/spells/function/api/gui/define_slot {font:"hpww_field_guide:level", character:"\uA102", pos_x:"02", pos_y:"02", align:"0", size:"9"}
-
-function pack:main/spells/function/api/gui/draw
+function pack:main/spells/function/skills/level/draw with storage mcfentitymap:out level
