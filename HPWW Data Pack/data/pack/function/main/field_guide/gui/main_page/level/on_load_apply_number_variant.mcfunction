@@ -1,0 +1,21 @@
+
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 101 run return run function aj:field_guide_gui/variants/number_1/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 102 run return run function aj:field_guide_gui/variants/number_2/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 103 run return run function aj:field_guide_gui/variants/number_3/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 104 run return run function aj:field_guide_gui/variants/number_4/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 105 run return run function aj:field_guide_gui/variants/number_5/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 106 run return run function aj:field_guide_gui/variants/number_6/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 107 run return run function aj:field_guide_gui/variants/number_7/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 108 run return run function aj:field_guide_gui/variants/number_8/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 109 run return run function aj:field_guide_gui/variants/number_9/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 110 run return run function aj:field_guide_gui/variants/number_10/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 111 run return run function aj:field_guide_gui/variants/number_11/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 112 run return run function aj:field_guide_gui/variants/number_12/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 113 run return run function aj:field_guide_gui/variants/number_13/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 114 run return run function aj:field_guide_gui/variants/number_14/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 115 run return run function aj:field_guide_gui/variants/number_15/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 116 run return run function aj:field_guide_gui/variants/number_16/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 117 run return run function aj:field_guide_gui/variants/number_17/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 118 run return run function aj:field_guide_gui/variants/number_18/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 119 run return run function aj:field_guide_gui/variants/number_19/apply
+execute if score @p[tag=hpww.field_guide.page_main] hpww.NumberGlyph matches 120 run return run function aj:field_guide_gui/variants/number_20/apply

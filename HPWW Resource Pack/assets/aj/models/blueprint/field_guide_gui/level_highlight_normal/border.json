@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/border",
+	"textures": {
+		"1": "aj:blueprint/field_guide_gui/fg_level_front_normal"
+	}
+}

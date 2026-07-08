@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:field_guide_gui"
-data modify storage animated_java:temp entry.data.rig_hash set value "c751b021dfca536f95588a147cc28a285784fbb3ffc2ad5ff70860084abba231"
+data modify storage animated_java:temp entry.data.rig_hash set value "cccd18753d27192533ed7d76587ffc4664bb9590657678c3d8373031eb796fea"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.field_guide_gui.node.talents] run function aj:field_guide_gui/zzz/summon/as_node/talents
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
@@ -52,5 +52,7 @@ execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
+execute on passengers if entity @s[tag=aj.field_guide_gui.node.fill] run function aj:field_guide_gui/zzz/summon/on_summon/bone_fill
+execute on passengers if entity @s[tag=aj.field_guide_gui.node.number] run function aj:field_guide_gui/zzz/summon/on_summon/bone_number
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

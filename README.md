@@ -181,7 +181,7 @@ The datapack and Resourcepack are a 2 in 1 file meaning, you can put the same zi
 
 ![Wands](https://www.dropbox.com/scl/fi/ladhdldpzgugvq8fova8a/wands_and_cores_showcase.png?rlkey=4hg34oatl1wqby0etfpv36hr0&st=rpszwr2a&dl=1)
 
-<i>(A picture of all current 27 wand varrients. 9 wood types, 3 cores, and a picture of Dragon Heartstring, Phoenix Feather, and the Unicorn Hair wand cores)</i>
+<i>(A picture of all current 27 wand variants. 9 wood types, 3 cores, and a picture of Dragon Heartstring, Phoenix Feather, and the Unicorn Hair wand cores)</i>
   
 </details>
 

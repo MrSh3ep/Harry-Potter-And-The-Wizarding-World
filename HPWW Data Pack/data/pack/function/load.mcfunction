@@ -192,9 +192,9 @@ scoreboard objectives add basic_cast_lifetime dummy
 scoreboard players set @a basic_cast_lifetime 0
 scoreboard objectives add basic_cast_lc_cooldown dummy
 scoreboard players set @s basic_cast_lc_cooldown 0
-scoreboard players set @a basic_cast_icon_varient 0
+scoreboard players set @a basic_cast_icon_variant 0
 
-scoreboard objectives add basic_cast_icon_varient dummy
+scoreboard objectives add basic_cast_icon_variant dummy
 
 scoreboard objectives add spell_uuid_0 dummy
 scoreboard players set @a spell_uuid_0 0
@@ -235,7 +235,6 @@ execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s i
 scoreboard objectives add knocked_out_timer_seconds dummy
 scoreboard objectives add knocked_out_timer_temp dummy
 
-
 #targeting API
 scoreboard objectives add target.glowing dummy
  
@@ -245,8 +244,8 @@ scoreboard objectives add hpww.xp_nextlevel dummy
 scoreboard objectives add hpww.total_xp_nextlevel dummy
 scoreboard objectives add level.SpellWheelDraw dummy
 scoreboard objectives add hpww.level_has_row dummy
-scoreboard objectives add hpww.XPGlyph dummy
+scoreboard objectives add hpww.FillGlyph dummy
 scoreboard objectives add hpww.NumberGlyph dummy
 execute as @a unless score @s hpww.NumberGlyph matches 100.. run scoreboard players set @s hpww.NumberGlyph 101
-execute as @a unless score @s hpww.XPGlyph matches 100.. run scoreboard players set @s hpww.XPGlyph 100
+execute as @a unless score @s hpww.FillGlyph matches 100.. run scoreboard players set @s hpww.FillGlyph 100
 

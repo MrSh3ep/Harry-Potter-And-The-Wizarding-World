@@ -10,7 +10,7 @@ execute if score @s hpww.level_has_row matches 0 run function mcfentitymap:new {
 data remove storage mcfentitymap:out level
 
 #saves values
-execute store result storage mcfentitymap:out level.XPGlyph int 1 run scoreboard players get @s hpww.XPGlyph
+execute store result storage mcfentitymap:out level.XPGlyph int 1 run scoreboard players get @s hpww.FillGlyph
 execute store result storage mcfentitymap:out level.NumberGlyph int 1 run scoreboard players get @s hpww.NumberGlyph
 
 function pack:main/spells/function/skills/level/main with storage mcfentitymap:out level
