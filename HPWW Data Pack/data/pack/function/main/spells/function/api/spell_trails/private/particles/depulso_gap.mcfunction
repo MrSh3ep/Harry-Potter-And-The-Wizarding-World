@@ -1,0 +1,10 @@
+execute positioned ^ ^ ^0.50 run particle dust{color:[0.63,0.53,0.78],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 6 force
+execute positioned ^ ^ ^0.50 run particle dust{color:[0.46,0.33,0.65],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 3 force
+execute positioned ^ ^ ^0.00 run particle dust{color:[0.63,0.53,0.78],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 6 force
+execute positioned ^ ^ ^0.00 run particle dust{color:[0.46,0.33,0.65],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 3 force
+execute positioned ^ ^ ^-0.50 run particle dust{color:[0.63,0.53,0.78],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 6 force
+execute positioned ^ ^ ^-0.50 run particle dust{color:[0.46,0.33,0.65],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 3 force
+execute positioned ^ ^ ^0.75 run particle dust{color:[0.63,0.53,0.78],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 6 force
+execute positioned ^ ^ ^0.75 run particle dust{color:[0.46,0.33,0.65],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 3 force
+execute positioned ^ ^ ^-0.75 run particle dust{color:[0.63,0.53,0.78],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 6 force
+execute positioned ^ ^ ^-0.75 run particle dust{color:[0.46,0.33,0.65],scale:0.7} ~ ~1 ~ 0.1 0.1 0.1 0.01 3 force

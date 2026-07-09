@@ -1,6 +1,5 @@
 # Reflect the incoming direction with v' = v - 2(v dot n)n.
 # The selected normal is unit-length, so no n dot n division is needed.
-scoreboard players set #2 spell_trail_motion 2
 
 scoreboard players operation #dot spell_trail_motion = #vx spell_trail_motion
 scoreboard players operation #dot spell_trail_motion *= #nx spell_trail_motion

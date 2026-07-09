@@ -4,6 +4,13 @@ $summon armor_stand ^ ^ ^0.5 {Tags:[spell_trail, protego_blockable, needs_rotati
 
 rotate @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] ~ ~
 
+tag @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, limit=1, sort=nearest] add trail_color_custom
+execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, tag=trail_color_red, limit=1, sort=nearest] run tag @s remove trail_color_custom
+execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, tag=trail_color_basic_cast, limit=1, sort=nearest] run tag @s remove trail_color_custom
+execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, tag=trail_color_depulso, limit=1, sort=nearest] run tag @s remove trail_color_custom
+execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, tag=trail_color_yellow, limit=1, sort=nearest] run tag @s remove trail_color_custom
+execute as @n[type=armor_stand, tag=needs_rotation, tag=spell_trail, tag=trail_color_dark_red, limit=1, sort=nearest] run tag @s remove trail_color_custom
+
 data remove storage pack:trail_storage in
 data remove storage pack:trail_storage out
 
