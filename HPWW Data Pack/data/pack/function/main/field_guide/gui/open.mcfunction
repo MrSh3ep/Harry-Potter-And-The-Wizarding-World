@@ -3,8 +3,14 @@ execute if predicate pack:on_ground run return run advancement revoke @s only pa
 function pack:main/spellwheel/wheel/function/close_wheel
 
 scoreboard players set @s SettingsMenuStatus 1
+scoreboard players set @s SettingsMenu.page.main 1
+
+
+
+
 
 tag @s add hpww.field_guide.page_main
-execute rotated ~ 0 positioned ^ ^ ^0.5 run function aj:field_guide_gui/summon {args:{}}
+execute rotated ~ 0 positioned ^ ^ ^1.5 run function aj:field_guide_gui/summon {args:{}}
+function pack:main/spells/function/api/uuid_selector/api/link_entities {entity:"@e[tag=aj.field_guide_gui.entity,distance=0..5]"}
 tag @s remove hpww.field_guide.page_main
 

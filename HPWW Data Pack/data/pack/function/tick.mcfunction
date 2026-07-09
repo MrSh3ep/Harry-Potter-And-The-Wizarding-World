@@ -98,5 +98,7 @@ function pack:main/brewing/cauldron/tick
 #level
 execute as @a run function pack:main/spells/function/skills/level/tick
 
+execute as @a at @s run function pack:main/field_guide/tick
+
 
 

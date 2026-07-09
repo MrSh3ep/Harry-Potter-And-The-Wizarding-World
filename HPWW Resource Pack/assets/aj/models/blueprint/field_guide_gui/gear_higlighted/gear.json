@@ -1,6 +1,6 @@
 {
 	"parent": "aj:blueprint/field_guide_gui/gear",
 	"textures": {
-		"57": "aj:blueprint/field_guide_gui/fg_gear_highlight"
+		"56": "aj:blueprint/field_guide_gui/fg_gear_highlighted"
 	}
 }

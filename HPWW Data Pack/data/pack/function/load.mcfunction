@@ -206,6 +206,15 @@ scoreboard objectives add spell_uuid_3 dummy
 scoreboard players set @a spell_uuid_3 0
 execute as @a run function pack:main/spells/function/other/store_uuid
 
+# UUID Selector API
+scoreboard objectives add hpww.api.UUID_Selector dummy
+scoreboard players set @a hpww.api.UUID_Selector 0
+scoreboard objectives add hpww.api.UUID0 dummy
+scoreboard objectives add hpww.api.UUID1 dummy
+scoreboard objectives add hpww.api.UUID2 dummy
+scoreboard objectives add hpww.api.UUID3 dummy
+scoreboard objectives add hpww.api.UUID_Linked dummy
+
 execute as @a run function aj:protego/remove/entities
 
 
@@ -251,4 +260,6 @@ execute as @a unless score @s hpww.FillGlyph matches 100.. run scoreboard player
 
 #Field Guid
 scoreboard objectives add SettingsMenuStatus dummy
+scoreboard objectives add SettingsMenu.page.main dummy
+
 

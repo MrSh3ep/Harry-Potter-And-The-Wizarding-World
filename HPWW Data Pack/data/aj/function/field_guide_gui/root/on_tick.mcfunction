@@ -3,3 +3,4 @@ execute if entity @s[tag=aj.field_guide_gui.animation.close_page_main.playing] r
 execute if entity @s[tag=aj.field_guide_gui.animation.open_page_main.playing] run function aj:field_guide_gui/animations/open_page_main/zzz/on_tick
 function aj:field_guide_gui/root/on_tick/transform_floating_entities
 execute on passengers run rotate @s ~ ~
+function pack:main/field_guide/particles/bubble/main

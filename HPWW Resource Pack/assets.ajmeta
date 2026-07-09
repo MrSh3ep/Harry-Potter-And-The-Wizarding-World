@@ -138,7 +138,7 @@
 				"assets/aj/models/blueprint/field_guide_gui/talents.json",
 				"assets/aj/models/blueprint/field_guide_gui/talents_highlighted/talents.json",
 				"assets/aj/models/blueprint/field_guide_gui/talents_normal/talents.json",
-				"assets/aj/textures/blueprint/field_guide_gui/fg_gear_highlight.png",
+				"assets/aj/textures/blueprint/field_guide_gui/fg_gear_highlighted.png",
 				"assets/aj/textures/blueprint/field_guide_gui/fg_gear_normal.png",
 				"assets/aj/textures/blueprint/field_guide_gui/fg_level_fill_0.png",
 				"assets/aj/textures/blueprint/field_guide_gui/fg_level_fill_1.png",
