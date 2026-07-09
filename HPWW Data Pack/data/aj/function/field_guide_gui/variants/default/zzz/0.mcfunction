@@ -9,3 +9,4 @@ $execute as $(border) run function aj:field_guide_gui/variants/default/zzz/apply
 $execute as $(number) run function aj:field_guide_gui/variants/default/zzz/apply_to_node_number
 $execute as $(missions) run function aj:field_guide_gui/variants/default/zzz/apply_to_node_missions
 $execute as $(quests) run function aj:field_guide_gui/variants/default/zzz/apply_to_node_quests
+$execute as $(close) run function aj:field_guide_gui/variants/default/zzz/apply_to_node_close

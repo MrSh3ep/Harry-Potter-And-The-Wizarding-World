@@ -1,5 +1,8 @@
 execute if score @s levioso_spell_active.timer matches 1.. run advancement revoke @s only pack:blocks/main_wand/right_click_main_wand
 execute if score @s levioso_spell_active.timer matches 1.. run return run tellraw @s ["",{color:"red",text:"You can not enter the spell wheel while charmed with Levioso"}]
+execute if score @s SettingsMenuStatus matches 1 run advancement revoke @s only pack:blocks/main_wand/right_click_main_wand
+execute if score @s SettingsMenuStatus matches 1 run return run tellraw @s ["",{color:"red",text:"You can not enter the spell wheel while the 'Field Guide' is open"}]
+
 
 # To modify existing stuff use get me first to get the info...
 execute unless score @s spell_wheel_tutorial_disabled matches 1 run function pack:main/spellwheel/wheel/function/save_inventory_line_3

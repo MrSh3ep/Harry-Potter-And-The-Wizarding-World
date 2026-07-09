@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/close",
+	"textures": {
+		"2": "aj:blueprint/field_guide_gui/fg_level_number_1"
+	}
+}

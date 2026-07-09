@@ -249,3 +249,6 @@ scoreboard objectives add hpww.NumberGlyph dummy
 execute as @a unless score @s hpww.NumberGlyph matches 100.. run scoreboard players set @s hpww.NumberGlyph 101
 execute as @a unless score @s hpww.FillGlyph matches 100.. run scoreboard players set @s hpww.FillGlyph 100
 
+#Field Guid
+scoreboard objectives add SettingsMenuStatus dummy
+

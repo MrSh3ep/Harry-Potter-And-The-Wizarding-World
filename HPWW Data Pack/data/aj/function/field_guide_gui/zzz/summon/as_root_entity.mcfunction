@@ -12,8 +12,13 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:field_guide_gui"
-data modify storage animated_java:temp entry.data.rig_hash set value "cccd18753d27192533ed7d76587ffc4664bb9590657678c3d8373031eb796fea"
+data modify storage animated_java:temp entry.data.rig_hash set value "97f64e603f121f85b22c79af8081d335cef875a4f34ff9b8b68838d21614e8d1"
 tp @s ~ ~ ~ ~ ~
+summon minecraft:interaction ^-0.0625 ^1.4375 ^1.3125 { Tags:["","aj.field_guide_gui.bone.close.child","aj.field_guide_gui.bone.close.child.interaction","aj.field_guide_gui.bone.close.decendant","aj.field_guide_gui.bone.close.decendant.interaction","aj.field_guide_gui.bone.close.tree","aj.field_guide_gui.bone.main.decendant","aj.field_guide_gui.bone.main.decendant.interaction","aj.field_guide_gui.bone.main.tree","aj.field_guide_gui.entity","aj.field_guide_gui.interaction","aj.field_guide_gui.interaction.interaction","aj.field_guide_gui.node","aj.field_guide_gui.node.interaction","aj.global.bone.close.child","aj.global.bone.close.child.interaction","aj.global.bone.close.decendant","aj.global.bone.close.decendant.interaction","aj.global.bone.close.tree","aj.global.bone.main.decendant","aj.global.bone.main.decendant.interaction","aj.global.bone.main.tree","aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.interaction","aj.new"], response: false, width: 0.75f, height: 0.3125f, }
+execute as @n[ type=minecraft:interaction, tag=aj.field_guide_gui.interaction.interaction, tag=aj.new, distance=..3 ] run function aj:field_guide_gui/zzz/summon/as_interaction/interaction
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.interaction set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.interactions.interaction.uuid set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.field_guide_gui.node.talents] run function aj:field_guide_gui/zzz/summon/as_node/talents
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.talents set from storage animated_java:gu out
@@ -44,15 +49,22 @@ data modify storage animated_java:temp entry.data.uuids_by_name.missions set fro
 execute on passengers if entity @s[tag=aj.field_guide_gui.node.quests] run function aj:field_guide_gui/zzz/summon/as_node/quests
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.quests set from storage animated_java:gu out
-function aj:field_guide_gui/zzz/set_default_pose
+execute on passengers if entity @s[tag=aj.field_guide_gui.node.close] run function aj:field_guide_gui/zzz/summon/as_node/close
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.close set from storage animated_java:gu out
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
+function aj:field_guide_gui/zzz/set_default_pose
 execute if data storage animated_java:temp args.variant run function aj:field_guide_gui/zzz/summon/variant_arg/process with storage animated_java:temp args
+execute if score #success aj.i matches 0 run return fail
+execute if data storage animated_java:temp args.animation run function aj:field_guide_gui/zzz/summon/animation_arg/process with storage animated_java:temp args
 execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
+function aj:field_guide_gui/zzz/summon/zzz/0 with storage animated_java:temp entry.data.interactions
 execute on passengers if entity @s[tag=aj.field_guide_gui.node.fill] run function aj:field_guide_gui/zzz/summon/on_summon/bone_fill
 execute on passengers if entity @s[tag=aj.field_guide_gui.node.number] run function aj:field_guide_gui/zzz/summon/on_summon/bone_number
+execute at @s run function aj:field_guide_gui/zzz/summon/on_summon/rig
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

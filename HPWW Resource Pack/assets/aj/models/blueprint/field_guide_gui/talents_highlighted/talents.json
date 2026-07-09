@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/talents",
+	"textures": {
+		"58": "aj:blueprint/field_guide_gui/fg_talents_highlighted"
+	}
+}

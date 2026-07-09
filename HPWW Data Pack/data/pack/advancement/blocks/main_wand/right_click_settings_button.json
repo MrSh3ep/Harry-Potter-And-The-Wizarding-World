@@ -12,6 +12,6 @@
 		}
 	},
 	"rewards": {
-		"function": "pack:main/spellwheel/wheel/function/settings_menu/settings_menu"
+		"function": "pack:main/field_guide/gui/open"
 	}
 }

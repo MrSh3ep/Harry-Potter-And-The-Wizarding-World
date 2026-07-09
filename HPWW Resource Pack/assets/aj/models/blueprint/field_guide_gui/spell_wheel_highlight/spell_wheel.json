@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/spell_wheel",
+	"textures": {
+		"54": "aj:blueprint/field_guide_gui/fg_spell_wheel_highlighted"
+	}
+}
