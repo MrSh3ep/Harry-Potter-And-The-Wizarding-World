@@ -12,7 +12,7 @@
 		],
 		"fallback": {
 			"type": "minecraft:model",
-			"model": "aj:blueprint/field_guide_gui/missions",
+			"model": "aj:blueprint/field_guide_gui/challenges",
 			"tints": [
 				{"type": "minecraft:dye", "default": [1, 1, 1]}
 			]

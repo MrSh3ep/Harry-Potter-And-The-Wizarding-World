@@ -2,7 +2,6 @@
 #Called from pages in display
 
 
-
 execute if score @s knocked_out_timer matches 1.. run return run function pack:main/spellwheel/wheel/function/display/draw_line_6
 
 

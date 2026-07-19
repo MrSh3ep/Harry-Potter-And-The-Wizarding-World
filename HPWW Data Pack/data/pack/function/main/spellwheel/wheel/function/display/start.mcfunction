@@ -1,6 +1,5 @@
 
 #called from pack:tick.mcfunction
-
 scoreboard players set @s spell_wheel_display_timer 4
 scoreboard players set @s spell_wheel_display_dirty 0
 

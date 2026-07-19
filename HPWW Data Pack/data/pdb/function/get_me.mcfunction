@@ -1,7 +1,5 @@
-data modify storage pdb:main temp set from entity @s UUID
-data modify storage pdb:main args.UUID0 set from storage pdb:main temp[0]
-data modify storage pdb:main args.UUID1 set from storage pdb:main temp[1]
-data modify storage pdb:main args.UUID2 set from storage pdb:main temp[2]
-data modify storage pdb:main args.UUID3 set from storage pdb:main temp[3]
-
-function pdb:zprivate/get_me with storage pdb:main args
+data remove storage pdb:main out
+function mcfentitymap:internal/uuid/get_uuid
+function pdb:zprivate/get_me with storage uuid:out
+execute unless data storage pdb:main out.UUID run function pdb:migrate_legacy
+execute unless data storage pdb:main out.UUID run data modify storage pdb:main out.UUID set from entity @s UUID

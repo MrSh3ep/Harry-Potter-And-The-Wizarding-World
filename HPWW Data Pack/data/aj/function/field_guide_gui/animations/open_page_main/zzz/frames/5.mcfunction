@@ -7,7 +7,7 @@ $data merge entity $(spell_wheel) {transformation: [-0.0382f,-0.7571f,0f,-0.8986
 $data merge entity $(fill) {transformation: [-0.0382f,-0.7571f,0f,-0.3624f,-0.7571f,0.0382f,0f,1.3051f,0f,0f,-1f,-0.4984f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(border) {transformation: [-0.0382f,-0.7571f,0f,-0.3624f,-0.7571f,0.0382f,0f,1.3051f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(number) {transformation: [-0.0382f,-0.7571f,0f,-0.3624f,-0.7571f,0.0382f,0f,1.3051f,0f,0f,-1f,-0.5016f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(missions) {transformation: [-0.0382f,-0.7571f,0f,0.7259f,-0.7571f,0.0382f,0f,1.2502f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(challenges) {transformation: [-0.0382f,-0.7571f,0f,0.7259f,-0.7571f,0.0382f,0f,1.2502f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(quests) {transformation: [-0.0382f,-0.7571f,0f,0.8539f,-0.7571f,0.0382f,0f,1.9078f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(close) {transformation: [-0.0382f,-0.7571f,0f,-0.1731f,-0.7571f,0.0382f,0f,1.2955f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 data modify storage animated_java:temp entry.data merge value {"interactions":{"close_interaction":{"px":-0.0785,"py":1.2907,"pz":0.3125,"ry":0,"rx":0}}}

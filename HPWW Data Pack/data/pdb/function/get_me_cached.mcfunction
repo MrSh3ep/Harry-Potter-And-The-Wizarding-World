@@ -1,6 +1,6 @@
-execute store result storage pdb:main args.UUID0 int 1 run scoreboard players get @s spell_uuid_0
-execute store result storage pdb:main args.UUID1 int 1 run scoreboard players get @s spell_uuid_1
-execute store result storage pdb:main args.UUID2 int 1 run scoreboard players get @s spell_uuid_2
-execute store result storage pdb:main args.UUID3 int 1 run scoreboard players get @s spell_uuid_3
-
-function pdb:zprivate/get_me with storage pdb:main args
+data remove storage pdb:main out
+execute if score @s spell_uuid_0 matches 0 if score @s spell_uuid_1 matches 0 if score @s spell_uuid_2 matches 0 if score @s spell_uuid_3 matches 0 run function pack:main/spells/function/other/store_uuid
+function pdb:internal/uuid/get_cached
+function pdb:zprivate/get_me with storage uuid:out
+execute unless data storage pdb:main out.UUID run function pdb:migrate_legacy_cached
+execute unless data storage pdb:main out.UUID run data modify storage pdb:main out.UUID set from entity @s UUID

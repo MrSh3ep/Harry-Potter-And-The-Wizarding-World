@@ -1,9 +1,5 @@
-data modify storage pdb:main temp set from entity @s UUID
-data modify storage pdb:main args.UUID0 set from storage pdb:main temp[0]
-data modify storage pdb:main args.UUID1 set from storage pdb:main temp[1]
-data modify storage pdb:main args.UUID2 set from storage pdb:main temp[2]
-data modify storage pdb:main args.UUID3 set from storage pdb:main temp[3]
-
+execute if score @s spell_uuid_0 matches 0 if score @s spell_uuid_1 matches 0 if score @s spell_uuid_2 matches 0 if score @s spell_uuid_3 matches 0 run function pack:main/spells/function/other/store_uuid
+function pdb:internal/uuid/get_cached
 execute unless data storage pdb:main in.UUID run data modify storage pdb:main in.UUID set from entity @s UUID
 
-function pdb:zprivate/save_me with storage pdb:main args
+function pdb:zprivate/save_me with storage uuid:out

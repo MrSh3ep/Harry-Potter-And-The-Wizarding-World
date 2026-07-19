@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"53": "aj:blueprint/field_guide_gui/texture",
+		"60": "aj:blueprint/field_guide_gui/fg_challenges_normal",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -20,28 +20,28 @@
 			},
 			"faces": {
 				"north": {
-					"uv": [0, 0, 6, 6],
-					"texture": "#53"
+					"uv": [0, 0, 16, 16],
+					"texture": "#60"
 				},
 				"east": {
 					"uv": [0, 0, 0, 6],
-					"texture": "#53"
+					"texture": "#60"
 				},
 				"south": {
-					"uv": [6, 0, 12, 6],
-					"texture": "#53"
+					"uv": [0, 0, 16, 16],
+					"texture": "#60"
 				},
 				"west": {
 					"uv": [6, 0, 6, 6],
-					"texture": "#53"
+					"texture": "#60"
 				},
 				"up": {
 					"uv": [6, 0, 0, 0],
-					"texture": "#53"
+					"texture": "#60"
 				},
 				"down": {
 					"uv": [12, 0, 6, 0],
-					"texture": "#53"
+					"texture": "#60"
 				}
 			}
 		}

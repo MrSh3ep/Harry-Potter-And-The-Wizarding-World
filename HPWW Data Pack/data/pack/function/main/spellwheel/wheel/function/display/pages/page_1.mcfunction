@@ -1,4 +1,7 @@
 # Draw page 1 from cached per-player storage.
+
+
+
 data remove storage pack:spell_wheel_runtime draw
 data modify storage pack:spell_wheel_runtime draw set from storage pdb:main out.spell_wheel_cache.page_1.draw
 execute store result storage pack:spell_wheel_runtime draw.selected_page_number int 1 run scoreboard players get @s SelectedSlot
