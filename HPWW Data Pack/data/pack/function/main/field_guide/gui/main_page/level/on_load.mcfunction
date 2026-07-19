@@ -1,2 +1,0 @@
-function pack:main/field_guide/gui/main_page/level/on_load_apply_fill_variant
-function pack:main/field_guide/gui/main_page/level/on_load_apply_number_variant

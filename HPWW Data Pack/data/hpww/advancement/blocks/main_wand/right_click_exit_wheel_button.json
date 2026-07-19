@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "using_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"item_model": "hpww:exit_wheel_button"
+					}
+				}
+			} 
+		}
+	},
+	"rewards": {
+		"function": "hpww:main/spellwheel/wheel/function/close_wheel"
+	}
+}

@@ -1,0 +1,40 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/item_wheel/item_wheel_gear.png",
+            "chars": ["\ue001"],
+            "ascent": 0,
+            "height": 48
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/item_wheel/plus_item_wheel.png",
+            "chars": ["\ue002"],
+            "ascent": 0,
+            "height": 48
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/item_wheel/exit_item_wheel.png",
+            "chars": ["\ue003"],
+            "ascent": 0,
+            "height": 48
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/item_wheel/blank_slot_item_wheel.png",
+            "chars": ["\ue004"],
+            "ascent": 0,
+            "height": 48
+        },
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/item_wheel/wiggenweld_potion.png",
+            "chars": ["\ua001"],
+            "ascent": 0,
+            "height": 48
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "using_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"item_model": "hpww_items:field_guide"
+					}
+				}
+			} 
+		}
+	},
+	"rewards": {
+		"function": "hpww:main/field_guide/gui/open"
+	}
+}

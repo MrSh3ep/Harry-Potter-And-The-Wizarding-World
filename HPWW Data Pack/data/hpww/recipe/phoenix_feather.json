@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "HGH",
+        "AFA",
+        "HGH"
+    ],
+    "key": {
+                "H": "honeycomb",
+                "G": "gold_ingot",
+                "A": "amethyst_shard",
+                "F": "feather"
+    },
+    "result": {
+        "id": "command_block",
+        "components": {
+            "custom_data": {"wand_core":"phoenix_feather"},
+            "item_model": "hpww:phoenix_feather",
+           "item_name": {
+                "color": "white",
+                "text": "Phoenix Feather"
+            },
+            "lore": [
+                {
+                    "text": "Wand Core of Knowledge",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                },
+                [{"text":"\uEA1A", "font":"hpww:custom_glyphs", "shadow_color":0, "color":"white","bold":false,"italic":false}]
+            ]
+        },
+        "count": 1
+    }
+}
+        

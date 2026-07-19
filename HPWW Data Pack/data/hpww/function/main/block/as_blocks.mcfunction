@@ -1,0 +1,1 @@
+execute as @s[tag=hpww.wand_crafting_table_block] run function hpww:main/wand_crafting/tick_wand_crafting_table

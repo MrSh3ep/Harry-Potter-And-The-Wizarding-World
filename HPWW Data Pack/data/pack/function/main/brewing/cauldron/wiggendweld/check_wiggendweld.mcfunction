@@ -1,2 +1,0 @@
-execute if entity @e[nbt={Item:{id:"minecraft:oxeye_daisy", count:3}},distance=0..1,type=item] if entity @e[nbt={Item:{id:"minecraft:honeycomb", count:2}},distance=0..1,type=item] if entity @e[nbt={Item:{id:"minecraft:fermented_spider_eye", count:3}},distance=0..1,type=item] if entity @e[nbt={Item:{id:"minecraft:cactus_flower", count:1}},distance=0..1,type=item] run function pack:main/brewing/cauldron/wiggendweld/start_brew
-say checking

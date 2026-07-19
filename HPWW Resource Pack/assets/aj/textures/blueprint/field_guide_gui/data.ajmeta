@@ -2,7 +2,7 @@
 	"formatVersion": "1.0.0",
 	"rigs": {
 		"aj:field_guide_gui": {
-			"coreFiles": ["pack.mcmeta"],
+			"coreFiles": ["hpww.mcmeta"],
 			"versionedFiles": [
 				"data/aj/function/field_guide_gui/animations/close_page_main/apply_frame.mcfunction",
 				"data/aj/function/field_guide_gui/animations/close_page_main/next_frame.mcfunction",
@@ -398,7 +398,7 @@
 			]
 		},
 		"aj:hpww_field_guide": {
-			"coreFiles": ["pack.mcmeta"],
+			"coreFiles": ["hpww.mcmeta"],
 			"versionedFiles": [
 				"data/aj/function/hpww_field_guide/as_node.mcfunction",
 				"data/aj/function/hpww_field_guide/as_root.mcfunction",
@@ -467,7 +467,7 @@
 			]
 		},
 		"aj:protego": {
-			"coreFiles": ["pack.mcmeta"],
+			"coreFiles": ["hpww.mcmeta"],
 			"versionedFiles": [
 				"data/aj/function/protego/animations/pause_all.mcfunction",
 				"data/aj/function/protego/animations/protego_active/apply_frame.mcfunction",
@@ -606,7 +606,7 @@
 			]
 		},
 		"protego": {
-			"coreFiles": ["pack.mcmeta"],
+			"coreFiles": ["hpww.mcmeta"],
 			"versionedFiles": [
 				"data/animated_java/function/global/gu/get_entity_uuid_string.mcfunction",
 				"data/animated_java/function/global/gu/on_load.mcfunction",

@@ -1,0 +1,8 @@
+
+#kill resources
+execute as @e[type=armor_stand, tag=wand_crafting_table_detector, scores={pale_oak_log=1, phoenix_feather=1}] run kill @e[type=item, distance=..0.5, limit=1, nbt={Item:{id:"minecraft:stripped_pale_oak_wood"}}]
+execute as @e[type=armor_stand, tag=wand_crafting_table_detector, scores={pale_oak_log=1, phoenix_feather=1}] run kill @e[type=item, distance=..0.5, limit=1, nbt={Item:{id:"minecraft:command_block"}}]
+
+summon item ~ ~0.3 ~ {Item:{id:structure_block, components:{custom_data:{wand:1b,wand_wood:"pale_oak", wand_core:"phoenix_feather"}, enchantment_glint_override:0b, "swing_animation":{type:'stab',duration:20}, use_effects:{can_sprint:true, speed_multiplier:1}, consumable:{animation:"none", consume_seconds:1000000000}, enchantments:{"hpww:page_left_click":1}, piercing_weapon:{}, tooltip_display:{hidden_components:["enchantments"]}, rarity:rare, item_model:"wands:pale_oak_wand", custom_name:{text:"Pale Oak Wand", color:white, bold:false, italic:false}, lore:[[{text:"Wood Type: ", color:"gray", bold:false, italic:false}, {text:"Pale Oak", italic:false, bold:false, color:"#e7e3e1"}], [{text:"Wand Core: ", color:gray, bold:false, italic:false}, {text:"Phoenix Feather", color:"#fb731f", italic:false, bold:false}],[{text:"\uEA1A", font:"hpww:custom_glyphs", shadow_color:0, color:white,bold:false,italic:false}]]}}, Glowing:true, PickupDelay:40, CustomNameVisible:false, CustomName:{text:"Pale Oak Wand", color:white, bold:false, italic:false}, }
+
+function hpww:main/wand_crafting/detect/function/crafting_vfx

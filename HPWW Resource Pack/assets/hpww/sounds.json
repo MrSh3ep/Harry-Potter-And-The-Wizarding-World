@@ -1,0 +1,11 @@
+{
+    "depulso_hit": {
+        "sounds": [
+            {
+            "name": "hpww:depulso_hit",
+            "stream": true,
+            "attenuation_distance":1
+            }
+        ]
+    }
+}

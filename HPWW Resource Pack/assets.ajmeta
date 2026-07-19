@@ -2,7 +2,7 @@
 	"formatVersion": "1.0.0",
 	"rigs": {
 		"aj:field_guide_gui": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "hpww.mcmeta"],
 			"versionedFiles": [
 				"assets/aj/items/blueprint/field_guide_gui/border.json",
 				"assets/aj/items/blueprint/field_guide_gui/challenges.json",
@@ -201,7 +201,7 @@
 			]
 		},
 		"aj:hpww_field_guide": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "hpww.mcmeta"],
 			"versionedFiles": [
 				"assets/aj/items/blueprint/hpww_field_guide/challenges.json",
 				"assets/aj/items/blueprint/hpww_field_guide/gear.json",
@@ -223,7 +223,7 @@
 			]
 		},
 		"aj:protego": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "hpww.mcmeta"],
 			"versionedFiles": [
 				"assets/aj/items/blueprint/protego/protego.json",
 				"assets/aj/models/blueprint/protego/protego.json",
@@ -231,7 +231,7 @@
 			]
 		},
 		"protego": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "hpww.mcmeta"],
 			"versionedFiles": [
 				"assets/animated_java/items/blueprint/protego/protego.json",
 				"assets/animated_java/models/blueprint/protego/protego.json",

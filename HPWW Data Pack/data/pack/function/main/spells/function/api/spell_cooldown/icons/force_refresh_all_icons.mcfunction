@@ -1,8 +1,0 @@
-function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_spell {spell:"lumos"}
-function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_spell {spell:"levioso"}
-function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_spell {spell:"protego"}
-function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_spell {spell:"depulso"}
-function pack:main/spells/function/api/spell_cooldown/icons/force_refresh_spell {spell:"expelliarmus"}
-
-
-

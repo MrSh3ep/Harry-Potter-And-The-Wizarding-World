@@ -2,7 +2,7 @@
 	"formatVersion": "1.0.0",
 	"rigs": {
 		"aj:field_guide_gui": {
-			"coreFiles": ["pack.mcmeta"],
+			"coreFiles": ["hpww.mcmeta"],
 			"versionedFiles": [
 				"data/aj/function/field_guide_gui/animations/close_page_main/apply_frame.mcfunction",
 				"data/aj/function/field_guide_gui/animations/close_page_main/next_frame.mcfunction",

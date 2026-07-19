@@ -1,0 +1,29 @@
+
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "tick"
+        }
+    },
+    "display": {
+        "title": {
+            "text": "Lumos",
+            "color": "#6da2e7"
+        },
+        "description": "Use this spell to illuminate your sorroundings!",
+        "announce_to_chat": false,
+        "icon": {
+            "id": "torch"
+        },
+        "frame": "task",
+        "hidden": false,
+        "show_toast": true
+
+    },
+    "parent": "hpww:root",
+    "rewards": {
+
+    }
+        
+    
+}

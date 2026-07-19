@@ -1,6 +1,0 @@
-{
-	"criteria": { "tick": {
-		"trigger": "minecraft:tick"
-	}},
-	"rewards": { "function": "pack:main/spellwheel/wheel/function/pages/right_click/detect/cooldown" }
-}

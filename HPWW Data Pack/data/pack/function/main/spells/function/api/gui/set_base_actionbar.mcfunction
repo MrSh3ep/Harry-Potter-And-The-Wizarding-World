@@ -1,7 +1,0 @@
-$data modify storage pack:gui_api base_actionbar set value $(components)
-
-data remove storage pdb:main out
-function pdb:get_me_cached
-data modify storage pdb:main in set from storage pdb:main out
-data modify storage pdb:main in.gui_api.base_actionbar set from storage pack:gui_api base_actionbar
-function pdb:save_me

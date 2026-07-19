@@ -1,0 +1,10 @@
+{
+	"criteria": { "use_item": {
+		"trigger": "minecraft:using_item",
+		"conditions": { "item": { "predicates": {
+			"minecraft:custom_data": "{wand:1b}"
+		}}}
+	}},
+	"rewards": { "function": "hpww:main/spellwheel/wheel/function/save_inventory"
+	}
+}

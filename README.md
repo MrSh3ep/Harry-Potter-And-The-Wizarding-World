@@ -29,7 +29,7 @@ _(Credit to [The_Freenix](https://www.youtube.com/@The_Freenix) for the amazing 
 - fixed audio issues
 - Spell Trails are revamped and include better particles and real physics so they can **bounce off blocks!!**
 - **Duel HP:** when in the spell wheel, basic cast and other spells do damage to your custom health to make duels last longer and become more immersive. To heal your HP, block a spell with the sheild charm, Protego! There are currently no other ways to properly heal your duel HP but than reseting your `current_duel_hp` score, or reaching 0, then it resets to 100.
-- **Overlay/GUI API:** Enables developers to make custom GUIs or Overlays in their extension pack!
+- **Overlay/GUI API:** Enables developers to make custom GUIs or Overlays in their extension hpww!
 - **Spell Trail API:** Enables developers to quickly create spells VFX and full hit/detection/physics logic!
 - **HP API** allows developers can manipulate player's duel HP health
 - **Cooldown API:** Enables developers to add their own icons and cooldowns to the spell wheel. Use with the **Spell Trail API**, to make custom spell creation very easy and fast!
@@ -71,19 +71,19 @@ _(Credit to [The_Freenix](https://www.youtube.com/@The_Freenix) for the amazing 
 - Download the mod version of the project.  
 - Place the downloaded file in the `mods` folder of your Minecraft instance.  
 
-**Datapack And Resourcepack**
+**Datahpww And Resourcehpww**
 
-The datapack and Resourcepack are a 2 in 1 file meaning, you can put the same zip folder in both the datapack and the resourcepack folders. It will say incompatible, ignore it.. the game thinks its right when its not..
-- Download the datapack version (both resourcepack and datapack are in the same folder).
-- Place the Datapack in the `world datapack folder`.
-- Place the Resourcepack in your `Resourcepack folder` and select it.
+The datahpww and Resourcehpww are a 2 in 1 file meaning, you can put the same zip folder in both the datahpww and the resourcehpww folders. It will say incompatible, ignore it.. the game thinks its right when its not..
+- Download the datahpww version (both resourcehpww and datahpww are in the same folder).
+- Place the Datahpww in the `world datahpww folder`.
+- Place the Resourcehpww in your `Resourcehpww folder` and select it.
 
 
 </details>
 
 
 # Introduction
-> If you've ever read the Harry Potter book series by the author, **J. K. Rowling**, then you have most likely wondered.. "These books are incredible.. I WISH IT WAS IN MINECRAFT!". Well Im proud to present, **Harry Potter | And The Wizarding World!** Its a _fan made_ **datapack and Mod** that brings exactly everything you've ever read in the Harry Potter series, right into your **survival world or server.**
+> If you've ever read the Harry Potter book series by the author, **J. K. Rowling**, then you have most likely wondered.. "These books are incredible.. I WISH IT WAS IN MINECRAFT!". Well Im proud to present, **Harry Potter | And The Wizarding World!** Its a _fan made_ **datahpww and Mod** that brings exactly everything you've ever read in the Harry Potter series, right into your **survival world or server.**
 > 
 > Harry Potter | And the Wizarding World is desigend to be **integrated into a survival world, so you can experience Harry Potter outside of an adventure map!**
 
@@ -301,6 +301,6 @@ _for both buttons, press the `use.item/place_block` keybind to trigger them_
 
 
 ## Known Bugs
-If your items glitch or anything happens, reset your wand wheel player data with `/function pack:main/spellwheel/wheel/function/reset_player_data` or use the button in the spell wheel settings menu. If that still does not work, run a hard reset with `/function pack:main/spellwheel/wheel/reset_global_storage`
+If your items glitch or anything happens, reset your wand wheel player data with `/function hpww:main/spellwheel/wheel/function/reset_player_data` or use the button in the spell wheel settings menu. If that still does not work, run a hard reset with `/function hpww:main/spellwheel/wheel/reset_global_storage`
 
 **If you find any bugs, please share them on my [GitHub Page](https://github.com/MrSh3ep/Harry-Potter-And-The-Wizarding-World/issues)**

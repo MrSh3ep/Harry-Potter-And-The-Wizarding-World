@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:repeating_command_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+            "custom_data": {"wand_core":"dragon_heartstring"},
+            "item_model": "hpww:dragon_heartstring",
+            "item_name": {
+                "color": "white",
+                "text": "Dragon Heartstring"
+            },
+            "lore": [
+                {
+                    "text": "Wand Core of Power",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false
+                },
+                [{"text":"\uEA1A", "font":"hpww:custom_glyphs", "shadow_color":0, "color":"white","bold":false,"italic":false}]
+            ]
+        }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

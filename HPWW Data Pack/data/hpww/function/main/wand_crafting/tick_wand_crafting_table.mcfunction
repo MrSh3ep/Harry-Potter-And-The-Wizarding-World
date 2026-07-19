@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ oak_planks run function hpww:main/wand_crafting/break_wand_crafting_table

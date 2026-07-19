@@ -40,14 +40,14 @@ NOTE: In this license..
 
 
 
-2\. All code and assets found inside 'HPWW Data pack' and 'HPWW Resource pack' belongs STRICTLY to MrSh3ep. Any rules/guidelines that pertain to distributing, editing content, etc.. is defined and enforced in/by this license.
+2\. All code and assets found inside 'HPWW Data hpww' and 'HPWW Resource hpww' belongs STRICTLY to MrSh3ep. Any rules/guidelines that pertain to distributing, editing content, etc.. is defined and enforced in/by this license.
 
 
 
 \#Distribution and Editing
-* you may redistribute this datapack ONLY inside modpacks, in platforms such as Modrinth and Curseforge
+* you may redistribute this datahpww ONLY inside modhpwws, in platforms such as Modrinth and Curseforge
 
-* You are hereby prohibited from redistributing HPWW including any assets or code, modified/unmodified, TO THE PUBLIC for any reason without my (Mrsh3ep) explicit permission unless in a Modpack.
+* You are hereby prohibited from redistributing HPWW including any assets or code, modified/unmodified, TO THE PUBLIC for any reason without my (Mrsh3ep) explicit permission unless in a Modhpww.
 * If you wish to redistribute contact me to potentially make an agreement.
 
 
@@ -66,6 +66,6 @@ NOTE: In this license..
 
 * You are allowed to feature HPWW in any content with the guidelines below:
 
-  1. You must provide a link in the description of content, or in the actual content, leading to the HPWW Modrinth page. 'https://modrinth.com/datapack/harry-potter-wizarding-world'
+  1. You must provide a link in the description of content, or in the actual content, leading to the HPWW Modrinth page. 'https://modrinth.com/datahpww/harry-potter-wizarding-world'
   2. If showcasing any 'HPWW' content, you must explicitly state in your content that it was sourced from the project 'Harry Potter | And The Wizarding World'
 

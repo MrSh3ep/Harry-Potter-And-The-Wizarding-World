@@ -1,1 +1,0 @@
-function pack:main/brewing/cauldron/wiggendweld/check_items

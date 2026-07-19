@@ -1,0 +1,1 @@
+execute unless items entity @s weapon.mainhand test_instance_block as @s[advancements={hpww:spells/unlocked/protego_unlocked=true}] at @s run function hpww:main/spells/function/protego/protego_start

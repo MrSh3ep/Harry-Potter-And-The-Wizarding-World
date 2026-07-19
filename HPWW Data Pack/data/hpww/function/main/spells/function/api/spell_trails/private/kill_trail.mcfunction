@@ -1,0 +1,14 @@
+
+
+execute at @s run summon marker ~ ~ ~ {Tags:[trail_entity_checker], NoGravity:1b}
+scoreboard players set @s spell_trail_life_ticks 0
+function hpww:main/spells/function/api/spell_trails/private/cleanup_particle_anchor
+
+
+function hpww:main/spells/function/api/spell_trails/private/storage/get_me
+execute at @s run execute as @n[type=marker, limit=1, tag=trail_entity_checker] at @s as @s run function hpww:main/spells/function/api/spell_trails/private/trail_end_function with storage hpww:trail_storage out.trail_end_function
+
+execute at @s run playsound minecraft:block.creaking_heart.step master @a[distance=0..20] ~ ~ ~ 3
+
+
+kill @s

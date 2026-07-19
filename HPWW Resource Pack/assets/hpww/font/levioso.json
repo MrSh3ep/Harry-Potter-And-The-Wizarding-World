@@ -1,0 +1,256 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_active.png",
+            "chars": [
+                "ꄀ"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_selected.png",
+            "chars": [
+                "넀"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_1.png",
+            "chars": [
+                "섁"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_2.png",
+            "chars": [
+                "섂"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_3.png",
+            "chars": [
+                "섃"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_4.png",
+            "chars": [
+                "섄"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_5.png",
+            "chars": [
+                "섅"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_6.png",
+            "chars": [
+                "섆"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_7.png",
+            "chars": [
+                "섇"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_8.png",
+            "chars": [
+                "섈"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_9.png",
+            "chars": [
+                "섉"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_10.png",
+            "chars": [
+                "섐"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_11.png",
+            "chars": [
+                "섑"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_12.png",
+            "chars": [
+                "섒"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_13.png",
+            "chars": [
+                "섓"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_14.png",
+            "chars": [
+                "섔"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_15.png",
+            "chars": [
+                "섕"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_16.png",
+            "chars": [
+                "섖"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_17.png",
+            "chars": [
+                "섗"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_18.png",
+            "chars": [
+                "섘"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_19.png",
+            "chars": [
+                "섙"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_20.png",
+            "chars": [
+                "선"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_21.png",
+            "chars": [
+                "섡"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_22.png",
+            "chars": [
+                "섢"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_23.png",
+            "chars": [
+                "섣"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_24.png",
+            "chars": [
+                "설"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_25.png",
+            "chars": [
+                "섥"
+            ],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/levioso/levioso_cooldown_26.png",
+            "chars": [
+                "섦"
+            ],
+            "ascent": 25,
+            "height": 46
+        }
+    ]
+}

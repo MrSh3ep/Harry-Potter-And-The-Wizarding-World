@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "tick"
+        }
+    },
+    "display": {
+        "title": {
+            "text": "Expelliarmus",
+            "color": "#9C2007"
+        },
+        "description": "Use this spell to disarm your opponents",
+        "announce_to_chat": false,
+        "icon": {
+            "id": "elytra"
+        },
+        "frame": "task",
+        "hidden": false,
+        "show_toast": true
+
+    },
+    "parent": "hpww:root",
+    "rewards": {
+
+    }
+        
+    
+}

@@ -1,0 +1,125 @@
+{
+    "providers": [
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_spacer.png",
+            "chars": ["\uEA0A"],
+            "ascent": 25,
+            "height": 46
+        },
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/description_logo_glyph.png",
+            "chars": ["\uEA1A"],
+            "ascent": 7,
+            "height": 7
+        },
+
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_blank.png",
+            "chars": ["\ue101"],
+            "ascent": 25,
+            "height": 46
+        },
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_q_active.png",
+            "chars": ["\uE014"],
+            "ascent": 40,
+            "height": 50
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_q_deactive.png",
+            "chars": ["\uE015"],
+            "ascent": 40,
+            "height": 50
+        },
+
+         {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_0.png",
+            "chars": ["\uE030"],
+            "ascent": 25,
+            "height": 46
+        },
+
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_1.png",
+            "chars": ["\uE031"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_2.png",
+            "chars": ["\uE032"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_3.png",
+            "chars": ["\uE033"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_4.png",
+            "chars": ["\uE034"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_5.png",
+            "chars": ["\uE035"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE036"],
+            "ascent": 25,
+            "height": 46
+        },
+        
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE037"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/spell_wheel_scroll_6.png",
+            "chars": ["\uE038"],
+            "ascent": 25,
+            "height": 46
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/hp_background.png",
+            "chars": ["\uE039"],
+            "ascent": 47,
+            "height": 80
+        }
+        
+
+
+
+
+
+       
+
+    ]
+}

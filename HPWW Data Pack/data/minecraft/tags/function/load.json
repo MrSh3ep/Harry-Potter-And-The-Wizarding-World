@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["animated_java:global/on_load", "mcfentitymap:load", "pack:load", "player_motion:internal/technical/load", "xze:load"]
+	"values": ["animated_java:global/on_load", "mcfentitymap:load", "hpww:load", "player_motion:internal/technical/load", "xze:load"]
 }
