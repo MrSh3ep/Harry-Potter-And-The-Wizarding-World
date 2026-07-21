@@ -1,0 +1,33 @@
+{
+	"textures": {
+		"15": "aj:blueprint/fg_spell_wheel/fg_exit_normal",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [-15, 9, 12],
+			"to": [-15, 15, 18],
+			"rotation": {
+				"x": -28.82357,
+				"y": -42.80378,
+				"z": 39.00258,
+				"origin": [-14, 10, 13]
+			},
+			"faces": {
+				"east": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#15"
+				},
+				"west": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#15"
+				}
+			}
+		}
+	]
+}

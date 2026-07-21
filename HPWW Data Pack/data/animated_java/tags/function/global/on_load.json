@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["aj:field_guide_gui/on_load", "aj:protego/on_load"]
+	"values": ["aj:fg_spell_wheel/on_load", "aj:field_guide_gui/on_load", "aj:protego/on_load"]
 }

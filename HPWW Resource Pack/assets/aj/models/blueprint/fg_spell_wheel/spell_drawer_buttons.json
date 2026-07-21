@@ -1,0 +1,86 @@
+{
+	"textures": {
+		"0": "aj:blueprint/fg_spell_wheel/fg_arrow_left",
+		"1": "aj:blueprint/fg_spell_wheel/fg_arrow_right",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [5.73585, 7.54717, 7.09434],
+			"to": [8.90566, 10.71698, 7.09434],
+			"rotation": {
+				"x": 0,
+				"y": -50,
+				"z": 0,
+				"origin": [7.09434, 8, 7.09434]
+			},
+			"faces": {
+				"north": {
+					"uv": [16, 16, 0.125, 0],
+					"texture": "#1"
+				},
+				"east": {
+					"uv": [0, 7.5, 0, 12.5],
+					"texture": "#1"
+				},
+				"south": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#1"
+				},
+				"west": {
+					"uv": [1, 7.5, 1, 12.5],
+					"texture": "#1"
+				},
+				"up": {
+					"uv": [0.5, 1, 5.5, 1],
+					"texture": "#1"
+				},
+				"down": {
+					"uv": [0.5, 0, 5.5, 0],
+					"texture": "#1"
+				}
+			}
+		},
+		{
+			"from": [-15.09434, 7.54717, 7.54717],
+			"to": [-11.92453, 10.71698, 7.54717],
+			"rotation": {
+				"x": 0,
+				"y": 50,
+				"z": 0,
+				"origin": [-13.73585, 8, 7.54717]
+			},
+			"faces": {
+				"north": {
+					"uv": [16, 16, 0.125, 0],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 7.5, 0, 12.5],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [1, 7.5, 1, 12.5],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0.5, 1, 5.5, 1],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0.5, 0, 5.5, 0],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}
