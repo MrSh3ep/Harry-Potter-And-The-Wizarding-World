@@ -8,6 +8,26 @@
 				"model": {
 					"type": "minecraft:empty"
 				}
+			},
+			{
+				"when": "collection_normal",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/collection_normal/collection",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "collection_highlight",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/collection_highlight/collection",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

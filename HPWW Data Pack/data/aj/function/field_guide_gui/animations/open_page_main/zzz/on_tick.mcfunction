@@ -5,5 +5,5 @@ execute if score @s aj.tween_duration matches 0 on passengers run data modify en
 data remove storage animated_java:temp args
 execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.open_page_main.frame
 function aj:field_guide_gui/animations/open_page_main/zzz/apply_frame with storage animated_java:temp args
-execute if score @s aj.open_page_main.frame matches 7.. run return run function aj:field_guide_gui/animations/open_page_main/pause
+execute if score @s aj.open_page_main.frame matches 6.. run return run function aj:field_guide_gui/animations/open_page_main/pause
 scoreboard players add @s aj.open_page_main.frame 1

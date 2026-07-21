@@ -8,6 +8,26 @@
 				"model": {
 					"type": "minecraft:empty"
 				}
+			},
+			{
+				"when": "quests_normal",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/quests_normal/quests",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "quests_highlight",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/quests_highlight/quests",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

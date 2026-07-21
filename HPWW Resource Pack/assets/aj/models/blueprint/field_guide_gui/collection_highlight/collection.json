@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/collection",
+	"textures": {
+		"65": "aj:blueprint/field_guide_gui/fg_collection_highlight"
+	}
+}

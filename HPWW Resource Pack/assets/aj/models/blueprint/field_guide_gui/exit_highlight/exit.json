@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/exit",
+	"textures": {
+		"67": "aj:blueprint/field_guide_gui/fg_exit_highlight"
+	}
+}

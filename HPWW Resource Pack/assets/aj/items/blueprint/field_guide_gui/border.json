@@ -10,20 +10,20 @@
 				}
 			},
 			{
-				"when": "level_highlight_normal",
+				"when": "level_normal",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/field_guide_gui/level_highlight_normal/border",
+					"model": "aj:blueprint/field_guide_gui/level_normal/border",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "level_highlight_gold",
+				"when": "level_highlight",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/field_guide_gui/level_highlight_gold/border",
+					"model": "aj:blueprint/field_guide_gui/level_highlight/border",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]

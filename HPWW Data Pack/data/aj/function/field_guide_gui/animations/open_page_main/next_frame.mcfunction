@@ -3,7 +3,7 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute if score @s aj.open_page_main.frame matches 8.. run scoreboard players set @s aj.open_page_main.frame 1
+execute if score @s aj.open_page_main.frame matches 7.. run scoreboard players set @s aj.open_page_main.frame 1
 data remove storage animated_java:temp args
 execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.open_page_main.frame
 execute at @s run function aj:field_guide_gui/animations/open_page_main/zzz/apply_frame with storage animated_java:temp args

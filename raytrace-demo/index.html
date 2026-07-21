@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#03070a" />
+    <meta
+      name="description"
+      content="Lumen Field is an interactive, vendor-neutral browser raytracing laboratory."
+    />
+    <title>Lumen Field — Real-Time Raytracing Lab</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <main id="app" class="app-shell">
+      <canvas
+        id="viewport"
+        tabindex="0"
+        aria-label="Interactive raytraced scene viewport"
+        aria-describedby="viewport-instructions"
+      >
+        Your browser does not support the canvas element required by this raytracing demo.
+      </canvas>
+
+      <p id="viewport-instructions" class="sr-only">
+        Select Enter Ray Space, then use W A S D to move, the mouse to look around, Space to
+        jump, and Escape to release the pointer.
+      </p>
+
+      <div class="viewport-treatment" aria-hidden="true"></div>
+
+      <section id="loading-screen" class="loading-screen" aria-live="polite">
+        <div class="loading-grid" aria-hidden="true"></div>
+        <div class="loading-card">
+          <div class="photon-mark" aria-hidden="true">
+            <span class="photon-ring photon-ring--outer"></span>
+            <span class="photon-ring photon-ring--inner"></span>
+            <span class="photon-axis photon-axis--x"></span>
+            <span class="photon-axis photon-axis--y"></span>
+            <span class="photon-core"></span>
+          </div>
+
+          <p class="eyebrow">REAL-TIME LIGHT TRANSPORT / 01</p>
+          <h1>LUMEN<span>FIELD</span></h1>
+          <p class="loading-copy">A procedural ray space built for every modern GPU.</p>
+
+          <div class="boot-sequence" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p id="loading-status" class="loading-status">Renderer ready</p>
+
+          <button id="enter-button" class="enter-button" type="button">
+            <span>Enter ray space</span>
+            <span class="enter-button__arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <p class="loading-footnote">Click to initialize audio and pointer controls</p>
+        </div>
+      </section>
+
+      <section id="error-panel" class="error-panel" role="alert" hidden>
+        <span class="error-panel__signal" aria-hidden="true">!</span>
+        <div>
+          <p class="error-panel__label">Renderer interrupted</p>
+          <p id="error-message">The graphics device could not be initialized.</p>
+        </div>
+      </section>
+
+      <header class="top-hud" aria-label="Renderer status">
+        <div class="brand-lockup">
+          <span class="brand-lockup__mark" aria-hidden="true"></span>
+          <div>
+            <p class="brand-lockup__name">LUMEN<span>FIELD</span></p>
+            <p class="brand-lockup__edition">PATH LAB / WEB</p>
+          </div>
+        </div>
+
+        <div class="render-stats" aria-label="Live rendering statistics">
+          <div class="stat">
+            <span class="stat__label">DISPLAY</span>
+            <output id="fps-value" class="stat__value">--</output>
+            <span class="stat__unit">FPS</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">RAY RATE</span>
+            <output id="ray-fps-value" class="stat__value">--</output>
+            <span class="stat__unit">FPS</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">SAMPLES</span>
+            <output id="spp-value" class="stat__value">1</output>
+            <span class="stat__unit">SPP</span>
+          </div>
+          <div class="stat stat--wide">
+            <span class="stat__label">INTERNAL</span>
+            <output id="resolution-value" class="stat__value stat__value--compact">-- × --</output>
+          </div>
+        </div>
+
+        <div class="device-status">
+          <div class="device-status__copy">
+            <span class="device-status__label">GRAPHICS DEVICE</span>
+            <span id="gpu-value" class="device-status__value">Detecting GPU…</span>
+          </div>
+          <span id="status-pill" class="status-pill" data-state="warming">
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            WARMING
+          </span>
+        </div>
+      </header>
+
+      <nav class="scene-dock" aria-label="Choose a raytracing scene">
+        <p class="scene-dock__label">SCENES</p>
+        <button
+          class="scene-button is-active"
+          type="button"
+          data-scene="0"
+          aria-pressed="true"
+          aria-label="Load Material Atelier scene"
+        >
+          <span class="scene-button__index">01</span>
+          <span class="scene-button__glyph scene-button__glyph--atelier" aria-hidden="true"></span>
+          <span class="scene-button__copy">
+            <strong>Material Atelier</strong>
+            <small>Metals / glass / stone</small>
+          </span>
+        </button>
+        <button
+          class="scene-button"
+          type="button"
+          data-scene="1"
+          aria-pressed="false"
+          aria-label="Load Neon Arcade scene"
+        >
+          <span class="scene-button__index">02</span>
+          <span class="scene-button__glyph scene-button__glyph--arcade" aria-hidden="true"></span>
+          <span class="scene-button__copy">
+            <strong>Neon Arcade</strong>
+            <small>Emissive / midnight</small>
+          </span>
+        </button>
+        <button
+          class="scene-button"
+          type="button"
+          data-scene="2"
+          aria-pressed="false"
+          aria-label="Load Sunset Grove scene"
+        >
+          <span class="scene-button__index">03</span>
+          <span class="scene-button__glyph scene-button__glyph--grove" aria-hidden="true"></span>
+          <span class="scene-button__copy">
+            <strong>Sunset Grove</strong>
+            <small>Foliage / golden hour</small>
+          </span>
+        </button>
+      </nav>
+
+      <section class="scene-readout" aria-live="polite">
+        <span class="scene-readout__prefix">ACTIVE FIELD</span>
+        <span id="scene-name">Material Atelier</span>
+      </section>
+
+      <div id="reticle" class="reticle" aria-hidden="true">
+        <span class="reticle__ring"></span>
+        <span class="reticle__dot"></span>
+      </div>
+
+      <section id="controls-hint" class="controls-hint" aria-label="Movement controls">
+        <span class="control-group">
+          <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
+          <span>MOVE</span>
+        </span>
+        <span class="controls-hint__divider" aria-hidden="true"></span>
+        <span class="control-group">
+          <span class="mouse-icon" aria-hidden="true"></span>
+          <span>LOOK</span>
+        </span>
+        <span class="controls-hint__divider" aria-hidden="true"></span>
+        <span class="control-group">
+          <kbd>SPACE</kbd>
+          <span>JUMP</span>
+        </span>
+      </section>
+
+      <button
+        id="settings-toggle"
+        class="utility-button utility-button--settings"
+        type="button"
+        aria-expanded="false"
+        aria-controls="settings-panel"
+      >
+        <span class="utility-button__icon utility-button__icon--sliders" aria-hidden="true"></span>
+        <span>RENDER</span>
+      </button>
+
+      <aside id="settings-panel" class="settings-panel" aria-hidden="true" aria-label="Render settings">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">LIVE PIPELINE</p>
+            <h2>Render settings</h2>
+          </div>
+          <span class="panel-heading__code">RT.01</span>
+        </div>
+
+        <div class="setting-block">
+          <div class="setting-label">
+            <span>QUALITY PROFILE</span>
+            <span class="setting-label__meta">INTERNAL SCALE</span>
+          </div>
+          <div class="quality-grid" role="group" aria-label="Raytracing quality profile">
+            <button type="button" data-quality="performance" aria-pressed="false">
+              <strong>PERF</strong><small>50%</small>
+            </button>
+            <button class="is-active" type="button" data-quality="balanced" aria-pressed="true">
+              <strong>BAL</strong><small>67%</small>
+            </button>
+            <button type="button" data-quality="quality" aria-pressed="false">
+              <strong>QUAL</strong><small>82%</small>
+            </button>
+            <button type="button" data-quality="native" aria-pressed="false">
+              <strong>NATIVE</strong><small>100%</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="setting-block">
+          <label class="range-heading" for="bounces">
+            <span>
+              <strong>RAY BOUNCES</strong>
+              <small>Indirect light depth</small>
+            </span>
+            <output id="bounces-value" for="bounces">3</output>
+          </label>
+          <input id="bounces" class="range-control" type="range" min="1" max="6" step="1" value="3" />
+          <div class="range-scale" aria-hidden="true">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+          </div>
+        </div>
+
+        <div class="setting-block setting-block--toggles">
+          <label class="toggle-row" for="temporal-toggle">
+            <span>
+              <strong>TEMPORAL UPSCALER</strong>
+              <small>Vendor-neutral reconstruction</small>
+            </span>
+            <span class="switch">
+              <input id="temporal-toggle" type="checkbox" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+            </span>
+          </label>
+
+          <label class="toggle-row" for="framegen-toggle">
+            <span>
+              <strong>FRAME GENERATION</strong>
+              <small>Motion-aware interpolation</small>
+            </span>
+            <span class="switch">
+              <input id="framegen-toggle" type="checkbox" />
+              <span class="switch__track" aria-hidden="true"></span>
+            </span>
+          </label>
+
+          <label class="toggle-row" for="dynamic-toggle">
+            <span>
+              <strong>DYNAMIC RESOLUTION</strong>
+              <small>Targets a stable frame time</small>
+            </span>
+            <span class="switch">
+              <input id="dynamic-toggle" type="checkbox" checked />
+              <span class="switch__track" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+
+        <div class="setting-block">
+          <label class="range-heading" for="exposure">
+            <span>
+              <strong>EXPOSURE</strong>
+              <small>Scene luminance</small>
+            </span>
+            <output id="exposure-value" for="exposure">1.00</output>
+          </label>
+          <input
+            id="exposure"
+            class="range-control"
+            type="range"
+            min="0.5"
+            max="2"
+            step="0.05"
+            value="1"
+          />
+          <div class="range-endpoints" aria-hidden="true"><span>DIM</span><span>BRIGHT</span></div>
+        </div>
+
+        <p class="pipeline-note">
+          Temporal reconstruction and frame interpolation run on standard WebGL-compatible hardware.
+        </p>
+      </aside>
+
+      <button
+        id="help-toggle"
+        class="utility-button utility-button--help"
+        type="button"
+        aria-expanded="false"
+        aria-controls="help-panel"
+      >
+        <span class="utility-button__key" aria-hidden="true">?</span>
+        <span>CONTROLS</span>
+      </button>
+
+      <aside id="help-panel" class="help-panel" aria-hidden="true" aria-label="Keyboard and mouse controls">
+        <div class="panel-heading panel-heading--compact">
+          <div>
+            <p class="eyebrow">NAVIGATION MAP</p>
+            <h2>Controls</h2>
+          </div>
+          <span class="panel-heading__code">KB.M</span>
+        </div>
+
+        <dl class="control-list">
+          <div><dt><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dt><dd>Move</dd></div>
+          <div><dt><span class="mouse-icon" aria-hidden="true"></span></dt><dd>Look around</dd></div>
+          <div><dt><kbd>SHIFT</kbd></dt><dd>Sprint</dd></div>
+          <div><dt><kbd>SPACE</kbd></dt><dd>Jump</dd></div>
+          <div><dt><kbd>1</kbd>–<kbd>3</kbd></dt><dd>Change scene</dd></div>
+          <div><dt><kbd>R</kbd></dt><dd>Reset view</dd></div>
+          <div><dt><kbd>F</kbd></dt><dd>Frame generation</dd></div>
+          <div><dt><kbd>U</kbd></dt><dd>Temporal upscaler</dd></div>
+          <div><dt><kbd>ESC</kbd></dt><dd>Release cursor</dd></div>
+        </dl>
+        <p class="help-panel__note">Click the viewport to recapture the pointer.</p>
+      </aside>
+
+      <div class="corner-index corner-index--left" aria-hidden="true">X.184</div>
+      <div class="corner-index corner-index--right" aria-hidden="true">Y.072</div>
+    </main>
+
+    <noscript>
+      <div class="noscript-warning" role="alert">
+        Lumen Field needs JavaScript to compile and run the interactive renderer. Enable JavaScript,
+        then reload this page.
+      </div>
+    </noscript>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

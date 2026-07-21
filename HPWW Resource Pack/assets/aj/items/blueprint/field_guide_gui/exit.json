@@ -1,0 +1,571 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": "AJ_INTERNAL_EMPTY",
+				"model": {
+					"type": "minecraft:empty"
+				}
+			},
+			{
+				"when": "number_1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_1/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_2/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_3/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_4/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_5/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_6/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_7/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_8/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_9/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_10/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_11/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_12/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_13/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_14/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_15/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_16",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_16/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_17",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_17/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_18",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_18/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_19",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_19/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "number_20",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/number_20/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_0",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_0/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_1/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_2/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_3/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_4/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_5",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_5/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_6",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_6/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_7",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_7/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_8",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_8/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_9",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_9/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_10",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_10/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_11",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_11/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_12",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_12/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_13",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_13/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_14",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_14/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_15",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_15/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_16",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_16/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_17",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_17/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_18",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_18/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_19",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_19/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_20",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_20/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_21",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_21/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_22",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_22/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_23",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_23/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_24",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_24/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_25",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_25/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_26",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_26/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_27",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_27/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_28",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_28/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_29",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_29/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fill_30",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/fill_30/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "level_normal",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/level_normal/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "level_highlight",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/level_highlight/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "exit_normal",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/exit_normal/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "exit_highlight",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/exit_highlight/exit",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "aj:blueprint/field_guide_gui/exit",
+			"tints": [
+				{"type": "minecraft:dye", "default": [1, 1, 1]}
+			]
+		}
+	}
+}

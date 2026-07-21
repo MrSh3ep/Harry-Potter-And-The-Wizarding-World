@@ -20,10 +20,10 @@
 				}
 			},
 			{
-				"when": "gear_higlighted",
+				"when": "gear_highlight",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/field_guide_gui/gear_higlighted/gear",
+					"model": "aj:blueprint/field_guide_gui/gear_highlight/gear",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]

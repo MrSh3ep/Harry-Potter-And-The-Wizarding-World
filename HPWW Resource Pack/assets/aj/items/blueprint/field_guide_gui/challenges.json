@@ -8,6 +8,26 @@
 				"model": {
 					"type": "minecraft:empty"
 				}
+			},
+			{
+				"when": "challenges_normal",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/challenges_normal/challenges",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "challenges_highlight",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/field_guide_gui/challenges_highlight/challenges",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

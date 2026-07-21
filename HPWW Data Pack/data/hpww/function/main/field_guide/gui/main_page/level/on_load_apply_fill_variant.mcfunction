@@ -31,5 +31,4 @@ execute if score @p[tag=hpww.field_guide.page_main] hpww.FillGlyph matches 128 r
 execute if score @p[tag=hpww.field_guide.page_main] hpww.FillGlyph matches 129 run return run function aj:field_guide_gui/variants/fill_29/apply
 execute if score @p[tag=hpww.field_guide.page_main] hpww.FillGlyph matches 130 run return run function aj:field_guide_gui/variants/fill_30/apply
 
-
  

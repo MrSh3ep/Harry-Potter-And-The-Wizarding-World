@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/settings",
+	"textures": {
+		"66": "aj:blueprint/field_guide_gui/fg_settings_normal"
+	}
+}

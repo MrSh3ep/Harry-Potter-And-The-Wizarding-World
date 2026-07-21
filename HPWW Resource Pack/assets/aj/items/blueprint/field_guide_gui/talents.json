@@ -20,10 +20,10 @@
 				}
 			},
 			{
-				"when": "talents_highlighted",
+				"when": "talents_highlight",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/field_guide_gui/talents_highlighted/talents",
+					"model": "aj:blueprint/field_guide_gui/talents_highlight/talents",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]

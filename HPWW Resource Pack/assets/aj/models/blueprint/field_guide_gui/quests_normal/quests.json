@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/quests",
+	"textures": {
+		"62": "aj:blueprint/field_guide_gui/fg_quests_normal"
+	}
+}

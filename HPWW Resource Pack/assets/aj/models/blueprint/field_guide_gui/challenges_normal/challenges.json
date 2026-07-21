@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/field_guide_gui/challenges",
+	"textures": {
+		"60": "aj:blueprint/field_guide_gui/fg_challenges_normal"
+	}
+}
