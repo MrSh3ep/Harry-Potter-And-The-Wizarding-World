@@ -4,9 +4,9 @@ $data merge entity $(gear) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,
 $data merge entity $(collection) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(settings) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(spell_wheel) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(fill) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.0872f,-0.9962f,0.0641f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(border) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.0872f,-0.9962f,0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
-$data merge entity $(number) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.0872f,-0.9962f,0.0609f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(fill) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.1736f,-0.9848f,0.0641f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(border) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.1736f,-0.9848f,0.0625f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(number) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,-0.1736f,-0.9848f,0.0609f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(challenges) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2812f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(quests) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2812f,0f,0f,-1f,-0.5f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(exit) {transformation: [0f,0f,0f,-0.0078f,0f,0f,0f,1.2813f,0f,0f,-1f,0f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
