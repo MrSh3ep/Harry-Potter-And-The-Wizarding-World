@@ -1,6 +1,0 @@
-{
-	"parent": "aj:blueprint/fg_spell_wheel/d_slot_6",
-	"textures": {
-		"2": "aj:blueprint/fg_spell_wheel/fg_slot_blank"
-	}
-}

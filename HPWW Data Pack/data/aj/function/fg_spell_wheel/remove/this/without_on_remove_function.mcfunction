@@ -3,6 +3,74 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'e879e8d689b7bdbeea3381aa63374d982428cfe6bcbc10a0ee076b800e1db2ff'}}} run function animated_java:global/remove/outdated_rig
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_8_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_7_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_6_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_5_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_4_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_3_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_2_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.drawer_slot_1_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.curses_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.utility_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.force_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.control_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.damage_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.other_1_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.other_2_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.other_3_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.other_4_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.other_5_page_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_7_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_6_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_5_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_4_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_3_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_2_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_page_1_display_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_slot_1_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_slot_2_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_slot_3_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.wheel_slot_4_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.d_right_arrow_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.d_left_arrow_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.sp_left_arrow_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.sp_right_arrow_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.close_interaction
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: '532f807974b5790dd69770203012342d5eab8f42564b4f361df0f6077e648b8f'}}} run function animated_java:global/remove/outdated_rig
 function aj:fg_spell_wheel/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

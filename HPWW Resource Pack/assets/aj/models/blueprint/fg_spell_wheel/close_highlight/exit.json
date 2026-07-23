@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/exit",
+	"textures": {
+		"14": "aj:blueprint/fg_spell_wheel/fg_exit_highlight"
+	}
+}

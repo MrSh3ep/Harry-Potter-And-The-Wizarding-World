@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/d_slot_3",
+	"textures": {
+		"0": "aj:blueprint/fg_spell_wheel/fg_expelliarmus_unlocked"
+	}
+}

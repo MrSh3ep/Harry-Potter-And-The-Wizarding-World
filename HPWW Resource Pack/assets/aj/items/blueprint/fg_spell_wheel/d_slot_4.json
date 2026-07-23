@@ -10,100 +10,90 @@
 				}
 			},
 			{
-				"when": "drawer_1_slot_4",
+				"when": "drawer_damage_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_1_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_damage_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_2_slot_4",
+				"when": "drawer_control_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_2_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_control_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_3_slot_4",
+				"when": "drawer_force_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_3_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_force_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_4_slot_4",
+				"when": "drawer_utility_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_4_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_utility_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_5_slot_4",
+				"when": "drawer_other_1_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_5_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_other_1_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_6_slot_4",
+				"when": "drawer_other_2_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_6_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_other_2_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_7_slot_4",
+				"when": "drawer_other_3_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_7_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_other_3_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_8_slot_4",
+				"when": "drawer_other_4_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_8_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_other_4_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
 			},
 			{
-				"when": "drawer_9_slot_4",
+				"when": "drawer_other_5_slot_4",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_9_slot_4/d_slot_4",
-					"tints": [
-						{"type": "minecraft:dye", "default": [1, 1, 1]}
-					]
-				}
-			},
-			{
-				"when": "drawer_10_slot_4",
-				"model": {
-					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/drawer_10_slot_4/d_slot_4",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_other_5_slot_4/d_slot_4",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]

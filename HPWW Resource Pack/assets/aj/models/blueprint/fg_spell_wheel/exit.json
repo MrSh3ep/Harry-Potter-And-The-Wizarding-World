@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"15": "aj:blueprint/fg_spell_wheel/fg_exit_normal",
+		"14": "aj:blueprint/fg_spell_wheel/fg_exit_normal",
 		"particle": "minecraft:item/pufferfish"
 	},
 	"display": {
@@ -21,11 +21,11 @@
 			"faces": {
 				"east": {
 					"uv": [0, 0, 16, 16],
-					"texture": "#15"
+					"texture": "#14"
 				},
 				"west": {
 					"uv": [0, 0, 16, 16],
-					"texture": "#15"
+					"texture": "#14"
 				}
 			}
 		}

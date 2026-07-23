@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/force",
+	"textures": {
+		"29": "aj:blueprint/fg_spell_wheel/fg_drawer_force"
+	}
+}

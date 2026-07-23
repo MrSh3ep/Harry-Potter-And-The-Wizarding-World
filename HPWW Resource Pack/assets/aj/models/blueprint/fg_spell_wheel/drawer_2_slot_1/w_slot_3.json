@@ -1,6 +1,0 @@
-{
-	"parent": "aj:blueprint/fg_spell_wheel/w_slot_3",
-	"textures": {
-		"2": "aj:blueprint/fg_spell_wheel/fg_levioso_unlocked"
-	}
-}

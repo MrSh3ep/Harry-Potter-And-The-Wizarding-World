@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/other_1",
+	"textures": {
+		"25": "aj:blueprint/fg_spell_wheel/fg_drawer_other"
+	}
+}

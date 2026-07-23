@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/sp_left_arrow",
+	"textures": {
+		"1": "aj:blueprint/fg_spell_wheel/fg_arrow_left"
+	}
+}
