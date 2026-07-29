@@ -32,4 +32,4 @@ function aj:fg_spell_wheel/root/on_tick/select_interaction_d_right_arrow_interac
 function aj:fg_spell_wheel/root/on_tick/select_interaction_d_left_arrow_interaction with storage animated_java:temp entry.data.interactions.d_left_arrow_interaction
 function aj:fg_spell_wheel/root/on_tick/select_interaction_sp_left_arrow_interaction with storage animated_java:temp entry.data.interactions.sp_left_arrow_interaction
 function aj:fg_spell_wheel/root/on_tick/select_interaction_sp_right_arrow_interaction with storage animated_java:temp entry.data.interactions.sp_right_arrow_interaction
-function aj:fg_spell_wheel/root/on_tick/select_interaction_close_interaction with storage animated_java:temp entry.data.interactions.close_interaction
+function aj:fg_spell_wheel/root/on_tick/select_interaction_exit_interaction with storage animated_java:temp entry.data.interactions.exit_interaction

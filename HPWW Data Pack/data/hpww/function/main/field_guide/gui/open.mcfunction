@@ -8,7 +8,6 @@ scoreboard players set @s SettingsMenu.page.main 1
 
 
 
-
 tag @s add hpww.field_guide.page_main
 execute rotated ~ 0 positioned ^ ^ ^1.5 run function aj:field_guide_gui/summon {args:{}}
 function hpww:main/spells/function/api/uuid_selector/api/link_entities {entity:"@e[tag=aj.field_guide_gui.entity,distance=0..5]"}

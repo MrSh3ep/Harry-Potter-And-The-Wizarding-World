@@ -65,5 +65,5 @@ data modify storage animated_java:temp args merge from storage animated_java:tem
 function aj:fg_spell_wheel/zzz/at_all_interactions/execute_at_transform with storage animated_java:temp args
 data modify storage animated_java:temp args merge from storage animated_java:temp entry.data.interactions.sp_right_arrow_interaction
 function aj:fg_spell_wheel/zzz/at_all_interactions/execute_at_transform with storage animated_java:temp args
-data modify storage animated_java:temp args merge from storage animated_java:temp entry.data.interactions.close_interaction
+data modify storage animated_java:temp args merge from storage animated_java:temp entry.data.interactions.exit_interaction
 function aj:fg_spell_wheel/zzz/at_all_interactions/execute_at_transform with storage animated_java:temp args

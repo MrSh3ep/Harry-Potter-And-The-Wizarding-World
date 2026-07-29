@@ -65,5 +65,5 @@ data modify storage animated_java:temp args.uuid set from storage animated_java:
 function aj:fg_spell_wheel/zzz/as_all_interactions/execute_as_uuid with storage animated_java:temp args
 data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.interactions.sp_right_arrow_interaction.uuid
 function aj:fg_spell_wheel/zzz/as_all_interactions/execute_as_uuid with storage animated_java:temp args
-data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.interactions.close_interaction.uuid
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.interactions.exit_interaction.uuid
 function aj:fg_spell_wheel/zzz/as_all_interactions/execute_as_uuid with storage animated_java:temp args

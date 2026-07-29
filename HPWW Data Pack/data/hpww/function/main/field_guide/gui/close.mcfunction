@@ -15,3 +15,6 @@ execute as @e[tag=aj.field_guide_gui.root, distance=0..3, limit=1, sort=nearest]
     function aj:field_guide_gui/as_all_interactions {command: "kill @s"}
 
 execute as @e[type=item_display,tag=aj.field_guide_gui.root, limit=1, sort=nearest] run function aj:field_guide_gui/animations/close_page_main/play
+
+
+

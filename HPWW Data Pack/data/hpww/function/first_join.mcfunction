@@ -43,9 +43,11 @@ scoreboard players set @s intilize_duel_hp 1
 scoreboard players set @s in_die_loop 0
 scoreboard players set @s levioso_spell_active.timer 0
 scoreboard players set @s levioso_spell_active.hit_count 0
-
-
-
+scoreboard players set @s SettingsMenuStatus 0
+scoreboard players set @s SettingsMenu.page.main 0
+scoreboard players set @s hpww.interaction.is_being_looked_at 0
+scoreboard players set @s SettingsMenu.page.spell_wheel 0
+scoreboard players set @s hpww.api.UUID_Selector 0
 
 
 
