@@ -13,6 +13,7 @@ scoreboard players set @s SpellWheelStatus 1
 scoreboard players set @s spell_wheel_display_dirty 1
 scoreboard players set @s spell_wheel_display_timer 0
 scoreboard players set @s spell_wheel_maintenance_timer 0
+scoreboard players set @s protego_q_lock 0
 playsound block.vault.activate master @s ~ ~ ~ 1 1
 
 execute as @a if score @s new_player_storage matches 0 run function pdb:new_player

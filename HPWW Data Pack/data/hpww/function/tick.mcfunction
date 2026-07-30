@@ -8,7 +8,7 @@ execute as @a at @s run function hpww:main/spells/function/lumos/tick
 
 #these three, prtotego #drop prevention, #Draw Spell Wheel, And Spell Wheel SFX have to be in this order
         #protego
-        execute as @a[scores={SpellWheelStatus=1}] at @s unless items entity @s weapon.mainhand test_instance_block run function hpww:main/spells/function/protego/protego_detect
+        execute as @a[scores={SpellWheelStatus=1}] at @s run function hpww:main/spells/function/protego/q_input
 
 
 #Drop Prevention

@@ -29,6 +29,7 @@ recipe give @s hpww:wand_crafting_table
 scoreboard players set @s basic_cast_cooldown 0
 scoreboard players set @s protego_activated 0
 scoreboard players set @s protego_block_timer 0
+scoreboard players set @s protego_q_lock 0
 scoreboard players set @s basic_cast_icon_variant 0
 scoreboard players set @s highlight_team_id 0
 scoreboard players set @s HasPreset 0

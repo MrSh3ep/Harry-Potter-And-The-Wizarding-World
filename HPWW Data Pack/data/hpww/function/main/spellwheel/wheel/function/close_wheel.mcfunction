@@ -5,6 +5,7 @@ scoreboard players set @s SpellWheelStatus 0
 scoreboard players set @s spell_wheel_display_dirty 0
 scoreboard players set @s spell_wheel_display_timer 0
 scoreboard players set @s spell_wheel_maintenance_timer 0
+scoreboard players set @s protego_q_lock 0
 playsound block.vault.deactivate master @s ~ ~ ~ 1 1
 
 item replace entity @s hotbar.0 with air

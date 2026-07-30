@@ -173,6 +173,8 @@ scoreboard objectives add expelliarmus_wand_spin_frame dummy
         scoreboard players set @a protego_activated 0
         scoreboard objectives add protego_block_timer dummy
         scoreboard players set @a protego_block_timer 0
+        scoreboard objectives add protego_q_lock dummy
+        scoreboard players set @a protego_q_lock 0
 
     #Lumos
         scoreboard objectives add lumos_activated dummy
