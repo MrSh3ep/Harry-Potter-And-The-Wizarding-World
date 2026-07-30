@@ -3,7 +3,7 @@ dialog clear @s
 
 data remove storage pdb:main in
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 data modify storage pdb:main in set from storage pdb:main out
 
 # now add what u need since ur adding to in from ur data :P idk why it took so long to figure out how to do player storgae cause its not that har lmao :D

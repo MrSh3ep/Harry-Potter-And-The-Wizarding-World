@@ -2,7 +2,7 @@ $data modify storage hpww:cooldown_api current set value {spell:"$(spell)"}
 
 data remove storage pdb:main in
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 data modify storage pdb:main in set from storage pdb:main out
 
 scoreboard players set #cooldown_api_changed cooldown_api 0

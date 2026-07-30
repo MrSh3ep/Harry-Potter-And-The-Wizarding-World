@@ -4,7 +4,7 @@ scoreboard players set @s cooldown_api 0
 scoreboard players set #remaining cooldown_api 0
 
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 $execute store result score #remaining cooldown_api run data get storage pdb:main out.cooldowns.$(spell).remaining 1
 
 execute if score #remaining cooldown_api matches 1.. run scoreboard players operation @s cooldown_api = #remaining cooldown_api

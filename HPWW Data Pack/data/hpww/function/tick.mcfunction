@@ -77,8 +77,6 @@ execute as @a unless score @s Joined matches 1.. run tag @s add new_player
 execute as @a[tag=new_player] run function hpww:first_join
 
 
-execute as @a if score @s SpellWheelStatus matches 1 run function hpww:main/spells/function/other/selected_page_save
-
 execute as @a[scores={basic_cast_cooldown=1..}] run scoreboard players remove @s basic_cast_cooldown 1
 
 function hpww:main/spells/function/api/spell_trails/private/tick

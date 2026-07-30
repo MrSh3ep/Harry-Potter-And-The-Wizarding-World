@@ -9,7 +9,7 @@ item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
 item replace entity @s hotbar.8 with air
 
-function pdb:get_me
+function pdb:get_me_cached
 function hpww:main/spellwheel/wheel/function/give_wands/replace/slot_0 with storage pdb:main out.wands.first_open.data
 function hpww:main/spellwheel/wheel/function/give_wands/replace/slot_1 with storage pdb:main out.wands.first_open.data
 function hpww:main/spellwheel/wheel/function/give_wands/replace/slot_2 with storage pdb:main out.wands.first_open.data

@@ -5,7 +5,7 @@ execute store result score #global_arg cooldown_api run data get storage hpww:co
 
 data remove storage pdb:main in
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 data modify storage pdb:main in set from storage pdb:main out
 
 $execute unless score #global_arg cooldown_api matches 1.. unless data storage pdb:main in.cooldowns.$(spell) run data modify storage pdb:main in.cooldowns.$(spell) set value {remaining:0,duration:0,stage:-99,paused:0,pause_timer:0,selected:0,selected_timer:0}

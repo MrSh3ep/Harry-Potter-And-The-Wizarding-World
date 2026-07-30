@@ -19,7 +19,7 @@ execute unless score @s settings_bind_slot matches 1..4 run return fail
 
 data remove storage pdb:main in
 data remove storage pdb:main out
-function pdb:get_me
+function pdb:get_me_cached
 data modify storage pdb:main in set from storage pdb:main out
 
 data remove storage pdb:main bind_spell
