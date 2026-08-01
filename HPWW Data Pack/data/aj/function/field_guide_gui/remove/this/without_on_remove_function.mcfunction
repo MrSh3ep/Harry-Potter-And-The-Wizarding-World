@@ -19,6 +19,6 @@ data modify storage animated_java:temp args.uuid set from storage animated_java:
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
 data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.exit_interaction
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: '8e32f6364c5930ad386251ac01eee4d9eeb141f9c38cbd2da603b2ca0e900c29'}}} run function animated_java:global/remove/outdated_rig
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: '614448dc1565a4b643f1448903f26394edc7974aed481f722afe1304643b8717'}}} run function animated_java:global/remove/outdated_rig
 function aj:field_guide_gui/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack
