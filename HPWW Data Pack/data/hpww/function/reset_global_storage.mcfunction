@@ -1,6 +1,5 @@
 execute as @a[scores={SpellWheelStatus=1}] run function hpww:main/spellwheel/wheel/function/close_wheel
 
-
 data remove storage pdb:main in
 data remove storage pdb:main out
 data remove storage pdb:main players

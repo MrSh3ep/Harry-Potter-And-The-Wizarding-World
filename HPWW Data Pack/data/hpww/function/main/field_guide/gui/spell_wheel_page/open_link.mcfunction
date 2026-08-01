@@ -9,3 +9,7 @@ tag @s remove hpww.field_guide.page_main
 #scoreboard players set @s SettingsMenuStatus 0
 scoreboard players set @s SettingsMenu.page.main 0
 scoreboard players set @s SettingsMenu.page.spell_wheel 1
+
+#intilize page_1
+scoreboard players set @s hpww.fg.spell_wheel_page.drawer_page 1
+function hpww:main/field_guide/gui/spell_wheel_page/load_pages/page_1

@@ -270,4 +270,7 @@ scoreboard objectives add SettingsMenu.page.main dummy
 scoreboard objectives add hpww.interaction.is_being_looked_at dummy
 scoreboard objectives add SettingsMenu.page.spell_wheel dummy
 
+scoreboard objectives add hpww.fg.spell_wheel_page.drawer_page dummy
+
+
 

@@ -2,7 +2,7 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "tick"
+            "trigger": "impossible"
         }
     },
     "display": {

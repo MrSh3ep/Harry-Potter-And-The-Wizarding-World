@@ -11,10 +11,9 @@ scoreboard players set @s SettingsMenu.page.main 0
 advancement revoke @s only hpww:blocks/main_wand/right_click_settings_button
 
 
-execute as @e[tag=aj.field_guide_gui.root, distance=0..3, limit=1, sort=nearest] run \
-    function aj:field_guide_gui/as_all_interactions {command: "kill @s"}
+execute as @e[tag=aj.field_guide_gui.root, distance=0..3, limit=1, sort=nearest, type=interaction] run function aj:field_guide_gui/as_all_interactions {command: "kill @s"}
 
-execute as @e[type=item_display,tag=aj.field_guide_gui.root, limit=1, sort=nearest] run function aj:field_guide_gui/animations/close_page_main/play
+execute as @e[tag=aj.field_guide_gui.root, limit=1, sort=nearest, distance=0..5, type=item_display,] run function aj:field_guide_gui/animations/close_page_main/play
 
 
 
