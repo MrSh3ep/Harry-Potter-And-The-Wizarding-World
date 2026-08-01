@@ -12,4 +12,4 @@ scoreboard players set @s SettingsMenu.page.spell_wheel 1
 
 #intilize page_1
 scoreboard players set @s hpww.fg.spell_wheel_page.drawer_page 1
-function hpww:main/field_guide/gui/spell_wheel_page/load_pages/page_1
+function hpww:main/field_guide/gui/spell_wheel_page/load_drawer_pages/page_1_damage

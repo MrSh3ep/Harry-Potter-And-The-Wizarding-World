@@ -3,3 +3,4 @@ tag @s remove aj.new
 data modify entity @s CustomName set value ['',{text:aj.fg_spell_wheel,color:'#00aced'},'.',{text:interaction,color:light_purple},'.',{text:d_right_arrow_interaction,color:gold}]
 function animated_java:global/gu/get_entity_uuid_string
 scoreboard players operation @s aj.id = aj.last_id aj.id
+data modify entity @s data.animated_java.on_interact_function set value "function aj:fg_spell_wheel/interactions/d_right_arrow_interaction_on_interact"

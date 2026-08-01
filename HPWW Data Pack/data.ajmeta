@@ -66,6 +66,8 @@
 				"data/aj/function/fg_spell_wheel/as_root_entity.mcfunction",
 				"data/aj/function/fg_spell_wheel/at_all_interactions.mcfunction",
 				"data/aj/function/fg_spell_wheel/at_interaction.mcfunction",
+				"data/aj/function/fg_spell_wheel/interactions/d_left_arrow_interaction_on_interact.mcfunction",
+				"data/aj/function/fg_spell_wheel/interactions/d_right_arrow_interaction_on_interact.mcfunction",
 				"data/aj/function/fg_spell_wheel/interactions/exit_interaction_on_interact.mcfunction",
 				"data/aj/function/fg_spell_wheel/move.mcfunction",
 				"data/aj/function/fg_spell_wheel/on_load.mcfunction",
