@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/damage",
+	"textures": {
+		"27": "aj:blueprint/fg_spell_wheel/fg_drawer_damage_deactive"
+	}
+}

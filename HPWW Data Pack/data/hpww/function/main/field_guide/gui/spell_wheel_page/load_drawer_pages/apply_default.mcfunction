@@ -1,1 +1,0 @@
-function hpww:main/spells/function/api/uuid_selector/api/as_at_linked_entities {entities:"@e[type=item_display, tag=aj.fg_spell_wheel.bone, limit=1, sort=nearest, distance=0..5]", function:"aj:fg_spell_wheel/variants/default/apply"}

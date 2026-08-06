@@ -8,6 +8,46 @@
 				"model": {
 					"type": "minecraft:empty"
 				}
+			},
+			{
+				"when": "wheel_lumos_slot_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_lumos_slot_3/w_slot_3",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "wheel_expelliarmus_slot_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_expelliarmus_slot_3/w_slot_3",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "wheel_depulso_slot_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_depulso_slot_3/w_slot_3",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "wheel_levioso_slot_3",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_levioso_slot_3/w_slot_3",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

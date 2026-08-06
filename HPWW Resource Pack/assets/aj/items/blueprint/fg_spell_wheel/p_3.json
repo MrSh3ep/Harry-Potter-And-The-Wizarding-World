@@ -20,10 +20,10 @@
 				}
 			},
 			{
-				"when": "wheel_page_indicator_4",
+				"when": "wheel_page_indicator_3_off",
 				"model": {
 					"type": "minecraft:model",
-					"model": "aj:blueprint/fg_spell_wheel/wheel_page_indicator_4/p_3",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_page_indicator_3_off/p_3",
 					"tints": [
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]

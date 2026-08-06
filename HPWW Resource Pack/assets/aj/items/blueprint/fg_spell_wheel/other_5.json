@@ -18,6 +18,16 @@
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
+			},
+			{
+				"when": "drawer_indicator_other_5_off",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/drawer_indicator_other_5_off/other_5",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

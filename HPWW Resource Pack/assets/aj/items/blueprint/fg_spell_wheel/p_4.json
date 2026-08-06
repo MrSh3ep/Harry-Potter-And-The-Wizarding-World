@@ -8,6 +8,26 @@
 				"model": {
 					"type": "minecraft:empty"
 				}
+			},
+			{
+				"when": "wheel_page_indicator_4",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_page_indicator_4/p_4",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "wheel_page_indicator_4_off",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_page_indicator_4_off/p_4",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {

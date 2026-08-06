@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/fg_spell_wheel/curses",
+	"textures": {
+		"26": "aj:blueprint/fg_spell_wheel/fg_drawer_curses_deactive"
+	}
+}

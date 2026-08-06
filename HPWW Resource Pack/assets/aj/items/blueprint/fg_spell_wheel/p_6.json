@@ -18,6 +18,16 @@
 						{"type": "minecraft:dye", "default": [1, 1, 1]}
 					]
 				}
+			},
+			{
+				"when": "wheel_page_indicator_6_off",
+				"model": {
+					"type": "minecraft:model",
+					"model": "aj:blueprint/fg_spell_wheel/wheel_page_indicator_6_off/p_6",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
 			}
 		],
 		"fallback": {
