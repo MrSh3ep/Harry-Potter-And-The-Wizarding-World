@@ -4,5 +4,13 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"mc-dp-icons.crownedFunctionsNames": [],
+		"mc-dp-icons.crownedLoadFunctionsNames": [
+			"function/load"
+		],
+		"mc-dp-icons.crownedTickFunctionsNames": [
+			"function/tick"
+		]
+	}
 }

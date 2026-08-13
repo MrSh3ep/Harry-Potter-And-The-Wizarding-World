@@ -31,7 +31,6 @@ scoreboard players set @s protego_activated 0
 scoreboard players set @s protego_block_timer 0
 scoreboard players set @s protego_q_lock 0
 scoreboard players set @s basic_cast_icon_variant 0
-scoreboard players set @s highlight_team_id 0
 scoreboard players set @s HasPreset 0
 scoreboard players set @s spell_wheel_cache_dirty 1
 scoreboard players set @s spell_wheel_display_timer 0
