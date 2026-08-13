@@ -4,5 +4,5 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
 function aj:fg_spell_wheel/variants/drawer_utility_slot_1_selected/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
-function hpww:main/spells/function/api/uuid_selector/internal/as_linked_entity_to_player {command:"function hpww:main/field_guide/gui/spell_wheel_page/bind/save_drawer_selected_spell_name {spell_name:"lumos"}"}
+function hpww:main/spells/function/api/uuid_selector/internal/as_linked_entity_to_player {command:"function hpww:main/field_guide/gui/spell_wheel_page/bind/save_drawer_selected_spell_name {spell_name:lumos}"}
 return 1
