@@ -18,3 +18,4 @@ execute store result storage hpww:bind_spell_api args.page int 1 run scoreboard 
 execute unless data storage hpww:bind_spell_api args.spell_name run return fail
 
 function hpww:main/spells/function/api/bind_spell/api/bind with storage hpww:bind_spell_api args
+function hpww:main/field_guide/gui/spell_wheel_page/bind/clear_drawer_selection
