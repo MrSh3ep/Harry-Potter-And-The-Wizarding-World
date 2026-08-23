@@ -6,16 +6,7 @@ function pdb:get_me_cached
 
 execute if data entity @s SelectedItem{components:{"minecraft:custom_data":{wand:1b}}} store result score @s expelliarmus_wand_slot run data get entity @s SelectedItemSlot
 
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:0b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 0
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:1b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 1
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:2b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 2
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:3b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 3
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:4b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 4
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:5b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 5
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:6b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 6
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:7b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 7
-execute if score @s expelliarmus_wand_slot matches -1 if data entity @s Inventory[{Slot:8b,components:{"minecraft:custom_data":{wand:1b}}}] run scoreboard players set @s expelliarmus_wand_slot 8
-
+# When the wheel is open, the real hotbar is stored in PDB rather than held.
 execute if score @s SpellWheelStatus matches 1 if score @s expelliarmus_wand_slot matches -1 if data storage pdb:main out.hotbar.0{components:{"minecraft:custom_data":{wand:1b}}} run scoreboard players set @s expelliarmus_wand_slot 0
 execute if score @s SpellWheelStatus matches 1 if score @s expelliarmus_wand_slot matches -1 if data storage pdb:main out.hotbar.1{components:{"minecraft:custom_data":{wand:1b}}} run scoreboard players set @s expelliarmus_wand_slot 1
 execute if score @s SpellWheelStatus matches 1 if score @s expelliarmus_wand_slot matches -1 if data storage pdb:main out.hotbar.2{components:{"minecraft:custom_data":{wand:1b}}} run scoreboard players set @s expelliarmus_wand_slot 2
