@@ -18,3 +18,6 @@ function hpww:main/field_guide/gui/spell_wheel_page/load_drawer_pages/page_1_dam
 #intilize wheel page
 scoreboard players set @s hpww.fg.spell_wheel_page.wheel_page 1
 function hpww:main/field_guide/gui/spell_wheel_page/load_wheel_pages/page_1
+
+# Show this guide once per player; player/global reset clears the flag.
+execute unless score @s hpww.fg.spell_wheel_page.notice_seen matches 1 run function hpww:main/field_guide/gui/spell_wheel_page/show_first_open_notice

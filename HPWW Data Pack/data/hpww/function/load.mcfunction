@@ -272,6 +272,7 @@ scoreboard objectives add SettingsMenu.page.spell_wheel dummy
 
 scoreboard objectives add hpww.fg.spell_wheel_page.drawer_page dummy
 scoreboard objectives add hpww.fg.spell_wheel_page.wheel_page dummy
+scoreboard objectives add hpww.fg.spell_wheel_page.notice_seen dummy
 scoreboard objectives add hpww.drawer_selected_slot dummy
 
 
