@@ -1,3 +1,8 @@
+playsound ui.button.click master @s ~ ~ ~ 0.2
+
+
+
+
 # Called as the player; $(slot) comes from the Blockbench callback.
 data remove storage pdb:main in
 data remove storage pdb:main out

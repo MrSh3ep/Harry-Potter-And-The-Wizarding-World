@@ -1,3 +1,6 @@
+playsound ui.button.click master @s ~ ~ ~ 0.2
+
+
 
 
 execute unless score @s hpww.fg.spell_wheel_page.wheel_page matches 1 run scoreboard players remove @s hpww.fg.spell_wheel_page.wheel_page 1

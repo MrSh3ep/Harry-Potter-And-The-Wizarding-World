@@ -7,7 +7,6 @@ scoreboard players set @s SettingsMenu.page.main 1
 scoreboard players set @s SettingsMenu.page.spell_wheel 0
 
 
-
 execute as @e[tag=aj.fg_spell_wheel.root, distance=0..3, limit=1, sort=nearest] run \
     function aj:fg_spell_wheel/as_all_interactions {command: "kill @s"}
 

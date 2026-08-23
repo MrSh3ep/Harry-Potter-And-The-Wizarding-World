@@ -16,3 +16,4 @@ execute as @e[tag=aj.field_guide_gui.root, limit=1, sort=nearest, distance=0..5,
 
 function hpww:main/spells/function/api/uuid_selector/api/as_at_linked_entities {entities:"@e[type=marker, tag=hpww.fg_marker_binded, limit=1, sort=nearest, distance=0..5]", function:"hpww:main/field_guide/gui/kill_marker"}
 scoreboard players set @s SettingsMenuStatus 0
+

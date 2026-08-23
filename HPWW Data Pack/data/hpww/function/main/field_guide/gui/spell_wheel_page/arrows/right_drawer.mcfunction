@@ -1,4 +1,7 @@
 
+playsound ui.button.click master @s ~ ~ ~ 0.2
+
+
 
 scoreboard players add @s hpww.fg.spell_wheel_page.drawer_page 1
 
@@ -14,4 +17,3 @@ execute if score @s hpww.fg.spell_wheel_page.drawer_page matches 7 run return ru
 execute if score @s hpww.fg.spell_wheel_page.drawer_page matches 8 run return run function hpww:main/field_guide/gui/spell_wheel_page/load_drawer_pages/page_8_other_3
 execute if score @s hpww.fg.spell_wheel_page.drawer_page matches 9 run return run function hpww:main/field_guide/gui/spell_wheel_page/load_drawer_pages/page_9_other_4
 execute if score @s hpww.fg.spell_wheel_page.drawer_page matches 10 run return run function hpww:main/field_guide/gui/spell_wheel_page/load_drawer_pages/page_10_other_5
-
