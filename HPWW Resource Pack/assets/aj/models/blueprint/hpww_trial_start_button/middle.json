@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"0": "aj:blueprint/hpww_trial_start_button/hpww_trial_start_button",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [8, -4, -4],
+			"to": [8, 20, 20],
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"origin": [7.07692, -7.69231, 8.92308]
+			},
+			"faces": {
+				"north": {
+					"uv": [0, 0, 0, 3.25],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [4.75, 3.25, 8, 6.5],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 0, 0, 3.25],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [4.75, 3.25, 8, 6.5],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [0, 3.25, 0, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [0, 0, 0, 3.25],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

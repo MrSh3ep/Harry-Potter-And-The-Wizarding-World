@@ -1,0 +1,14 @@
+{
+  "env": {
+    "gameVersion": "Latest release"
+  },
+  "lint": {
+    "undeclaredSymbol": [
+      {
+        "then": {
+          "declare": "public"
+        }
+      }
+    ]
+  }
+}

@@ -280,8 +280,8 @@ scoreboard objectives add hpww.drawer_selected_slot dummy
 scoreboard objectives add hpww.api.bind_spell.page dummy
 scoreboard objectives add hpww.api.bind_spell.slot dummy
 
+#structures - unicorns den
+scoreboard objectives add hpww.unicorns_den.seting_up dummy
+execute as @e[type=marker, tag=unicorns_den_spawn_marker] unless score @s hpww.unicorns_den.seting_up matches 1 run scoreboard players set @s hpww.unicorns_den.seting_up 0
 
-
-
-
-
+scoreboard objectives add hpww.start_button.interaction_pressed dummy

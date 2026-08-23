@@ -101,3 +101,5 @@ execute as @a at @s run function hpww:main/field_guide/tick
 
 
 
+#structures
+function hpww:main/structures/unicorns_den/structure/tick

@@ -476,6 +476,10 @@
 				"assets/aj/textures/blueprint/field_guide_gui/fg_talents_normal.png"
 			]
 		},
+		"aj:hpww_alter": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": []
+		},
 		"aj:hpww_field_guide": {
 			"coreFiles": ["assets/minecraft/atlases/blocks.json", "hpww.mcmeta"],
 			"versionedFiles": [
@@ -496,6 +500,18 @@
 				"assets/aj/models/blueprint/hpww_field_guide/spell_wheel.json",
 				"assets/aj/models/blueprint/hpww_field_guide/talents.json",
 				"assets/aj/textures/blueprint/hpww_field_guide/main_menu_field_guide.png"
+			]
+		},
+		"aj:hpww_trial_start_button": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/aj/items/blueprint/hpww_trial_start_button/logo.json",
+				"assets/aj/items/blueprint/hpww_trial_start_button/middle.json",
+				"assets/aj/items/blueprint/hpww_trial_start_button/outer.json",
+				"assets/aj/models/blueprint/hpww_trial_start_button/logo.json",
+				"assets/aj/models/blueprint/hpww_trial_start_button/middle.json",
+				"assets/aj/models/blueprint/hpww_trial_start_button/outer.json",
+				"assets/aj/textures/blueprint/hpww_trial_start_button/hpww_trial_start_button.png"
 			]
 		},
 		"aj:protego": {

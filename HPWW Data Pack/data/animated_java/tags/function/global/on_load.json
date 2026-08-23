@@ -1,4 +1,10 @@
 {
 	"replace": false,
-	"values": ["aj:fg_spell_wheel/on_load", "aj:field_guide_gui/on_load", "aj:protego/on_load"]
+	"values": [
+		"aj:fg_spell_wheel/on_load",
+		"aj:field_guide_gui/on_load",
+		"aj:hpww_alter/on_load",
+		"aj:hpww_trial_start_button/on_load",
+		"aj:protego/on_load"
+	]
 }
