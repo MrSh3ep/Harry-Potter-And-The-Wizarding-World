@@ -12,6 +12,7 @@
 #Slot 1
     #set names of slot
     execute as @e[tag=aj.fg_spell_wheel.interaction.drawer_slot_1_interaction, distance=0..5, limit=1, sort=nearest, type=interaction] run data modify entity @s CustomName set value "Depulso"
+    execute as @e[tag=aj.fg_spell_wheel.interaction.drawer_slot_1_interaction, distance=0..5, limit=1, sort=nearest, type=interaction] run function hpww:main/field_guide/gui/spell_wheel_page/bind/set_drawer_spell {spell_name:"depulso"}
     #if slot_1 (Depulso) is unlocked then run this
     execute if entity @s[advancements={hpww:spells/unlocked/depulso_unlocked=true}] run return run function hpww:main/spells/function/api/uuid_selector/api/as_at_linked_entities {entities:"@e[type=item_display, tag=aj.fg_spell_wheel.bone.d_slot_1, limit=1, sort=nearest, distance=0..5]", function:"aj:fg_spell_wheel/variants/drawer_force_slot_1/apply"}
 

@@ -16,4 +16,4 @@ execute store result storage hpww:bind_spell_api args.page int 1 run scoreboard 
 # Do nothing until a drawer spell has been selected.
 execute unless data storage hpww:bind_spell_api args.spell_name run return fail
 
-function hpww:main/spells/function/api/bind_spell/api/bind with storage hpww:bind_spell_api args
+return run function hpww:main/field_guide/gui/spell_wheel_page/bind/bind_if_selected_spell_unlocked with storage hpww:bind_spell_api args
