@@ -1,3 +1,4 @@
+return fail
 #ran from left click single detect 
 scoreboard players set @s left_click_timer 0
 scoreboard players set @s left_click_count 0
