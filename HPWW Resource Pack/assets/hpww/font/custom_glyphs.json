@@ -112,6 +112,13 @@
             "chars": ["\uE039"],
             "ascent": 47,
             "height": 80
+        },
+        {
+            "type": "bitmap",
+            "file": "hpww:spell_wheel/right_mouse_button.png",
+            "chars": ["\uE040"],
+            "ascent": 11,
+            "height": 16
         }
         
 
