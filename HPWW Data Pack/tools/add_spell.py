@@ -17,9 +17,11 @@ from typing import Iterable
 
 try:
     from PIL import Image, ImageDraw
-except ImportError:  # pragma: no cover - handled with a useful runtime error
+    PIL_IMPORT_ERROR = None
+except ImportError as exc:  # pragma: no cover - handled with a useful runtime error
     Image = None
     ImageDraw = None
+    PIL_IMPORT_ERROR = exc
 
 
 SCRIPT_PATH = Path(__file__).resolve()
@@ -64,10 +66,28 @@ def display_name_for(name: str) -> str:
 
 
 def require_pillow() -> None:
-    if Image is None:
+    global Image, ImageDraw, PIL_IMPORT_ERROR
+
+    if Image is not None:
+        return
+
+    # Retry here so a generator window opened before Pillow was installed can
+    # recover without relying on the failed import cached at process startup.
+    try:
+        from PIL import Image as pillow_image
+        from PIL import ImageDraw as pillow_image_draw
+    except ImportError as exc:
+        PIL_IMPORT_ERROR = exc
         raise GeneratorError(
-            "Pillow is required to generate icons. Install it with: py -m pip install Pillow"
-        )
+            "Pillow could not be imported by this Python interpreter.\n\n"
+            f"Python: {sys.executable}\n"
+            f"Import error: {PIL_IMPORT_ERROR}\n\n"
+            f'Install it for this exact interpreter with:\n"{sys.executable}" -m pip install Pillow'
+        ) from exc
+
+    Image = pillow_image
+    ImageDraw = pillow_image_draw
+    PIL_IMPORT_ERROR = None
 
 
 def read_text(path: Path) -> str:

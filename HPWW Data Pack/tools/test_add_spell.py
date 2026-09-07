@@ -53,6 +53,23 @@ class AddSpellTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.temporary_directory.cleanup()
 
+    def test_pillow_import_can_recover_after_startup(self) -> None:
+        original_image = add_spell.Image
+        original_image_draw = add_spell.ImageDraw
+        original_error = add_spell.PIL_IMPORT_ERROR
+        try:
+            add_spell.Image = None
+            add_spell.ImageDraw = None
+            add_spell.PIL_IMPORT_ERROR = ImportError("simulated startup failure")
+            add_spell.require_pillow()
+            self.assertIsNotNone(add_spell.Image)
+            self.assertIsNotNone(add_spell.ImageDraw)
+            self.assertIsNone(add_spell.PIL_IMPORT_ERROR)
+        finally:
+            add_spell.Image = original_image
+            add_spell.ImageDraw = original_image_draw
+            add_spell.PIL_IMPORT_ERROR = original_error
+
     def test_existing_lumos_icon_algorithm_is_reproduced(self) -> None:
         texture_root = add_spell.DEFAULT_RESOURCE_PACK / add_spell.TEXTURE_ROOT / "lumos"
         with Image.open(texture_root / "lumos_active.png") as source:
