@@ -12,7 +12,7 @@
         "description": "A powerful force spell that sends your opponents flying!",
         "announce_to_chat": false,
         "icon": {
-            "id": "elytra"
+            "id": "wind_charge"
         },
         "frame": "task",
         "hidden": false,

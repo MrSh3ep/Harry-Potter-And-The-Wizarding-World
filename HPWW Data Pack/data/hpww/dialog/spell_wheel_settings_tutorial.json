@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "The Spell Wheel Settings Page",
+    "strikethrough": false
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "The Spell Wheel Page is where you can bind any unlocked spell to anywhere on your spell wheel!",
+        "bold": false
+      },
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Simply right click any unlocked spell from the \"Spell Drawer (Bottom 8 slots)\", then click on any of the 4 slots on the \"Spell Wheel (Top 4 Slots)\" to bind a spell.  You can also Left click any of the Spell Wheel slots to clear that slot."
+      },
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Use the arrows next to the \"Spell Wheel\" to change your Spell Wheel page. Additionally, use the arrows next to the \"Spell Drawer\" to change the spell category the drawer displays."
+      },
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "There are 10 categories: Damage, Control, Force, Utility, Curses, Other_1-5. Every spell currently In HPWW will be in one of the drawer pages. More Information can be found on the harry Potter | And The Wizarding World Modrinth page. This message can also be found in the settings page of the field guide."
+      },
+      "width": 300
+    }
+  ],
+  "inputs": []
+}

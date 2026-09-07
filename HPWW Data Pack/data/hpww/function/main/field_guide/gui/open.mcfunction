@@ -1,5 +1,6 @@
 execute if predicate hpww:on_ground run return run advancement revoke @s only hpww:blocks/main_wand/right_click_settings_button
 
+execute unless score @s hppw.field_guide.first_open_dialog matches 1 run function hpww:main/field_guide/gui/first_open
 execute if score @s SpellWheelStatus matches 1 run function hpww:main/spellwheel/wheel/function/close_wheel
 
 tag @s add hpww.field_guide.page_main

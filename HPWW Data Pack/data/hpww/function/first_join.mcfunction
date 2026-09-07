@@ -51,12 +51,14 @@ scoreboard players set @s hpww.api.UUID_Selector 0
 scoreboard players set @s hpww.fg.spell_wheel_page.drawer_page 0
 scoreboard players set @s hpww.fg.spell_wheel_page.wheel_page 0
 
-advancement revoke @s only hpww:spells/unlocked/depulso_unlocked
-advancement revoke @s only hpww:spells/unlocked/levioso_unlocked
-advancement revoke @s only hpww:spells/unlocked/expelliarmus_unlocked
-advancement revoke @s only hpww:spells/unlocked/lumos_unlocked
-advancement revoke @s only hpww:spells/unlocked/protego_unlocked
-
+#advancement revoke @s only hpww:spells/unlocked/depulso_unlocked
+#advancement revoke @s only hpww:spells/unlocked/levioso_unlocked
+#advancement revoke @s only hpww:spells/unlocked/expelliarmus_unlocked
+#advancement revoke @s only hpww:spells/unlocked/lumos_unlocked
+#advancement revoke @s only hpww:spells/unlocked/protego_unlocked
+advancement revoke @s only hpww:first_join_mail
+loot give @s loot hpww:items/mail
+  recipe give @a hpww:field_guide
 
 
 

@@ -1,4 +1,4 @@
-
+return fail
 execute if score @s levioso_spell_active.timer matches 1.. run return fail
 
 #makes sure U have the new path

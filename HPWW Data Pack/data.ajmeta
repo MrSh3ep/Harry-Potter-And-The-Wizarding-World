@@ -942,6 +942,7 @@
 				"data/aj/function/field_guide_gui/at_all_interactions.mcfunction",
 				"data/aj/function/field_guide_gui/at_interaction.mcfunction",
 				"data/aj/function/field_guide_gui/interactions/exit_interaction_on_interact.mcfunction",
+				"data/aj/function/field_guide_gui/interactions/settings_interaction_on_interact.mcfunction",
 				"data/aj/function/field_guide_gui/interactions/spell_wheel_interaction_on_interact.mcfunction",
 				"data/aj/function/field_guide_gui/move.mcfunction",
 				"data/aj/function/field_guide_gui/on_load.mcfunction",

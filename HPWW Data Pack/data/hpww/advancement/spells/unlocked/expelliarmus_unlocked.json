@@ -12,7 +12,7 @@
         "description": "Use this spell to disarm your opponents",
         "announce_to_chat": false,
         "icon": {
-            "id": "elytra"
+            "id": "copper_sword"
         },
         "frame": "task",
         "hidden": false,

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "Settings",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Click on any of the Buttons below to learn more about the Field Guide pages, or other things in the Wizarding World"
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": false,
+  "after_action": "close",
+  "pause": false,
+  "exit_action": {
+    "label": "Exit",
+    "width": 100
+  },
+  "columns": 1,
+  "button_width": 180,
+  "dialogs": [
+    "hpww:field_guide_tutorial",
+    "hpww:spell_wheel_settings_tutorial",
+    "hpww:spell_wheel_tutorial",
+    "hpww:first_join_message",
+    "hpww:recipes"
+  ]
+}

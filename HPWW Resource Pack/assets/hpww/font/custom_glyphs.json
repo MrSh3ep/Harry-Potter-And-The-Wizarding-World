@@ -115,7 +115,7 @@
         },
         {
             "type": "bitmap",
-            "file": "hpww:spell_wheel/right_mouse_button.png",
+            "file": "hpww:spell_wheel/left_mouse_doubble_click.png",
             "chars": ["\uE040"],
             "ascent": 11,
             "height": 16

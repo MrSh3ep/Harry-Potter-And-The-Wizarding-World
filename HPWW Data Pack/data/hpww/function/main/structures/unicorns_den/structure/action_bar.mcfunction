@@ -1,1 +1,0 @@
-title @a[tag=hpww.unicorns_den.action_bar_viewer,limit=1] actionbar [{font:"hpww:custom_glyphs", text:"\uE040", shadow_color:0},{font:"default", color:"white",text:" Examine", shadow_color:-16448251}]

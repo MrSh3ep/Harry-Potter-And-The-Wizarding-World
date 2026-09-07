@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:notice",
+  "title": "Recipes",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Click on the link below to visit the modrinth page. There scroll down to the Features Section, the click on Crafting. You will then find everything you need to know about crafting."
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Modrinth Page Link (Click Me))",
+        "click_event": {
+          "action": "open_url",
+          "url": "https://modrinth.com/datapack/harry-potter-wizarding-world"
+        }
+      }
+    }
+  ],
+  "can_close_with_escape": false
+}

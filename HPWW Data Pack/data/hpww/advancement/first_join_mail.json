@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"use_item": {
+			"trigger": "using_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"item_model": "hpww:mail"
+					}
+				}
+			} 
+		}
+	},
+	"rewards": {
+		"function": "hpww:first_join_dialog"
+	}
+}

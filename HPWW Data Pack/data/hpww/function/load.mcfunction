@@ -13,6 +13,14 @@ execute if score #startup_message_player startup_message matches 1 run tellraw @
   scoreboard objectives add levioso_spell_active.timer dummy
   scoreboard objectives add levioso_spell_active.hit_count dummy
   scoreboard objectives add levioso_spell_active.timer_display dummy
+
+  advancement grant @a only hpww:spells/unlocked/depulso_unlocked
+  advancement grant @a only hpww:spells/unlocked/levioso_unlocked
+  advancement grant @a only hpww:spells/unlocked/expelliarmus_unlocked
+  advancement grant @a only hpww:spells/unlocked/lumos_unlocked
+
+  recipe give @a hpww:field_guide
+
     
 
 
@@ -274,14 +282,14 @@ scoreboard objectives add hpww.fg.spell_wheel_page.drawer_page dummy
 scoreboard objectives add hpww.fg.spell_wheel_page.wheel_page dummy
 scoreboard objectives add hpww.fg.spell_wheel_page.notice_seen dummy
 scoreboard objectives add hpww.drawer_selected_slot dummy
+scoreboard objectives add hppw.field_guide.first_open_dialog dummy
 
 
 #bind spell api
 scoreboard objectives add hpww.api.bind_spell.page dummy
 scoreboard objectives add hpww.api.bind_spell.slot dummy
 
-#structures - unicorns den
-scoreboard objectives add hpww.unicorns_den.seting_up dummy
-execute as @e[type=marker, tag=unicorns_den_spawn_marker] unless score @s hpww.unicorns_den.seting_up matches 1 run scoreboard players set @s hpww.unicorns_den.seting_up 0
+
 
 scoreboard objectives add hpww.start_button.interaction_pressed dummy
+advancement revoke @a only hpww:first_join_mail

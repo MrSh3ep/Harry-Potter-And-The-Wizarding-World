@@ -1,4 +1,4 @@
-
+dialog show @s hpww:spell_wheel_tutorial
 
 scoreboard players set @s HasPreset 1
 

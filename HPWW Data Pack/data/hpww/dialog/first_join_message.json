@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:notice",
+  "title": "Welcome To The Wizarding World",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Hello, and Welcome to the Wizarding World! To get started on your adventure, craft yourself a Wand! ",
+      "width": 220
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "You can choose any wand core and any overworld wood type. Then throw your items onto a Wand Crafting Table"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "All recipes can be found in the Field Guide book provided, or in the Crafting Table Recipe Book"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Thank You for downloading! If you have any questions, look on the modrinth page or join my discord!"
+    }
+  ],
+  "can_close_with_escape": false,
+  "after_action": "close"
+}

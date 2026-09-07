@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:notice",
+  "title": "Spell Wheel UI Tutorial",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "The Spell Wheel is how you activate any spell in the Wizarding World. There are 7 pages, each with 4 slots (28 slots total). The controls are simple. "
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Left Click - Activate Slot 1 \n Double Left Click - Activate Slot 2 \n Right Click - Activate Slot 3 \n Double Right Click - Activate Slot 4 \n Scroll Up/Down - Change Pages"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "To Bind spells to slots, click on the Book Item; his is the Field Guide. From the home page, click on the Spell Wheel Button and start customizing!"
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "This message can be found in the Field Guide Settings page. If you have any questions Join my discord or look on the datapack Modrinth Page"
+    }
+  ],
+  "inputs": []
+}

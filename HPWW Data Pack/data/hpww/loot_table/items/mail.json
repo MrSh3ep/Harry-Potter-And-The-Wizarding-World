@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:structure_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "consumable":{"consume_seconds":1000000000},
+            "item_model": "hpww:mail",
+            "item_name": {
+                "color": "white",
+                "text": "Welcome To The Wizarding World"
+            }
+        }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

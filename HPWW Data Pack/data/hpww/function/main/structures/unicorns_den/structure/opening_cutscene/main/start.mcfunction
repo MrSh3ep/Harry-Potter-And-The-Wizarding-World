@@ -1,1 +1,0 @@
-execute as @a[tag=hpww.fade] at @e[tag=aj.hpww_trial_start_button.root] run function hpww:main/structures/unicorns_den/structure/opening_cutscene/main/1
