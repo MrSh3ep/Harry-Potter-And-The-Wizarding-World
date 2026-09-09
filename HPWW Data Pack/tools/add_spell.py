@@ -11,6 +11,8 @@ import math
 import os
 from pathlib import Path
 import re
+import shutil
+import subprocess
 import sys
 import tempfile
 from typing import Iterable
@@ -88,6 +90,81 @@ def require_pillow() -> None:
     Image = pillow_image
     ImageDraw = pillow_image_draw
     PIL_IMPORT_ERROR = None
+
+
+def find_python_with_pillow() -> Path | None:
+    candidates: list[Path] = []
+
+    for command_name in ("python", "python3"):
+        resolved = shutil.which(command_name)
+        if resolved:
+            candidates.append(Path(resolved))
+
+    if os.name == "nt" and shutil.which("py"):
+        try:
+            launcher_result = subprocess.run(
+                ["py", "-0p"],
+                check=False,
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            launcher_result = None
+
+        if launcher_result:
+            for line in launcher_result.stdout.splitlines():
+                match = re.search(
+                    r"([A-Za-z]:\\.*\\python(?:\d+(?:\.\d+)*)?\.exe)\s*$",
+                    line,
+                    flags=re.IGNORECASE,
+                )
+                if match:
+                    candidates.append(Path(match.group(1)))
+
+    current = Path(sys.executable).resolve()
+    checked: set[str] = set()
+    for candidate in candidates:
+        try:
+            candidate = candidate.resolve()
+        except OSError:
+            continue
+        candidate_key = os.path.normcase(str(candidate))
+        if candidate == current or candidate_key in checked or not candidate.is_file():
+            continue
+        checked.add(candidate_key)
+
+        try:
+            result = subprocess.run(
+                [
+                    str(candidate),
+                    "-c",
+                    "from PIL import Image, ImageDraw; import tkinter",
+                ],
+                check=False,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                timeout=15,
+            )
+        except (OSError, subprocess.TimeoutExpired):
+            continue
+        if result.returncode == 0:
+            return candidate
+    return None
+
+
+def relaunch_with_pillow(argv: list[str]) -> int | None:
+    if Image is not None:
+        return None
+
+    alternate_python = find_python_with_pillow()
+    if alternate_python is None:
+        return None
+
+    try:
+        return subprocess.call([str(alternate_python), str(SCRIPT_PATH), *argv])
+    except OSError:
+        return None
 
 
 def read_text(path: Path) -> str:
@@ -439,7 +516,12 @@ def check_conflicts(data_pack: Path, resource_pack: Path, name: str, force: bool
         resource_pack / FONT_ROOT / f"{name}.json",
         resource_pack / TEXTURE_ROOT / name,
     ]
-    conflicts = [str(path) for path in destinations if path.exists()]
+    conflicts = []
+    for path in destinations:
+        if path.is_file():
+            conflicts.append(str(path))
+        elif path.is_dir() and any(child.is_file() for child in path.rglob("*")):
+            conflicts.append(str(path))
     if conflicts:
         raise GeneratorError(
             "The spell already has generated files:\n- " + "\n- ".join(conflicts)
@@ -627,6 +709,10 @@ def launch_gui() -> int:
 
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
+    relaunched_result = relaunch_with_pillow(argv)
+    if relaunched_result is not None:
+        return relaunched_result
+
     if not argv:
         return launch_gui()
 

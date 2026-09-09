@@ -107,6 +107,18 @@ class AddSpellTests(unittest.TestCase):
             self.assertEqual(generated_changes, existing_changes)
 
     def test_builds_complete_bindable_spell_without_field_guide_edits(self) -> None:
+        # Empty folders can remain after deleting a generated spell by hand.
+        (
+            self.data_pack
+            / add_spell.SPELLS_ROOT
+            / "codex_test_spell/function"
+        ).mkdir(parents=True)
+        (
+            self.resource_pack
+            / add_spell.TEXTURE_ROOT
+            / "codex_test_spell"
+        ).mkdir(parents=True)
+
         name, paths = add_spell.build_spell(
             raw_name="codex_test_spell",
             image_path=self.source_icon,
