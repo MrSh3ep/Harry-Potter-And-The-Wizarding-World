@@ -9,7 +9,7 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": "You can choose any wand core and any overworld wood type. Then throw your items onto a Wand Crafting Table"
+      "contents": "You can choose any wand core and any overworld STRIPPED WOOD (specifically. EX: stripped_oak_wood). Then throw your items onto a Wand Crafting Table"
     },
     {
       "type": "minecraft:plain_message",
