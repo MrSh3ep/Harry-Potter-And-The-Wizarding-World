@@ -245,19 +245,6 @@ scoreboard players set #default spell_trail_speed 1000
 
 
 
-#Duel HP
-scoreboard objectives add total_duel_hp dummy
-scoreboard objectives add current_duel_hp dummy
-scoreboard objectives add intilize_duel_hp dummy
-execute as @a unless score @s intilize_duel_hp matches 1 run function hpww:new_duel_hp
-scoreboard objectives add knocked_out_timer dummy
-scoreboard players set @a knocked_out_timer 0
-scoreboard objectives add in_die_loop dummy
-execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s in_die_loop 0
-
-scoreboard objectives add knocked_out_timer_seconds dummy
-scoreboard objectives add knocked_out_timer_temp dummy
-
 #targeting API
 scoreboard objectives add target.glowing dummy
  

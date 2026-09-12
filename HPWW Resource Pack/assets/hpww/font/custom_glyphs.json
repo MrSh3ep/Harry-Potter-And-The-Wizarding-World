@@ -108,13 +108,6 @@
         },
         {
             "type": "bitmap",
-            "file": "hpww:spell_wheel/hp_background.png",
-            "chars": ["\uE039"],
-            "ascent": 47,
-            "height": 80
-        },
-        {
-            "type": "bitmap",
             "file": "hpww:spell_wheel/left_mouse_doubble_click.png",
             "chars": ["\uE040"],
             "ascent": 11,

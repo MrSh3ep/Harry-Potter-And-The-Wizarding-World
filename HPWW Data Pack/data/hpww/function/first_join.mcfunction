@@ -37,10 +37,6 @@ scoreboard players set @s spell_wheel_display_timer 0
 scoreboard players set @s spell_wheel_display_dirty 0
 scoreboard players set @s spell_wheel_maintenance_timer 0
 scoreboard players set @s spell_wheel_attack_mode 0
-scoreboard players set @s total_duel_hp 100
-scoreboard players set @s current_duel_hp 100
-scoreboard players set @s intilize_duel_hp 1
-scoreboard players set @s in_die_loop 0
 scoreboard players set @s levioso_spell_active.timer 0
 scoreboard players set @s levioso_spell_active.hit_count 0
 scoreboard players set @s SettingsMenuStatus 0

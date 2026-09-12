@@ -8,7 +8,6 @@ scoreboard players set @s protego_block_timer 17
 
 effect give @s resistance 2 1 true
 effect give @s instant_health 1 1 true
-function hpww:main/spells/function/api/duel_hp/api/current_hp/add_current {score:5}
 
 execute at @s run function hpww:main/spells/function/protego/block_particles
 

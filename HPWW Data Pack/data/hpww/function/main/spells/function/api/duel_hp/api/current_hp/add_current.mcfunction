@@ -1,1 +1,0 @@
-$scoreboard players add @s current_duel_hp $(score)

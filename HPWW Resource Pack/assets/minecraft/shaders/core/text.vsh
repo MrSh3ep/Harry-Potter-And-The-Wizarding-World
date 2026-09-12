@@ -27,19 +27,6 @@ out vec2 texCoord0;
 flat out float hpwwGuiMarker;
 out vec2 hpwwGuiLocalOffset;
 
-bool isHpTextColor(vec4 color) {
-    return (abs(color.r - 0.8666667) < 0.001 && abs(color.g - 0.2392157) < 0.001 && abs(color.b - 0.2392157) < 0.001) || (abs(color.r - 0.0) < 0.001 && abs(color.g - 0.7176471) < 0.001 && abs(color.b - 1.0) < 0.001);
-}
-
-float hpTextYOffset() {
-#if defined(IS_GUI)
-    return 34.3333;
-#elif defined(IS_SEE_THROUGH)
-    return 6.6667;
-#else
-    return 0.0;
-#endif
-}
 const float HPWW_GUI_COLUMNS = 29.0;
 const float HPWW_GUI_ROWS = 15.0;
 const float HPWW_GUI_SIZE_STEP = 8.0;
@@ -149,12 +136,6 @@ void main() {
 #endif
 
     gl_Position = ProjMat * hpwwViewPosition;
-
-#if defined(IS_GUI) || defined(IS_SEE_THROUGH)
-    if (hpwwGuiMarker < 0.5 && isHpTextColor(Color)) {
-        gl_Position.y += hpTextYOffset() * abs(ProjMat[1][1]) * gl_Position.w;
-    }
-#endif
 
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
     sphericalVertexDistance = fog_spherical_distance(Position);

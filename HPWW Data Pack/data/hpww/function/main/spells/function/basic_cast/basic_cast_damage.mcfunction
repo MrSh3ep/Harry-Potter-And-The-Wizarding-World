@@ -1,8 +1,7 @@
 tag @e[type=armor_stand,tag=basic_cast_hit_source] remove basic_cast_hit_source
 tag @n[type=armor_stand,tag=spell_trail,tag=trail_color_basic_cast,distance=0..2,limit=1,sort=nearest] add basic_cast_hit_source
 
-damage @n[distance=0.1..1.4, type=!player, nbt=!{Small:1b}] 3
-execute as @n[distance=0.1..1.4, type=!#hpww:excluded_checked_entities, nbt=!{Small:1b}] run function hpww:main/spells/function/api/duel_hp/api/current_hp/subtract_current {score:5}
+damage @n[distance=0.1..1.4, type=!#hpww:excluded_checked_entities, nbt=!{Small:1b}] 3
 execute if entity @n[type=!#hpww:excluded_checked_entities,distance=0.1..1.4,nbt=!{Small:1b}] run function hpww:main/spells/function/basic_cast/run_hit_sfx
 
 scoreboard players add @n[tag=levioso_active, type=!#hpww:excluded_checked_entities, distance=0..2, nbt=!{Small:1b}] levioso_spell_active.hit_count 1

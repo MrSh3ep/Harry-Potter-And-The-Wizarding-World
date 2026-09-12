@@ -46,9 +46,6 @@ execute as @a at @s run function hpww:main/spells/function/lumos/tick
 
     execute as @a[scores={SpellWheelStatus=1}] run function hpww:main/spellwheel/wheel/function/display/item_wheel/tick
 
-execute as @a as @s at @s run function hpww:main/spells/function/api/duel_hp/api/knocked_out/tick
-
-
 # Spell Wheel Settings triggers
 execute as @a[scores={spell_wheel_tutorial_chat=1..}] run function hpww:main/spellwheel/wheel/tutorial/chat_trigger
 execute as @a[scores={spell_wheel_tutorial_disable=1..}] run function hpww:main/spellwheel/wheel/tutorial/disable_trigger
@@ -82,11 +79,6 @@ execute as @a[scores={basic_cast_cooldown=1..}] run scoreboard players remove @s
 function hpww:main/spells/function/api/spell_trails/private/tick
 function hpww:main/spells/function/lumos/light/tick
 
-
-execute as @a unless score @s intilize_duel_hp matches 1 run function hpww:new_duel_hp
-execute unless score @s in_die_loop matches 0..1 run scoreboard players set @s in_die_loop 0
-
-execute as @a if score @s knocked_out_timer matches ..-1 run function hpww:main/spells/function/api/duel_hp/api/knocked_out/re_alive
 
 function hpww:main/spells/function/levioso/function/tick
 
